@@ -5,6 +5,7 @@
 ## Version: 1.5.0
 ## SavedVariables: SpeakStone_ForeverMainDB
 
+## OptionalDeps: SpeakStone_TWW_EN, SpeakStone_TWW_FR
 
 # Libraries
 Libs\LibStub\LibStub.lua
