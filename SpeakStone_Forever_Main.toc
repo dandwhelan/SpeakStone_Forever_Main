@@ -2,10 +2,9 @@
 ## Title: SpeakStone Forever - Main
 ## Notes: Plays AI-generated voiceovers for quests, books, and gossip, in each NPC's own voice. Built for WoW Forever (Classic+).
 ## Author: Nerf, SpeakStone@beanw.co.uk
-## Version: 1.5.1
+## Version: 1.5.2
 ## SavedVariables: SpeakStone_ForeverMainDB
 
-## OptionalDeps: SpeakStone_TWW_EN, SpeakStone_TWW_FR
 
 # Libraries
 Libs\LibStub\LibStub.lua
@@ -19,6 +18,7 @@ QuestTitles.lua
 NPCNames.lua
 DynamicGossipNPCs.lua
 GossipTexts.lua
+VoicedLines.lua
 SpeakStone_Main.lua
 Harvester.lua
 SpeakStone_Main_Settings.lua
