@@ -2,7 +2,8 @@
 ## Title: SpeakStone Forever - Main
 ## Notes: Plays AI-generated voiceovers for quests, books, and gossip, in each NPC's own voice. Built for WoW Forever (Classic+).
 ## Author: Nerf, SpeakStone@beanw.co.uk
-## Version: 1.5.2
+## X-Curse-Project-ID: 1706480
+## Version: 1.6.2
 ## SavedVariables: SpeakStone_ForeverMainDB
 
 
