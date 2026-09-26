@@ -645,14 +645,28 @@ end
 local AUDIO_PACK_PROMPT_TEXT = "SpeakStone works better with the audio packs installed.\n\n"
     .. "Please look on CurseForge to get the Audio packs. They are always being updated and improved."
 
+-- WoW cannot open a browser, so the link sits in a pre-selected edit box
+-- the player can Ctrl+C.
+local CURSEFORGE_URL = "https://www.curseforge.com/members/dandwhelan/projects"
+
 StaticPopupDialogs["SPEAKSTONE_AUDIO_PACK_PROMPT"] = {
-    text = AUDIO_PACK_PROMPT_TEXT,
+    text = AUDIO_PACK_PROMPT_TEXT .. "\n\nPress Ctrl+C to copy the link:",
     button1 = OKAY,
-    button2 = "Don't show again",
-    OnCancel = function(_, _, reason)
-        if reason == "clicked" and SpeakStone_ForeverMainDB then
-            SpeakStone_ForeverMainDB.hideAudioPackPrompt = true
+    hasEditBox = true,
+    editBoxWidth = 320,
+    OnShow = function(self)
+        local editBox = self.editBox or self.EditBox or _G[self:GetName() .. "EditBox"]
+        if editBox then
+            editBox:SetText(CURSEFORGE_URL)
+            editBox:HighlightText()
+            editBox:SetFocus()
         end
+    end,
+    EditBoxOnEnterPressed = function(editBox)
+        editBox:GetParent():Hide()
+    end,
+    EditBoxOnEscapePressed = function(editBox)
+        editBox:GetParent():Hide()
     end,
     timeout = 0,
     whileDead = true,
@@ -660,11 +674,14 @@ StaticPopupDialogs["SPEAKSTONE_AUDIO_PACK_PROMPT"] = {
     preferredIndex = 3,
 }
 
+-- Shown once ever: the flag is saved the first time the prompt appears.
 function PromptForAudioPacksIfMissing()
-    if HasAnyAudioPack() or (SpeakStone_ForeverMainDB and SpeakStone_ForeverMainDB.hideAudioPackPrompt) then
+    if HasAnyAudioPack() or not SpeakStone_ForeverMainDB or SpeakStone_ForeverMainDB.audioPackPromptShown then
         return
     end
+    SpeakStone_ForeverMainDB.audioPackPromptShown = true
     print("|cff33ff99SpeakStone:|r " .. AUDIO_PACK_PROMPT_TEXT:gsub("\n\n", " "))
+    print("|cff33ff99SpeakStone:|r " .. CURSEFORGE_URL)
     StaticPopup_Show("SPEAKSTONE_AUDIO_PACK_PROMPT")
 end
 
