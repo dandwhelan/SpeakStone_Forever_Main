@@ -1,13 +1,20 @@
 # SpeakStone Forever - Main
 
 SpeakStone's base addon for **WoW Forever** (Classic+, interface `16001`).
-Plays AI-generated voiceovers for quests, books and gossip, each in the
-NPC's own voice.
+Quests, books and gossip are read aloud with voices similar to the in-game
+characters, not a generic narrator.
 
-This is code only. Audio ships in separate pack addons
-(`SpeakStone_Pack_Forever_*`), which require this one.
+Unofficial; not affiliated with Blizzard Entertainment.
 
-## Generated, not hand-maintained
+## Install
+
+1. **SpeakStone Forever - Main** (this addon: code only, no audio)
+2. **SpeakStone Forever Audio Pack 1** ([SpeakStone_Forever_Audio_Pack1](https://github.com/dandwhelan/SpeakStone_Forever_Audio_Pack1))
+3. **SpeakStone Forever Audio Pack 2** ([SpeakStone_Forever_Audio_Pack2](https://github.com/dandwhelan/SpeakStone_Forever_Audio_Pack2))
+
+Install all three. Both audio packs require this addon.
+
+## Built from SpeakStone_Main
 
 Everything here is produced by `tools/build_forever_main.py` from the retail
 [SpeakStone_Main](https://github.com/dandwhelan/SpeakStone_Main) payload.
@@ -21,4 +28,6 @@ Captures made on this client are reported to the site as `flavour: "forever"`
 by `Harvester.lua`, from the interface number. Quest IDs are only unique within
 one game, so this is what keeps Forever quest text from merging into retail's.
 
-Fixes belong in SpeakStone_Main; regenerate this rather than editing it.
+Fixes belong in SpeakStone_Main; rebuild this rather than editing it.
+
+Player site: https://speakstone.beanw.co.uk
