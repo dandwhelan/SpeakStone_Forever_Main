@@ -2,6 +2,9 @@ local _, addon = ...
 
 local NUM_VISIBLE_ROWS = 14
 local ROW_HEIGHT = 34
+-- Where the list starts: below the Quests / Gossip / Books tabs and the
+-- search box (owner, 2026-09-28: a Books button across the top).
+local LIST_TOP = -86
 -- Typing in the search box used to re-filter on every keystroke, and filtering
 -- by name means resolving a title for every quest in the library. Held back by
 -- this much, a burst of typing costs one pass instead of one per character.
@@ -199,11 +202,40 @@ titleLoader:SetScript("OnEvent", function(_, _, questID, success)
 end)
 
 -- --------------------------------------------------------------------------
+-- Book names. Only book clips reach the Books tab: files named
+-- "<name>_page<n>", where <name> is "item<ID>", "item_<title>", "<title>" or
+-- "<title>_<first words of page 1>". This turns <name> back into something to
+-- read. Item IDs are resolved through the client when it knows the item.
+-- --------------------------------------------------------------------------
+local bookNameCache = {}
+local function BookName(base)
+    local cached = bookNameCache[base]
+    if cached then return cached end
+    local name
+    local itemID = tonumber(base:match("^item(%d+)$") or "")
+    if itemID then
+        local ok, n = pcall(function()
+            return (C_Item and C_Item.GetItemNameByID and C_Item.GetItemNameByID(itemID)) or GetItemInfo(itemID)
+        end)
+        if ok and n and n ~= "" and not (issecretvalue and issecretvalue(n)) then
+            name = n
+        else
+            return "Item " .. itemID    -- not cached: the client may learn the name later
+        end
+    else
+        name = base:gsub("^item_", ""):gsub("_", " ")
+        name = name:gsub("(%a)([%w']*)", function(first, rest) return first:upper() .. rest end)
+    end
+    bookNameCache[base] = name
+    return name
+end
+
+-- --------------------------------------------------------------------------
 -- Building the window
 -- --------------------------------------------------------------------------
 local function BuildUI()
     local frame = CreateFrame("Frame", "SpeakStoneAudioLibraryUI", UIParent, "BasicFrameTemplateWithInset")
-    frame:SetSize(400, 612)
+    frame:SetSize(400, 636)
     frame:SetPoint("CENTER")
     frame:SetMovable(true)
     frame:EnableMouse(true)
@@ -227,10 +259,22 @@ local function BuildUI()
         frame.title = title
     end
 
+    -- Tabs across the top: Quests, Gossip, Books (owner, 2026-09-28). This
+    -- replaced a single Quests <-> Gossip toggle when books became a third list.
+    frame.tabs = {}
+    local TAB_ORDER = { { "quests", "Quests" }, { "gossip", "Gossip" }, { "books", "Books" } }
+    for i, t in ipairs(TAB_ORDER) do
+        local tab = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+        tab:SetSize(118, 22)
+        tab:SetPoint("TOPLEFT", frame, "TOPLEFT", 14 + (i - 1) * 122, -28)
+        tab:SetText(t[2])
+        frame.tabs[t[1]] = tab
+    end
+
     -- Search Box
     local searchBox = CreateFrame("EditBox", "SpeakStoneAudioLibrarySearchBox", frame, "SearchBoxTemplate")
-    searchBox:SetSize(288, 22)
-    searchBox:SetPoint("TOPLEFT", frame, "TOPLEFT", 18, -32)
+    searchBox:SetSize(360, 22)
+    searchBox:SetPoint("TOPLEFT", frame, "TOPLEFT", 20, -56)
     searchBox:SetAutoFocus(false)
     searchBox:SetMaxLetters(60)
     if searchBox.Instructions then
@@ -238,19 +282,13 @@ local function BuildUI()
     end
     frame.searchBox = searchBox
 
-    -- Mode toggle: Quests <-> Gossip. Two separate lists, since a quest row
-    -- and a gossip row show different data and gossip has no "types" to key
-    -- three fixed buttons off -- one NPC can have anywhere from one variant
-    -- to several.
-    local modeButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
-    modeButton:SetSize(66, 22)
-    modeButton:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -18, -32)
-    modeButton:SetText("Gossip")
-    frame.modeButton = modeButton
+    -- One list per tab, since a quest row, a gossip row and a book row show
+    -- different data: gossip has no "types" to key three fixed buttons off,
+    -- and a book is a set of pages.
 
     -- ScrollFrame (FauxScrollFrame for high performance virtualized rows)
     local scrollFrame = CreateFrame("ScrollFrame", "SpeakStoneAudioLibraryScrollFrame", frame, "FauxScrollFrameTemplate")
-    scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", 12, -62)
+    scrollFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", 12, LIST_TOP)
     scrollFrame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -36, 44)
     frame.scrollFrame = scrollFrame
 
@@ -300,7 +338,7 @@ local function BuildUI()
     for i = 1, NUM_VISIBLE_ROWS do
         local row = CreateFrame("Button", nil, frame)
         row:SetSize(342, ROW_HEIGHT)
-        row:SetPoint("TOPLEFT", frame, "TOPLEFT", 16, -62 - (i - 1) * ROW_HEIGHT)
+        row:SetPoint("TOPLEFT", frame, "TOPLEFT", 16, LIST_TOP - (i - 1) * ROW_HEIGHT)
 
         -- Highlight texture
         local highlight = row:CreateTexture(nil, "HIGHLIGHT")
@@ -355,14 +393,19 @@ local function BuildUI()
         -- Click handlers. Quest rows use all three buttons; a gossip row uses
         -- only descBtn, relabeled "Play" -- see UpdateList.
         descBtn:SetScript("OnClick", function()
-            if row.gossipData then
+            if row.bookData then
+                frame:OpenBook(row.bookData.book, 1)
+            elseif row.gossipData then
                 frame:PlayGossipClip(row.gossipData.npcID, row.gossipData.variant)
             elseif row.questData then
                 frame:PlaySpecificAudio(row.questData.id, "description")
             end
         end)
         progBtn:SetScript("OnClick", function()
-            if row.questData then
+            if row.bookData then
+                frame:OpenBook(row.bookData.book, 1)
+                frame:PlayBook(row.bookData.book, 1)
+            elseif row.questData then
                 frame:PlaySpecificAudio(row.questData.id, "progress")
             end
         end)
@@ -374,6 +417,26 @@ local function BuildUI()
 
         -- Tooltips
         local function ShowRowTooltip(owner)
+            if row.bookData then
+                local b = row.bookData
+                GameTooltip:SetOwner(owner or row, "ANCHOR_RIGHT")
+                GameTooltip:AddLine(BookName(b.book.base), 1, 0.82, 0)
+                if b.kind == "book" then
+                    local total = 0
+                    for _, page in ipairs(b.book.pages) do
+                        total = total + (frame:GetPageDuration(b.book, page) or 0)
+                    end
+                    GameTooltip:AddLine(#b.book.pages .. " page(s)", 0.7, 0.7, 0.7)
+                    if total > 0 then GameTooltip:AddLine(string.format("%.1fs in all", total), 0.3, 1, 0.3) end
+                    GameTooltip:AddLine("Book: reads every page in order.", 0.8, 0.8, 1)
+                else
+                    GameTooltip:AddLine("Page " .. b.page, 0.7, 0.7, 0.7)
+                    local d = frame:GetPageDuration(b.book, b.page)
+                    if d then GameTooltip:AddLine(string.format("%.1fs", d), 0.3, 1, 0.3) end
+                end
+                GameTooltip:Show()
+                return
+            end
             if row.gossipData then
                 local g = row.gossipData
                 GameTooltip:SetOwner(owner or row, "ANCHOR_RIGHT")
@@ -460,6 +523,9 @@ local function BuildUI()
     local activePlayingType = nil
     local activePlayingNPCID = nil
     local activePlayingVariant = nil
+    -- Book reading: which book, which page is sounding, whether the whole book
+    -- is being read, and the timer that turns to the next page.
+    local activeBook, activeBookPage, activeBookWhole, bookTimer = nil, nil, false, nil
 
     -- Duration lookup helper. The walk over every installed pack, in
     -- extension order, is the addon's own FindSound -- this file used to
@@ -468,6 +534,12 @@ local function BuildUI()
     function frame:GetAudioDuration(questID, audioType)
         if not addon.FindSound then return nil end
         local _, _, duration = addon.FindSound({ questID .. "_" .. audioType })
+        return duration
+    end
+
+    function frame:GetPageDuration(book, page)
+        if not addon.FindSound then return nil end
+        local _, _, duration = addon.FindSound({ book.base .. "_page" .. page })
         return duration
     end
 
@@ -502,6 +574,7 @@ local function BuildUI()
 
         local quests = {}
         local gossip = {}
+        local books = {}
         if addon.GetAudioIndex then
             local audioIndex = addon.GetAudioIndex()
             for _, entry in pairs(audioIndex.quests) do
@@ -512,11 +585,17 @@ local function BuildUI()
             for _, entry in ipairs(audioIndex.gossip) do
                 table.insert(gossip, entry)
             end
+            -- Books tab: one row per book. Its pages are shown in the book
+            -- view (owner, 2026-09-28: "a book with pages"). Only book clips.
+            for _, book in ipairs(audioIndex.books or {}) do
+                table.insert(books, { kind = "book", book = book })
+            end
         end
         table.sort(quests, function(a, b) return a.id < b.id end)
 
         self.allQuests = quests
         self.allGossip = gossip
+        self.allBooks = books
         self.isIndexed = true
         self.filteredList = nil
         -- A rebuilt index invalidates the narrowing below, which assumes the
@@ -531,6 +610,8 @@ local function BuildUI()
     function frame:ActiveList()
         if self.mode == "gossip" then
             return self.allGossip
+        elseif self.mode == "books" then
+            return self.allBooks
         end
         return self.allQuests
     end
@@ -598,9 +679,15 @@ local function BuildUI()
             local processed = 0
 
             local isGossip = frame.mode == "gossip"
+            local isBooks = frame.mode == "books"
             while i <= total do
                 local entry = source[i]
-                if isGossip then
+                if isBooks then
+                    -- A book matches by name; its page rows come with it.
+                    if BookName(entry.book.base):lower():find(needle, 1, true) then
+                        results[#results + 1] = entry
+                    end
+                elseif isGossip then
                     local idStr = entry.npcIDStr or tostring(entry.npcID)
                     local name = SpeakStone_NPCNames and SpeakStone_NPCNames[entry.npcID]
                     if idStr:find(needle, 1, true)
@@ -666,6 +753,7 @@ local function BuildUI()
     -- Update visible rows
     function frame:UpdateList()
         local isGossip = self.mode == "gossip"
+        local isBooks = self.mode == "books"
         local list = self.filteredList or self:ActiveList() or {}
         local numItems = #list
         -- Taken once. UpdateList runs on every frame of a search pass, and
@@ -683,8 +771,22 @@ local function BuildUI()
                 local data = list[index]
                 row:Show()
 
-                if isGossip then
+                if isBooks then
                     row.questData = nil
+                    row.gossipData = nil
+                    row.bookData = data
+                    local name = BookName(data.book.base)
+                    row.compBtn:Hide()
+                    row.descBtn:Show()
+                    row.progBtn:Show()
+                    row.text:SetText("|cffffd100" .. name .. "|r")
+                    row.idText:SetText(#data.book.pages .. (#data.book.pages == 1 and " page" or " pages"))
+                    row.descBtn:SetText("Open")
+                    local on = activeBook == data.book and activeBookWhole
+                    row.progBtn:SetText(on and "|cff00ff00Read|r" or "Read")
+                elseif isGossip then
+                    row.questData = nil
+                    row.bookData = nil
                     row.gossipData = data
 
                     local name = SpeakStone_NPCNames and SpeakStone_NPCNames[data.npcID]
@@ -717,6 +819,7 @@ local function BuildUI()
                     end
                 else
                     row.gossipData = nil
+                    row.bookData = nil
                     row.questData = data
 
                     local title = GetQuestTitle(data.id)
@@ -774,11 +877,12 @@ local function BuildUI()
             else
                 row.questData = nil
                 row.gossipData = nil
+                row.bookData = nil
                 row:Hide()
             end
         end
 
-        local noun = isGossip and "gossip clips" or "quests"
+        local noun = isBooks and "books" or (isGossip and "gossip clips" or "quests")
         if self.filtering then
             -- A pass still running has not found everything yet, and "no
             -- matching quests" while it is still looking is simply wrong --
@@ -804,6 +908,211 @@ local function BuildUI()
         activePlayingType = nil
         activePlayingNPCID = nil
         activePlayingVariant = nil
+        if bookTimer then
+            bookTimer:Cancel()
+            bookTimer = nil
+        end
+        activeBook, activeBookPage, activeBookWhole = nil, nil, false
+        self:UpdateList()
+        if self.RefreshBook then self:RefreshBook() end
+    end
+
+    -- Plays one page of a book. With `whole`, the next page follows when this
+    -- one ends, through to the last page; StopAudio (or playing anything
+    -- else) ends the reading.
+    -- ------------------------------------------------------------------
+    -- Book view: one book shown as a book, page by page (owner, 2026-09-28).
+    -- Covers the list; the page shown follows the reading.
+    -- ------------------------------------------------------------------
+    local view = CreateFrame("Frame", nil, frame)
+    view:SetPoint("TOPLEFT", frame, "TOPLEFT", 14, LIST_TOP)
+    view:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -14, 44)
+    view:SetFrameLevel(frame:GetFrameLevel() + 20)
+    view:EnableMouse(true)
+    view:Hide()
+    local parchment = view:CreateTexture(nil, "BACKGROUND")
+    parchment:SetAllPoints()
+    parchment:SetColorTexture(0.87, 0.79, 0.62, 1)
+    local edge = view:CreateTexture(nil, "BORDER")
+    edge:SetPoint("TOPLEFT", 6, -6)
+    edge:SetPoint("BOTTOMRIGHT", -6, 6)
+    edge:SetColorTexture(0.93, 0.87, 0.73, 1)
+    local bTitle = view:CreateFontString(nil, "OVERLAY", "QuestTitleFontBlackShadow")
+    bTitle:SetPoint("TOP", view, "TOP", 0, -18)
+    bTitle:SetWidth(320)
+    bTitle:SetTextColor(0.25, 0.16, 0.06)
+    local bStatus = view:CreateFontString(nil, "OVERLAY", "GameFontBlackSmall")
+    bStatus:SetPoint("TOP", bTitle, "BOTTOM", 0, -4)
+    bStatus:SetWidth(300)
+
+    -- The page's words (owner, 2026-09-28: "look at adding the book text"),
+    -- from BookTexts.lua, scrollable for long pages.
+    local textScroll = CreateFrame("ScrollFrame", nil, view, "UIPanelScrollFrameTemplate")
+    textScroll:SetPoint("TOPLEFT", view, "TOPLEFT", 22, -58)
+    textScroll:SetPoint("BOTTOMRIGHT", view, "BOTTOMRIGHT", -34, 118)
+    local textChild = CreateFrame("Frame", nil, textScroll)
+    textChild:SetSize(300, 10)
+    textScroll:SetScrollChild(textChild)
+    local bText = textChild:CreateFontString(nil, "OVERLAY", "QuestFont")
+    bText:SetPoint("TOPLEFT", 0, 0)
+    bText:SetWidth(300)
+    bText:SetJustifyH("LEFT")
+    bText:SetJustifyV("TOP")
+    bText:SetTextColor(0.18, 0.12, 0.05)
+
+    local bPage = view:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+    bPage:SetPoint("BOTTOM", view, "BOTTOM", 0, 86)
+    bPage:SetTextColor(0.3, 0.2, 0.08)
+    local function Btn(label, w, point, x, y)
+        local b = CreateFrame("Button", nil, view, "UIPanelButtonTemplate")
+        b:SetSize(w, 24)
+        b:SetPoint(point, view, point, x, y)
+        b:SetText(label)
+        return b
+    end
+    local prevBtn = Btn("< Prev", 80, "BOTTOMLEFT", 20, 80)
+    local nextBtn = Btn("Next >", 80, "BOTTOMRIGHT", -20, 80)
+    local playPageBtn = Btn("Play page", 100, "BOTTOM", -56, 46)
+    local readBtn = Btn("Read book", 100, "BOTTOM", 56, 46)
+    local backBtn = Btn("Back to books", 120, "BOTTOM", 0, 12)
+
+    -- Book text as the player would see it: $B line breaks, and the player's
+    -- own name / class / race / gendered words filled in.
+    local function PageText(book, index)
+        local pages = SpeakStone_BookTexts and SpeakStone_BookTexts[book.base]
+        local t = pages and pages[book.pages[index]]
+        if not t or t == "" then
+            return "|cff7a6a50(No text on file for this page.)|r"
+        end
+        local ok, out = pcall(function()
+            local name = UnitName("player") or "friend"
+            local _, class = UnitClass("player")
+            local race = UnitRace("player") or "traveller"
+            local female = UnitSex("player") == 3
+            t = t:gsub("%$[bB]", "\n")
+            t = t:gsub("%$[gG]%s*([^:;]*):([^;]*);", function(m, f) return female and f or m end)
+            t = t:gsub("%$[nN]", name):gsub("<name>", name)
+            t = t:gsub("%$[cC]", (class and class:lower():gsub("^%l", string.upper)) or "hero"):gsub("<class>", class or "hero")
+            t = t:gsub("%$[rR]", race):gsub("<race>", race)
+            return t
+        end)
+        return ok and out or t
+    end
+    frame.bookView = view
+
+    function frame:RefreshBook()
+        if not view.book then return end
+        local book, idx = view.book, view.index
+        bTitle:SetText(BookName(book.base))
+        bPage:SetText(string.format("Page %d of %d", idx, #book.pages))
+        if view.shownIndex ~= idx or view.shownBook ~= book then
+            bText:SetText(PageText(book, idx))
+            textChild:SetHeight(math.max(10, bText:GetStringHeight() + 8))
+            textScroll:SetVerticalScroll(0)
+            view.shownIndex, view.shownBook = idx, book
+        end
+        local reading = activeBook == book and activeBookWhole
+        if activeBook == book and activeBookPage == book.pages[idx] then
+            bStatus:SetText(reading and "Reading the book..." or "Playing this page")
+        else
+            bStatus:SetText(" ")
+        end
+        readBtn:SetText(reading and "Stop" or "Read book")
+        if idx > 1 then prevBtn:Enable() else prevBtn:Disable() end
+        if idx < #book.pages then nextBtn:Enable() else nextBtn:Disable() end
+    end
+
+    function frame:OpenBook(book, index)
+        view.book, view.index = book, index or 1
+        view:Show()
+        self:RefreshBook()
+    end
+
+    function frame:CloseBook()
+        view.book = nil
+        view:Hide()
+    end
+
+    local function Turn(delta)
+        local book = view.book
+        if not book then return end
+        local idx = math.max(1, math.min(#book.pages, view.index + delta))
+        if idx == view.index then return end
+        view.index = idx
+        -- Turning the page while the book is being read jumps the reading there.
+        if activeBook == book and activeBookWhole then
+            frame:PlayBook(book, idx)
+        end
+        frame:RefreshBook()
+    end
+    prevBtn:SetScript("OnClick", function() Turn(-1) end)
+    nextBtn:SetScript("OnClick", function() Turn(1) end)
+    playPageBtn:SetScript("OnClick", function()
+        if view.book then frame:PlayBookPage(view.book, view.book.pages[view.index]) end
+    end)
+    readBtn:SetScript("OnClick", function()
+        if not view.book then return end
+        if activeBook == view.book and activeBookWhole then
+            frame:StopAudio()
+        else
+            frame:PlayBook(view.book, view.index)
+        end
+    end)
+    backBtn:SetScript("OnClick", function() frame:CloseBook() end)
+    -- The wheel scrolls the page's text; Prev/Next turn pages.
+
+    local function StartBookPage(book, index, whole)
+        local page = book.pages[index]
+        if not page then return false end
+        local soundPath, duration
+        if addon.FindSound then
+            local _, path, len = addon.FindSound({ book.base .. "_page" .. page })
+            soundPath, duration = path, len
+        end
+        if not soundPath then
+            print("SpeakStone Audio Library: page " .. page .. " of '" .. BookName(book.base) .. "' not found")
+            return false
+        end
+        local willPlay, handle = PlaySoundFile(soundPath, "Dialog")
+        if not (willPlay and handle) then return false end
+        activeDebugSound = handle
+        activeBook, activeBookPage, activeBookWhole = book, page, whole
+        if view.book == book then
+            view.index = index
+            frame:RefreshBook()
+        end
+        bookTimer = C_Timer.NewTimer((tonumber(duration) or 5) + 0.4, function()
+            bookTimer = nil
+            if activeBook ~= book or activeBookPage ~= page then return end
+            if whole and book.pages[index + 1] then
+                StartBookPage(book, index + 1, true)
+            else
+                activeBook, activeBookPage, activeBookWhole = nil, nil, false
+            end
+            if frame:IsShown() then
+                frame:UpdateList()
+                frame:RefreshBook()
+            end
+        end)
+        return true
+    end
+
+    function frame:PlayBook(book, startIndex)
+        self:StopAudio()
+        if addon.StopCurrentSound then addon.StopCurrentSound() end
+        StartBookPage(book, startIndex or 1, true)
+        self:UpdateList()
+    end
+
+    function frame:PlayBookPage(book, page)
+        self:StopAudio()
+        if addon.StopCurrentSound then addon.StopCurrentSound() end
+        for i, p in ipairs(book.pages) do
+            if p == page then
+                StartBookPage(book, i, false)
+                break
+            end
+        end
         self:UpdateList()
     end
 
@@ -877,15 +1186,22 @@ local function BuildUI()
 
     function frame:SetMode(mode)
         if self.mode == mode then return end
+        -- Drop the previous tab's list BEFORE anything redraws: resetting the
+        -- scrollbar in FilterList redraws at once, and it used to draw the old
+        -- tab's rows under the new mode (gossip rows as books, etc.).
+        self.filteredList = nil
+        if self.CloseBook then self:CloseBook() end
         self:StopAudio()
         self.mode = mode
-        if mode == "gossip" then
-            modeButton:SetText("Quests")
-            searchBox.Instructions:SetText("Search NPC ID, name, race or sex...")
-        else
-            modeButton:SetText("Gossip")
-            searchBox.Instructions:SetText("Search quest ID, name, race or sex...")
+        local hints = {
+            quests = "Search quest ID, name, race or sex...",
+            gossip = "Search NPC ID, name, race or sex...",
+            books = "Search book name...",
+        }
+        if searchBox.Instructions then
+            searchBox.Instructions:SetText(hints[mode] or hints.quests)
         end
+        self:UpdateTabs()
         -- A rebuilt index invalidates the narrowing FilterList relies on --
         -- the previous result was drawn from the other mode's list.
         self.lastQuery = nil
@@ -893,9 +1209,23 @@ local function BuildUI()
         self:FilterList(self.searchBox:GetText())
     end
 
-    modeButton:SetScript("OnClick", function()
-        frame:SetMode(frame.mode == "gossip" and "quests" or "gossip")
-    end)
+    -- The selected tab is shown pressed and can't be clicked again.
+    function frame:UpdateTabs()
+        local current = self.mode or "quests"
+        for mode, tab in pairs(self.tabs) do
+            if mode == current then
+                tab:Disable()
+                tab:LockHighlight()
+            else
+                tab:Enable()
+                tab:UnlockHighlight()
+            end
+        end
+    end
+    for mode, tab in pairs(frame.tabs) do
+        tab:SetScript("OnClick", function() frame:SetMode(mode) end)
+    end
+    frame:UpdateTabs()
 
     function frame:ToggleVisibility()
         if self:IsVisible() then
@@ -957,10 +1287,11 @@ local function BuildUI()
         -- waiting for, and it would keep waking every frame until it finished.
         CancelFilter()
         self:StopAudio()
+        self:CloseBook()
         -- The index is tens of thousands of rows and most of the addon's
         -- memory. Rebuilding it on the next open costs a moment; keeping it
         -- costs every player the memory all session.
-        self.allQuests, self.allGossip = nil, nil
+        self.allQuests, self.allGossip, self.allBooks = nil, nil, nil
         self.filteredList, self.lastQuery, self.lastResult = nil, nil, nil
         self.isIndexed = false
         if addon.ReleaseAudioIndex then addon.ReleaseAudioIndex() end
@@ -987,9 +1318,14 @@ function addon.AudioLibraryInvalidate()
     end
 end
 
-function addon.OpenAudioLibrary()
+-- `mode` ("quests", "gossip" or "books") opens straight onto that tab: the
+-- settings window's Play section has one button per tab.
+function addon.OpenAudioLibrary(mode)
     local frame = EnsureUI()
     frame:Show()
+    if type(mode) == "string" then
+        frame:SetMode(mode)
+    end
     return frame
 end
 
