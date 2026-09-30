@@ -1,6 +1,7 @@
 ## Interface: 16001
 ## Title: SpeakStone Forever - Main
 ## X-Curse-Project-ID: 1706480
+## X-Wago-ID: jK8WWq6y
 ## Notes: Quests, books and gossip read aloud with voices similar to the in-game characters, not a generic narrator. Built for WoW Forever (Classic+). Unofficial; not affiliated with Blizzard Entertainment.
 ## Author: Nerf, SpeakStone@beanw.co.uk
 ## Version: 2.0.6
