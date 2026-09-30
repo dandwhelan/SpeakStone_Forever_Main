@@ -700,7 +700,9 @@ end
 
 local AUDIO_PACK_PROMPT_TEXT = "SpeakStone works better with the audio packs installed.\n\n"
     .. "Please look on CurseForge to get the Audio packs. They are always being updated and improved."
-addon.AUDIO_PACK_EXTRA_NOTE = ""
+    .. "\n\n"
+    .. "Please bear with me while CurseForge approves the audio pack addons."
+addon.AUDIO_PACK_EXTRA_NOTE = "\n\nPlease bear with me while CurseForge approves the audio pack addons."
 
 -- WoW cannot open a browser, so the link sits in a pre-selected edit box
 -- the player can Ctrl+C.
