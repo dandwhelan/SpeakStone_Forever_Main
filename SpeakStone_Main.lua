@@ -147,6 +147,27 @@ local defaultSettings = {
     -- while those lines are audible -- see muteGossip. 1.0s from 1.5.1: 0.5
     -- started narration on top of most quest givers' greetings.
     autoPlayDelay = 1.0,
+    -- The speech frame (SpeechFrame.lua): who is talking, the text, and
+    -- pause/stop, shown once the dialogue window has closed (or the quest
+    -- was auto-accepted) and narration is still going.
+    showSpeechFrame = true,
+    -- "small", "medium" or "large": the same frame at three scales, on top of
+    -- the game's own UI scale.
+    speechSize = "medium",
+    speechFrameLocked = false,
+    -- Scroll the text along with the voice. Off = the text stays put and the
+    -- mouse wheel scrolls it.
+    speechAutoScroll = true,
+    -- Grow the frame to show the whole text (up to SpeechFrame's cap)
+    -- instead of a four-line scroll area.
+    speechFitText = false,
+    -- Off by default: a new quest line waits its turn behind the one being
+    -- read instead of cutting it off. The speech frame shows "1/2" and a
+    -- Next button.
+    queueQuestSpeech = false,
+    -- Off by default: accepting a quest is the player's decision. Shift held
+    -- while the quest opens skips it for that quest.
+    autoAcceptQuests = false,
 }
 
 -- Autoplay for one kind of text. The master switch gates all three, so
@@ -744,6 +765,18 @@ function PromptForAudioPacksIfMissing()
     StaticPopup_Show("SPEAKSTONE_AUDIO_PACK_PROMPT")
 end
 
+-- Tell the speech frame (SpeechFrame.lua) about a clip. An error in there
+-- is reported but never stops playback itself.
+local function NotifySpeechFrame(event, soundData)
+    if not addon.SpeechFrameNotify then
+        return
+    end
+    local ok, err = pcall(addon.SpeechFrameNotify, event, soundData)
+    if not ok then
+        geterrorhandler()(err)
+    end
+end
+
 local function GetCurrentSound()
     return addon.activeSound
 end
@@ -786,10 +819,17 @@ local function FinishPlayback(soundData)
     soundData.endTimer = nil
     addon.activeSound = nil
     UnmuteDialogChannel()
+    -- Before onFinished, so a book's next page arrives as a fresh "start"
+    -- after this "finish" rather than the other way round.
+    NotifySpeechFrame("finish", soundData)
     -- Natural end only (StopCurrentSound never reaches here): lets a book
     -- queue its next page.
     if soundData.onFinished and soundData.soundHandle then
         soundData.onFinished(soundData)
+    end
+    -- Queued quest lines: the next one starts when this one ends by itself.
+    if soundData.soundHandle and not addon.activeSound and addon.PlayNextQueued then
+        addon.PlayNextQueued()
     end
 end
 
@@ -845,6 +885,11 @@ local function DoPlaySound(soundData)
     soundData.endTimer = C_Timer.NewTimer(duration + 0.25, function()
         FinishPlayback(soundData)
     end)
+
+    -- Nothing reports a clip's position either, so the speech frame works
+    -- it out from when it started.
+    soundData.startedAt = GetTime()
+    NotifySpeechFrame("start", soundData)
 end
 
 local function IsPlaying()
@@ -877,8 +922,69 @@ local function StopCurrentSound()
     UnmuteDialogChannel()
 
     addon.activeSound = nil
+    currentSound.isPlaying = false
+    NotifySpeechFrame("stop", currentSound)
 end
 addon.StopCurrentSound = StopCurrentSound
+
+-- Play a clip again from the top: the speech frame's Resume and Replay.
+-- PlaySoundFile cannot start part-way into a file, so resuming a paused
+-- clip means starting it over; the frame rewinds the text to match.
+function addon.ReplaySound(soundData)
+    if not soundData or not soundData.soundPath then
+        return
+    end
+    StopCurrentSound()
+    soundData.isPlaying = false
+    soundData.soundHandle = nil
+    soundData.endTimer = nil
+    soundData.nextSoundTimer = nil
+    addon.activeSound = soundData
+    DoPlaySound(soundData)
+end
+
+-- The quest speech queue (queueQuestSpeech). queuePos/queueTotal drive the
+-- speech frame's "1/2"; both reset once the queue has run dry.
+addon.speechQueue = {}
+addon.queuePos, addon.queueTotal = 0, 0
+
+function addon.ClearSpeechQueue()
+    wipe(addon.speechQueue)
+    addon.queuePos, addon.queueTotal = 0, 0
+end
+
+local function EnqueueSpeech(soundData)
+    for _, queued in ipairs(addon.speechQueue) do
+        if queued.questID == soundData.questID and queued.textType == soundData.textType then
+            return
+        end
+    end
+    if addon.queueTotal == 0 then
+        addon.queuePos, addon.queueTotal = 1, 1
+    end
+    table.insert(addon.speechQueue, soundData)
+    addon.queueTotal = addon.queueTotal + 1
+    NotifySpeechFrame("queue", addon.activeSound)
+end
+
+-- Start the next queued line now (the frame's Next button, or the end of
+-- the current one). Returns false when nothing is waiting.
+function addon.PlayNextQueued()
+    local nextSound = table.remove(addon.speechQueue, 1)
+    if not nextSound then
+        addon.queuePos, addon.queueTotal = 0, 0
+        return false
+    end
+    StopCurrentSound()
+    addon.queuePos = addon.queuePos + 1
+    nextSound.isPlaying = false
+    nextSound.soundHandle = nil
+    nextSound.endTimer = nil
+    nextSound.nextSoundTimer = nil
+    addon.activeSound = nextSound
+    DoPlaySound(nextSound)
+    return true
+end
 
 -- When Blizzard's own voice line (a talking head, or an NPC speaking aloud)
 -- is expected to finish, as a GetTime() value. Set by the event handler at
@@ -997,10 +1103,19 @@ function PlayQuestAudio(textType, skipDelay)
             and (cur.isPlaying or cur.nextSoundTimer) then
             return
         end
+        -- Queue mode: a quest line already being read keeps going and this
+        -- one waits behind it. Manual plays (skipDelay) still mean "now".
+        local queueing = SpeakStone_ForeverMainDB.queueQuestSpeech and not skipDelay and cur
+            and cur.questID and (cur.isPlaying or cur.nextSoundTimer)
         -- Unconditionally, not only when something is audible. A clip still
         -- waiting out the autoplay delay is not "playing", so gating on that
         -- left its timer running to fire over whatever came next.
-        StopCurrentSound()
+        if not queueing then
+            StopCurrentSound()
+            if #addon.speechQueue == 0 then
+                addon.queuePos, addon.queueTotal = 0, 0
+            end
+        end
 
         -- Newer audio ships as Ogg Vorbis, which is a fraction of the
         -- size of the original PCM library and is what the game itself uses.
@@ -1020,7 +1135,9 @@ function PlayQuestAudio(textType, skipDelay)
             -- so it is ready to submit whether or not this player ever runs
             -- the separate Harvester addon.
             CaptureMissingQuestAudio(questID, textType)
-            addon.activeSound = nil
+            if not queueing then
+                addon.activeSound = nil
+            end
             return
         end
 
@@ -1034,6 +1151,15 @@ function PlayQuestAudio(textType, skipDelay)
             npcGUID = UnitGUID("npc"),
             npcName = UnitName("npc"),
         }
+        -- The text and title, kept for the speech frame: once the window
+        -- closes the client will not hand them over again.
+        if addon.CaptureQuestText then
+            soundData.text, soundData.title = addon.CaptureQuestText(questID, textType)
+        end
+        if queueing then
+            EnqueueSpeech(soundData)
+            return
+        end
         addon.activeSound = soundData
 
         -- Delay shortly to account for greeting audio when using autoplay
@@ -1050,6 +1176,67 @@ local function IsSecret(val)
     if issecretvalue and issecretvalue(val) then return true end
     if SecretUtil and SecretUtil.IsSecretValue and SecretUtil.IsSecretValue(val) then return true end
     return false
+end
+addon.IsSecret = IsSecret
+
+-- A text getter's first return, or nil when it fails, is empty or secret.
+local function ReadText(getter, ...)
+    if type(getter) ~= "function" then
+        return nil
+    end
+    local ok, value = pcall(getter, ...)
+    if ok and type(value) == "string" and not IsSecret(value) and value ~= "" then
+        return value
+    end
+    return nil
+end
+
+-- The text and title of the quest passage about to be narrated, for the
+-- speech frame. Read from the quest giver's window when that is where the
+-- play came from, otherwise from the quest log (description only: the log
+-- has no progress or completion text).
+function addon.CaptureQuestText(questID, textType)
+    local text, title
+    if QuestFrame and QuestFrame:IsVisible() or GetQuestID() == questID then
+        text = ReadText(MISSING_QUEST_TEXT_GETTERS[textType])
+        title = ReadText(GetTitleText)
+    end
+    if not text and textType == "description" then
+        text = ReadText(GetQuestLogQuestText)
+    end
+    if not title and C_QuestLog and C_QuestLog.GetTitleForQuestID then
+        title = ReadText(C_QuestLog.GetTitleForQuestID, questID)
+    end
+    return text, title
+end
+
+-- Accept the quest on screen (autoAcceptQuests). Deferred a moment so the
+-- harvester and any replacement quest UI see QUEST_DETAIL first, and checked
+-- again afterwards in case the player already moved on. Shift skips it.
+function addon.MaybeAutoAccept()
+    if not SpeakStone_ForeverMainDB.autoAcceptQuests or IsShiftKeyDown() then
+        return
+    end
+    -- Quests the game accepts by itself only need acknowledging, and it
+    -- shows its own window for those.
+    if QuestGetAutoAccept and QuestGetAutoAccept() then
+        return
+    end
+    local questID = GetQuestID()
+    if not questID or questID == 0 then
+        return
+    end
+    local cur = GetCurrentSound()
+    if cur and cur.questID == questID then
+        -- Lets QUEST_FINISHED keep a clip that is still waiting out the
+        -- autoplay delay.
+        cur.autoAccepted = true
+    end
+    C_Timer.After(0.2, function()
+        if GetQuestID() == questID and not IsShiftKeyDown() then
+            AcceptQuest()
+        end
+    end)
 end
 
 -- Gossip text matching. GossipTexts.lua (tools/build_gossip_texts.py) maps
@@ -1175,6 +1362,17 @@ local function CreatureIDFromGUID(guid)
     return nil
 end
 
+-- Queue mode: a quest line being read (or waiting) is not cut off by an
+-- NPC's greeting, and closing the gossip window does not stop it.
+local function QuestQueueHolds()
+    if not SpeakStone_ForeverMainDB.queueQuestSpeech then
+        return false
+    end
+    local cur = GetCurrentSound()
+    return (cur and cur.questID and (cur.isPlaying or cur.nextSoundTimer))
+        or #addon.speechQueue > 0
+end
+
 local function PlayGossipAudio()
     local guid = UnitGUID("npc")
     if not guid or IsSecret(guid) then
@@ -1264,6 +1462,12 @@ local function PlayGossipAudio()
         npcGUID = guid,
         npcName = UnitName("npc"),
     }
+    do
+        local ok, text = pcall(C_GossipInfo.GetText)
+        if ok and type(text) == "string" and not IsSecret(text) and text ~= "" then
+            soundData.text = text
+        end
+    end
     addon.activeSound = soundData
 
     -- Same autoplay delay as the quest path above -- this was missing here,
@@ -1372,7 +1576,22 @@ local function PlayItemAudioDirect(itemLink, page, immediate)
         soundFile = soundFile,
         soundPath = soundPath,
         duration = duration,
+        page = page,
     }
+    -- The page's text, for the speech frame. Only the page on screen can be
+    -- read, so later pages reached with the book closed carry none.
+    pcall(function()
+        soundData.title = ItemTextGetItem()
+        if ItemTextFrame and ItemTextFrame:IsShown() and ItemTextGetPage() == page then
+            local text = ItemTextGetText()
+            if type(text) == "string" and not IsSecret(text) and text ~= "" then
+                soundData.text = text
+            end
+        end
+    end)
+    if IsSecret(soundData.title) or soundData.title == "" then
+        soundData.title = nil
+    end
     addon.activeSound = soundData
     DebugPrint("SpeakStone: playing " .. (itemID and ("item " .. itemID) or ("'" .. itemLink .. "'")) .. " (page " .. page .. ")")
 
@@ -1577,6 +1796,7 @@ end
 -- Keybindings
 BINDING_HEADER_QUESTREADERADDON = "SpeakStone"
 BINDING_NAME_PLAYACTIVEQUEST = "Play active quest voiceover"
+BINDING_NAME_SPEAKSTONEPAUSE = "Pause / resume narration"
 
 -- Event Handling for Quest Dialog Events
 local questEventFrame = CreateFrame("Frame")
@@ -1604,13 +1824,13 @@ questEventFrame:SetScript("OnEvent", function(self, event, ...)
     -- Gossip and Items have no questID and their own lookup, so they are handled before
     -- anything below assumes one exists.
     if event == "GOSSIP_SHOW" then
-        if AutoPlayAllowed("autoPlayGossip") then
+        if AutoPlayAllowed("autoPlayGossip") and not QuestQueueHolds() then
             PlayGossipAudio()
         end
         return
     elseif event == "GOSSIP_CLOSED" then
         addon.blindGossipPlayedGUID = nil
-        if SpeakStone_ForeverMainDB.stopDialogueOnClose then
+        if SpeakStone_ForeverMainDB.stopDialogueOnClose and not QuestQueueHolds() then
             StopCurrentSound()
         end
         return
@@ -1657,12 +1877,20 @@ questEventFrame:SetScript("OnEvent", function(self, event, ...)
             end
         end
         PlayQuestAudio(textType)  -- Call PlayQuestAudio with textType from event
+        if event == "QUEST_DETAIL" and addon.MaybeAutoAccept then
+            addon.MaybeAutoAccept()
+        end
+    elseif event == "QUEST_DETAIL" then
+        -- Auto-accept doesn't depend on narration being on.
+        if addon.MaybeAutoAccept then
+            addon.MaybeAutoAccept()
+        end
     elseif event == "QUEST_FINISHED" and SpeakStone_ForeverMainDB.stopDialogueOnClose then
         -- Keep reading after the quest window closes (owner, 2026-09-28): a
         -- quest line already playing finishes. Anything else stops as before.
         local cur = GetCurrentSound()
         local questLine = cur and (cur.textType == "description" or cur.textType == "progress"
-            or cur.textType == "completion") and cur.isPlaying
+            or cur.textType == "completion") and (cur.isPlaying or cur.autoAccepted)
         if not (SpeakStone_ForeverMainDB.keepReadingQuests ~= false and questLine) then
             StopCurrentSound() -- Stop sound when the quest dialog finishes
         end
