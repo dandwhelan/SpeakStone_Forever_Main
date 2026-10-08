@@ -11,8 +11,10 @@ Unofficial; not affiliated with Blizzard Entertainment.
 1. **SpeakStone Forever - Main** (this addon: code only, no audio)
 2. **SpeakStone Forever Audio Pack 1** ([SpeakStone_Forever_Audio_Pack1](https://github.com/dandwhelan/SpeakStone_Forever_Audio_Pack1))
 3. **SpeakStone Forever Audio Pack 2** ([SpeakStone_Forever_Audio_Pack2](https://github.com/dandwhelan/SpeakStone_Forever_Audio_Pack2))
+4. **SpeakStone Narration - Forever Chatter** ([SpeakStone_Forever_Chatter](https://github.com/dandwhelan/SpeakStone_Forever_Chatter)): NPC gossip, books and some quests
 
-Install all three. Both audio packs require this addon.
+Install all four. Every audio pack requires this addon. Without Chatter, nearly
+every book and NPC greeting is silent, as are some quests.
 
 ## Built from SpeakStone_Main
 
