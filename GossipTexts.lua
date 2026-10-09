@@ -331,7 +331,6 @@ SpeakStone_GossipTexts = {
   ["You've made a good start, but you still have a great deal to learn, adventurer."]=2,
 },
 [1226]={ -- Maxan Anvol
-  ["The Light protect you, $c."]=1,
   ["Serve the Light well, hunter."]=1,
   ["Serve the Light well, $c."]=1,
   ["I hope the Light is with you, adventurer. Is there anything I can do for you today?"]=2,
@@ -1188,7 +1187,6 @@ SpeakStone_GossipTexts = {
   ["With the sanction of Lord Varimathras, the Deathstalkers' numbers grow. More blades to strike at our enemies when they least expect it."]=1,
 },
 [2131]={ -- Austil de Mon
-  ["The warrior's role is one of protection. Just as we protect our compatriots in battle, we must also protect the interests of the Forsaken."]=1,
   ["Do not waste my time, paladin."]=1,
   ["Do not waste my time, $c."]=2,
 },
@@ -1476,7 +1474,6 @@ SpeakStone_GossipTexts = {
 },
 [2784]={ -- King Magni Bronzebeard
   ["Welcome to Ironforge, hunter."]=1,
-  ["Welcome to Ironforge, $c."]=1,
   ["Ah, so you have. You are most welcome in Ironforge, mage. This city is the seat of the Bronzebeard Clan. We are an ancient and proud people and our craftsmen are second to none. You'll find no finer creations of metal or stonework than dwarven-make. We are also amongst boldest of explorers on Azeroth. If you have a taste for adventure, you will be in good company amongst our people. Thank you for speaking with me, adventurer. Go now with the blessings of the Bronzebeard Clan. I wish you and your people well."]=2,
 },
 [2786]={ -- Gerrig Bonegrip
@@ -2259,7 +2256,6 @@ SpeakStone_GossipTexts = {
   ["Yonn Deepcut can be found inside the great tent at the northwest corner of Bloodhoof Village."]=40,
 },
 [3230]={ -- Nazgrel
-  ["So you've recently arrived from Azeroth, eh? You'd best steel yourself, $c - there are perils in this land unlike anything the Horde has faced before. I am Nazgrel - right hand to our mighty warchief, Thrall. He honored me with the task of safeguarding this brave expedition and - by all the spirits - I shall!"]=1,
   ["Mind yourself in the presence of the Warchief, warlock. The Kor'kron will suffer no insolence or insult here."]=1,
   ["Mind yourself in the presence of the Warchief, $c. The Kor'kron will suffer no insolence or insult here."]=1,
   ["Nazgrel grunts as he sizes you up. High Elves, here in Orgrimmar. I'd never bet on such a thing happening in my lifetime, but at this point nothing is surprising to me. Yes, the Warchief instructed me to draft up instructions for you. Take this letter and follow the instructions within. Conduct yourself with honor and show due deference when you meet with our leaders, elf. Once you've finished your journey, return to the Warchief."]=2,
@@ -7193,7 +7189,6 @@ SpeakStone_GossipTexts = {
 },
 [252476]={ -- Talaanis Shadowsong
   ["Welcome to Valanaar, mage."]=1,
-  ["Welcome to Valanaar, $c."]=1,
   ["It is vital that we learn more about what the cult is planning, and with the turncoat dead the information may have died with him..."]=2,
 },
 [252477]={ -- Peacekeeper Elite
