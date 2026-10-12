@@ -331,6 +331,7 @@ SpeakStone_GossipTexts = {
   ["You've made a good start, but you still have a great deal to learn, adventurer."]=2,
 },
 [1226]={ -- Maxan Anvol
+  ["The Light protect you, $c."]=1,
   ["Serve the Light well, hunter."]=1,
   ["Serve the Light well, $c."]=1,
   ["I hope the Light is with you, adventurer. Is there anything I can do for you today?"]=2,
@@ -1187,6 +1188,7 @@ SpeakStone_GossipTexts = {
   ["With the sanction of Lord Varimathras, the Deathstalkers' numbers grow. More blades to strike at our enemies when they least expect it."]=1,
 },
 [2131]={ -- Austil de Mon
+  ["The warrior's role is one of protection. Just as we protect our compatriots in battle, we must also protect the interests of the Forsaken."]=1,
   ["Do not waste my time, paladin."]=1,
   ["Do not waste my time, $c."]=2,
 },
@@ -1474,6 +1476,7 @@ SpeakStone_GossipTexts = {
 },
 [2784]={ -- King Magni Bronzebeard
   ["Welcome to Ironforge, hunter."]=1,
+  ["Welcome to Ironforge, $c."]=1,
   ["Ah, so you have. You are most welcome in Ironforge, mage. This city is the seat of the Bronzebeard Clan. We are an ancient and proud people and our craftsmen are second to none. You'll find no finer creations of metal or stonework than dwarven-make. We are also amongst boldest of explorers on Azeroth. If you have a taste for adventure, you will be in good company amongst our people. Thank you for speaking with me, adventurer. Go now with the blessings of the Bronzebeard Clan. I wish you and your people well."]=2,
 },
 [2786]={ -- Gerrig Bonegrip
@@ -1837,6 +1840,7 @@ SpeakStone_GossipTexts = {
   ["The way of the Druid is sibling to the Shaman. Gennia Runetotem is steeped in such knowledge. Seek her out in the large tent on the east side of Bloodhoof Village."]=5,
   ["To learn to be one with Nature in the eyes of the Earth Mother, this is a matter of pride. If your will is to learn the ways of the Hunter you must seek out Yaw Sharpmane at the north end of Bloodhoof Village."]=6,
   ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the Shaman."]=7,
+  ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the $c."]=7,
   ["If it is the way of the Warrior that you crave then you must seek out Krang Stonehoof. You will find him in the southeast corner of the village at his training circle, often instructing his other students."]=8,
   ["Using the fruits of the Earth Mother to create potions to aid us in our eternal struggle is an honorable endeavor. To learn of this you must travel north to our great home of Thunder Bluff. When you arrive at the top seek out the assistance of one of the Bluffwatchers for more specific directions."]=9,
   ["You desire to shape the bones of the Earth Mother into tools that will aid the Horde. Good, good. Follow the path north out of Bloodhoof Village until you come to the elevator leading to the top of Thunder Bluff. A Bluffwatcher there can give you further assistance."]=10,
@@ -1879,6 +1883,7 @@ SpeakStone_GossipTexts = {
   ["The way of the Druid is sibling to the Shaman. Gennia Runetotem is steeped in such knowledge. Seek her out in the large tent on the east side of Bloodhoof Village."]=5,
   ["To learn to be one with Nature in the eyes of the Earth Mother, this is a matter of pride. If your will is to learn the ways of the Hunter you must seek out Yaw Sharpmane at the north end of Bloodhoof Village."]=6,
   ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the Shaman."]=7,
+  ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the $c."]=7,
   ["If it is the way of the Warrior that you crave then you must seek out Krang Stonehoof. You will find him in the southeast corner of the village at his training circle, often instructing his other students."]=8,
   ["Using the fruits of the Earth Mother to create potions to aid us in our eternal struggle is an honorable endeavor. To learn of this you must travel north to our great home of Thunder Bluff. When you arrive at the top seek out the assistance of one of the Bluffwatchers for more specific directions."]=9,
   ["You desire to shape the bones of the Earth Mother into tools that will aid the Horde. Good, good. Follow the path north out of Bloodhoof Village until you come to the elevator leading to the top of Thunder Bluff. A Bluffwatcher there can give you further assistance."]=10,
@@ -1928,6 +1933,7 @@ SpeakStone_GossipTexts = {
   ["The way of the Druid is sibling to the Shaman. Gennia Runetotem is steeped in such knowledge. Seek her out in the large tent on the east side of Bloodhoof Village."]=5,
   ["To learn to be one with Nature in the eyes of the Earth Mother, this is a matter of pride. If your will is to learn the ways of the Hunter you must seek out Yaw Sharpmane at the north end of Bloodhoof Village."]=6,
   ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the Shaman."]=7,
+  ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the $c."]=7,
   ["If it is the way of the Warrior that you crave then you must seek out Krang Stonehoof. You will find him in the southeast corner of the village at his training circle, often instructing his other students."]=8,
   ["Using the fruits of the Earth Mother to create potions to aid us in our eternal struggle is an honorable endeavor. To learn of this you must travel north to our great home of Thunder Bluff. When you arrive at the top seek out the assistance of one of the Bluffwatchers for more specific directions."]=9,
   ["You desire to shape the bones of the Earth Mother into tools that will aid the Horde. Good, good. Follow the path north out of Bloodhoof Village until you come to the elevator leading to the top of Thunder Bluff. A Bluffwatcher there can give you further assistance."]=10,
@@ -1969,6 +1975,7 @@ SpeakStone_GossipTexts = {
   ["The way of the Druid is sibling to the Shaman. Gennia Runetotem is steeped in such knowledge. Seek her out in the large tent on the east side of Bloodhoof Village."]=5,
   ["To learn to be one with Nature in the eyes of the Earth Mother, this is a matter of pride. If your will is to learn the ways of the Hunter you must seek out Yaw Sharpmane at the north end of Bloodhoof Village."]=6,
   ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the Shaman."]=7,
+  ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the $c."]=7,
   ["If it is the way of the Warrior that you crave then you must seek out Krang Stonehoof. You will find him in the southeast corner of the village at his training circle, often instructing his other students."]=8,
   ["Using the fruits of the Earth Mother to create potions to aid us in our eternal struggle is an honorable endeavor. To learn of this you must travel north to our great home of Thunder Bluff. When you arrive at the top seek out the assistance of one of the Bluffwatchers for more specific directions."]=9,
   ["You desire to shape the bones of the Earth Mother into tools that will aid the Horde. Good, good. Follow the path north out of Bloodhoof Village until you come to the elevator leading to the top of Thunder Bluff. A Bluffwatcher there can give you further assistance."]=10,
@@ -2011,6 +2018,7 @@ SpeakStone_GossipTexts = {
   ["The way of the Druid is sibling to the Shaman. Gennia Runetotem is steeped in such knowledge. Seek her out in the large tent on the east side of Bloodhoof Village."]=5,
   ["To learn to be one with Nature in the eyes of the Earth Mother, this is a matter of pride. If your will is to learn the ways of the Hunter you must seek out Yaw Sharpmane at the north end of Bloodhoof Village."]=6,
   ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the Shaman."]=7,
+  ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the $c."]=7,
   ["If it is the way of the Warrior that you crave then you must seek out Krang Stonehoof. You will find him in the southeast corner of the village at his training circle, often instructing his other students."]=8,
   ["Using the fruits of the Earth Mother to create potions to aid us in our eternal struggle is an honorable endeavor. To learn of this you must travel north to our great home of Thunder Bluff. When you arrive at the top seek out the assistance of one of the Bluffwatchers for more specific directions."]=9,
   ["You desire to shape the bones of the Earth Mother into tools that will aid the Horde. Good, good. Follow the path north out of Bloodhoof Village until you come to the elevator leading to the top of Thunder Bluff. A Bluffwatcher there can give you further assistance."]=10,
@@ -2053,6 +2061,7 @@ SpeakStone_GossipTexts = {
   ["The way of the Druid is sibling to the Shaman. Gennia Runetotem is steeped in such knowledge. Seek her out in the large tent on the east side of Bloodhoof Village."]=5,
   ["To learn to be one with Nature in the eyes of the Earth Mother, this is a matter of pride. If your will is to learn the ways of the Hunter you must seek out Yaw Sharpmane at the north end of Bloodhoof Village."]=6,
   ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the Shaman."]=7,
+  ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the $c."]=7,
   ["If it is the way of the Warrior that you crave then you must seek out Krang Stonehoof. You will find him in the southeast corner of the village at his training circle, often instructing his other students."]=8,
   ["Using the fruits of the Earth Mother to create potions to aid us in our eternal struggle is an honorable endeavor. To learn of this you must travel north to our great home of Thunder Bluff. When you arrive at the top seek out the assistance of one of the Bluffwatchers for more specific directions."]=9,
   ["You desire to shape the bones of the Earth Mother into tools that will aid the Horde. Good, good. Follow the path north out of Bloodhoof Village until you come to the elevator leading to the top of Thunder Bluff. A Bluffwatcher there can give you further assistance."]=10,
@@ -2095,6 +2104,7 @@ SpeakStone_GossipTexts = {
   ["The way of the Druid is sibling to the Shaman. Gennia Runetotem is steeped in such knowledge. Seek her out in the large tent on the east side of Bloodhoof Village."]=5,
   ["To learn to be one with Nature in the eyes of the Earth Mother, this is a matter of pride. If your will is to learn the ways of the Hunter you must seek out Yaw Sharpmane at the north end of Bloodhoof Village."]=6,
   ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the Shaman."]=7,
+  ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the $c."]=7,
   ["If it is the way of the Warrior that you crave then you must seek out Krang Stonehoof. You will find him in the southeast corner of the village at his training circle, often instructing his other students."]=8,
   ["Using the fruits of the Earth Mother to create potions to aid us in our eternal struggle is an honorable endeavor. To learn of this you must travel north to our great home of Thunder Bluff. When you arrive at the top seek out the assistance of one of the Bluffwatchers for more specific directions."]=9,
   ["You desire to shape the bones of the Earth Mother into tools that will aid the Horde. Good, good. Follow the path north out of Bloodhoof Village until you come to the elevator leading to the top of Thunder Bluff. A Bluffwatcher there can give you further assistance."]=10,
@@ -2137,6 +2147,7 @@ SpeakStone_GossipTexts = {
   ["The way of the Druid is sibling to the Shaman. Gennia Runetotem is steeped in such knowledge. Seek her out in the large tent on the east side of Bloodhoof Village."]=5,
   ["To learn to be one with Nature in the eyes of the Earth Mother, this is a matter of pride. If your will is to learn the ways of the Hunter you must seek out Yaw Sharpmane at the north end of Bloodhoof Village."]=6,
   ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the Shaman."]=7,
+  ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the $c."]=7,
   ["If it is the way of the Warrior that you crave then you must seek out Krang Stonehoof. You will find him in the southeast corner of the village at his training circle, often instructing his other students."]=8,
   ["Using the fruits of the Earth Mother to create potions to aid us in our eternal struggle is an honorable endeavor. To learn of this you must travel north to our great home of Thunder Bluff. When you arrive at the top seek out the assistance of one of the Bluffwatchers for more specific directions."]=9,
   ["You desire to shape the bones of the Earth Mother into tools that will aid the Horde. Good, good. Follow the path north out of Bloodhoof Village until you come to the elevator leading to the top of Thunder Bluff. A Bluffwatcher there can give you further assistance."]=10,
@@ -2179,6 +2190,7 @@ SpeakStone_GossipTexts = {
   ["The way of the Druid is sibling to the Shaman. Gennia Runetotem is steeped in such knowledge. Seek her out in the large tent on the east side of Bloodhoof Village."]=5,
   ["To learn to be one with Nature in the eyes of the Earth Mother, this is a matter of pride. If your will is to learn the ways of the Hunter you must seek out Yaw Sharpmane at the north end of Bloodhoof Village."]=6,
   ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the Shaman."]=7,
+  ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the $c."]=7,
   ["If it is the way of the Warrior that you crave then you must seek out Krang Stonehoof. You will find him in the southeast corner of the village at his training circle, often instructing his other students."]=8,
   ["Using the fruits of the Earth Mother to create potions to aid us in our eternal struggle is an honorable endeavor. To learn of this you must travel north to our great home of Thunder Bluff. When you arrive at the top seek out the assistance of one of the Bluffwatchers for more specific directions."]=9,
   ["You desire to shape the bones of the Earth Mother into tools that will aid the Horde. Good, good. Follow the path north out of Bloodhoof Village until you come to the elevator leading to the top of Thunder Bluff. A Bluffwatcher there can give you further assistance."]=10,
@@ -2221,6 +2233,7 @@ SpeakStone_GossipTexts = {
   ["The way of the Druid is sibling to the Shaman. Gennia Runetotem is steeped in such knowledge. Seek her out in the large tent on the east side of Bloodhoof Village."]=5,
   ["To learn to be one with Nature in the eyes of the Earth Mother, this is a matter of pride. If your will is to learn the ways of the Hunter you must seek out Yaw Sharpmane at the north end of Bloodhoof Village."]=6,
   ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the Shaman."]=7,
+  ["There is a wise one in the village who goes by the name Narm Skychaser. He can continue your learning along the path of the $c."]=7,
   ["If it is the way of the Warrior that you crave then you must seek out Krang Stonehoof. You will find him in the southeast corner of the village at his training circle, often instructing his other students."]=8,
   ["Using the fruits of the Earth Mother to create potions to aid us in our eternal struggle is an honorable endeavor. To learn of this you must travel north to our great home of Thunder Bluff. When you arrive at the top seek out the assistance of one of the Bluffwatchers for more specific directions."]=9,
   ["You desire to shape the bones of the Earth Mother into tools that will aid the Horde. Good, good. Follow the path north out of Bloodhoof Village until you come to the elevator leading to the top of Thunder Bluff. A Bluffwatcher there can give you further assistance."]=10,
@@ -2256,6 +2269,7 @@ SpeakStone_GossipTexts = {
   ["Yonn Deepcut can be found inside the great tent at the northwest corner of Bloodhoof Village."]=40,
 },
 [3230]={ -- Nazgrel
+  ["So you've recently arrived from Azeroth, eh? You'd best steel yourself, $c - there are perils in this land unlike anything the Horde has faced before. I am Nazgrel - right hand to our mighty warchief, Thrall. He honored me with the task of safeguarding this brave expedition and - by all the spirits - I shall!"]=1,
   ["Mind yourself in the presence of the Warchief, warlock. The Kor'kron will suffer no insolence or insult here."]=1,
   ["Mind yourself in the presence of the Warchief, $c. The Kor'kron will suffer no insolence or insult here."]=1,
   ["Nazgrel grunts as he sizes you up. High Elves, here in Orgrimmar. I'd never bet on such a thing happening in my lifetime, but at this point nothing is surprising to me. Yes, the Warchief instructed me to draft up instructions for you. Take this letter and follow the instructions within. Conduct yourself with honor and show due deference when you meet with our leaders, elf. Once you've finished your journey, return to the Warchief."]=2,
@@ -2488,6 +2502,7 @@ SpeakStone_GossipTexts = {
 [3430]={ -- Mangletooth
   ["You! Undead! Come here. snort Time is short, and my end snort is near. Mangletooth shall win; you will see. snort My capture can still aid snort my people. The Razormane tribe is more powerful than the Bristlebacks! The Horde looks to find out who leads the raids on their people. You snort shall aid Mangletooth in return for the information only I know. Mangletooth can help you! snort But you must help Mangletooth."]=1,
   ["You! $r! Come here. <snort> Time is short, and my end <snort> is near. Mangletooth shall win; you will see. <snort> My capture can still aid <snort> my people. The Razormane tribe is more powerful than the Bristlebacks! The Horde looks to find out who leads the raids on their people. You <snort> shall aid Mangletooth in return for the information only I know. Mangletooth can help you! <snort> But you must help Mangletooth."]=1,
+  ["You! $r! Come here. snort Time is short, and my end snort is near. Mangletooth shall win; you will see. snort My capture can still aid snort my people. The Razormane tribe is more powerful than the Bristlebacks! The Horde looks to find out who leads the raids on their people. You snort shall aid Mangletooth in return for the information only I know. Mangletooth can help you! snort But you must help Mangletooth."]=1,
   ["My hatred is strong snort, but the time is right to tell you a tale, skyborne. Long ago a battle took place between gods. Agamaggan, our great boar god, fell to the earth after being defeated in the War of the Ancients, his blood raining down and his bones torn asunder. snort Great thorns reached up out of the earth where his blood touched the ground, and his skull adorns one of the caverns to the south."]=2,
   ["You have snort aided Mangletooth more than I would have dreamed, skyborne. Thank you. As long as I remain a captive here, you may bring me blood shards from the Bristleback quilboar and I will bless you with Agamaggan's power."]=3,
 },
@@ -2506,6 +2521,7 @@ SpeakStone_GossipTexts = {
 },
 [3448]={ -- Tonga Runetotem
   ["The times we live in are as fickle as the shifting winds, druid. The ground itself quakes and cries out in anguish. We must remain resolute or we ourselves will be engulfed by the turmoil."]=1,
+  ["The times we live in are as fickle as the shifting winds, $c. The ground itself quakes and cries out in anguish. We must remain resolute or we ourselves will be engulfed by the turmoil."]=1,
 },
 [3484]={ -- Kil'hala
   ["Hey mon, what can I be doin' for you?"]=1,
@@ -2659,6 +2675,7 @@ SpeakStone_GossipTexts = {
 },
 [3663]={ -- Delgren the Purifier
   ["Good day, Druid."]=1,
+  ["Good day, $c."]=1,
 },
 [3685]={ -- Harb Clawhoof
   ["Kodo beasts, my friend! Trained from a young age and raised on the Golden Plains of Mulgore, these fine animals will make even finer steeds! Please, browse my selection, and see for yourself why we taurens have come to rely on these magnificant creatures!"]=1,
@@ -2668,6 +2685,7 @@ SpeakStone_GossipTexts = {
 },
 [3690]={ -- Kar Stormsinger
   ["You need to be exalted with the tauren of Thunder Bluff before I will teach you a riding skill, warlock."]=1,
+  ["You need to be exalted with the tauren of Thunder Bluff before I will teach you a riding skill, $c."]=1,
 },
 [3691]={ -- Raene Wolfrunner
   ["I know these forests as if they were a part of me... but know that there is still much to be learned from them, and much danger still hidden."]=1,
@@ -2683,6 +2701,7 @@ SpeakStone_GossipTexts = {
   ["Greetings Night Elf, I am Tharnariun Treetender."]=1,
   ["There are many dangers facing us, but we cannot find ourselves neglecting nature, lest it neglect us in our time of need. We've learned this lesson before."]=2,
   ["Greetings Gnome, I am Tharnariun Treetender."]=2,
+  ["Greetings $r, I am Tharnariun Treetender."]=2,
 },
 [3702]={ -- Alanndarian Nightsong
   ["Hello $r, it is a pleasure to make your acquaintance."]=1,
@@ -3098,7 +3117,7 @@ SpeakStone_GossipTexts = {
   ["Greetings."]=1,
 },
 [4607]={ -- Father Lankester
-  ["Yes, mage?"]=1,
+  ["Yes, $c?"]=1,
   ["What can this insignificant servant do for you, adventurer? Training perhaps?"]=2,
 },
 [4608]={ -- Father Lazarus
@@ -3550,6 +3569,7 @@ SpeakStone_GossipTexts = {
 },
 [5675]={ -- Carendin Halgar
   ["Yes, warlock?"]=1,
+  ["Yes, $c?"]=1,
 },
 [5688]={ -- Innkeeper Renee
   ["Rest your weary bones for a spell."]=1,
@@ -3802,6 +3822,7 @@ SpeakStone_GossipTexts = {
 },
 [6122]={ -- Gakin the Darkbinder
   ["Yes, warlock?"]=1,
+  ["Yes, $c?"]=1,
 },
 [6252]={ -- Acolyte Magaz
   ["Listen to your elders, adventurer. If you are strong of will and dedicated, there is no power you cannot control."]=1,
@@ -4942,6 +4963,7 @@ SpeakStone_GossipTexts = {
 },
 [7954]={ -- Binjy Featherwhistle
   ["You need to be exalted with the gnomes of the Gnomeregan Exiles before I will teach you how to pilot a Mechanostrider, shaman."]=1,
+  ["You need to be exalted with the gnomes of the Gnomeregan Exiles before I will teach you how to pilot a Mechanostrider, $c."]=1,
   ["I'd be wasting both your gold and my time if I were to teach you how to pilot a Mechanostrider, $c. You're just too large!"]=2,
 },
 [7955]={ -- Milli Featherwhistle
@@ -4999,6 +5021,9 @@ SpeakStone_GossipTexts = {
 },
 [8579]={ -- Yeh'kinya
   ["Through my studies, I see that defeating the god Hakkar's avatar has weakened him. But the bulk of his strength remains, lurking at the far end of the Nether. You have defeated his avatar once, adventurer. Perhaps if you defeat it again you can further weaken the god so that, one day, we might face his true self. I have prepared a spell that you may use to again summon an avatar of Hakkar within the Sanctum of the Fallen God. Do you want to confront it once again?"]=1,
+},
+[8582]={ -- Kadrak
+  ["What is it, $c?"]=1,
 },
 [8659]={ -- Jes'rimon
   ["I give you warm greetin's, $c, as does the Shattered Hand. Do not look so surprised, adventurer. There be shadows even on the highest perches of Orgrimmar--somethin' must hide there. The Shattered Hand take that role willingly. Thrall, even in his good heart, acknowledge that the Hand be necessary to ensure orc and troll safety. But you not here to talk 'bout my business, you here for somethin' else."]=1,
@@ -5301,6 +5326,7 @@ SpeakStone_GossipTexts = {
 },
 [9981]={ -- Sikwa
   ["Greetings, druid. I can assist you in recovering lost companions."]=1,
+  ["Greetings, $c. I can assist you in recovering lost companions."]=1,
 },
 [10043]={ -- Ribbly's Crony
   ["Don't bother me while I'm partying..."]=1,
@@ -5895,6 +5921,7 @@ SpeakStone_GossipTexts = {
 [11608]={ -- Bardu Sharpeye
   ["Hello, mage. I've set up camp here at the Bulwark to make my preparations for my journey into the Plaguelands. I've heard rumor that a great human wizard took up residency in Hearthglen not terribly long ago. He was commissioned by the Scarlet Crusade to fashion their warriors and hunters new bows and guns. It's said that he completed a remarkable weapon before the Crusade killed him. I guess their mistrust of the arcane has grown."]=1,
   ["Hello, $c. I've set up camp here at the Bulwark to make my preparations for my journey into the Plaguelands. I've heard rumor that a great human wizard took up residency in Hearthglen not terribly long ago. He was commissioned by the Scarlet Crusade to fashion their warriors and hunters new bows and guns. It's said that he was working on a remarkable weapon before the Crusade killed him.$B$BI guess their mistrust of the arcane has grown."]=1,
+  ["Hello, $c. I've set up camp here at the Bulwark to make my preparations for my journey into the Plaguelands. I've heard rumor that a great human wizard took up residency in Hearthglen not terribly long ago. He was commissioned by the Scarlet Crusade to fashion their warriors and hunters new bows and guns. It's said that he completed a remarkable weapon before the Crusade killed him. I guess their mistrust of the arcane has grown."]=1,
 },
 [11615]={ -- Mickey Levine
   ["My family worked the Northridge Lumber Mill in what's now Western Plaguelands. They were dedicated to the Dumah family, and now the Scarlet Crusade have taken it over along with all of Hearthglen! I will not rest until those zealots are wiped from Azeroth."]=1,
@@ -5925,6 +5952,7 @@ SpeakStone_GossipTexts = {
 [11802]={ -- Dendrite Starblaze
   ["Greetings, druid. You are welcome in Nighthaven, as well as all of Moonglade. The Cenarion Circle welcomes all beings who respect the authority and command of nature. While you are here, please be sure to preserve the balance in all things. Disturbances are not welcome here, and our wardens are trained to cease all hostilities without question."]=1,
   ["Greetings, $c. You are welcome in Nighthaven, as well as all of Moonglade. The Cenarion Circle welcomes all beings who respect the authority and command of nature.$B$BWhile you are here, please be sure to preserve the balance in all things. Disturbances are not welcome here, and our wardens are trained to cease all hostilities without question."]=1,
+  ["Greetings, $c. You are welcome in Nighthaven, as well as all of Moonglade. The Cenarion Circle welcomes all beings who respect the authority and command of nature. While you are here, please be sure to preserve the balance in all things. Disturbances are not welcome here, and our wardens are trained to cease all hostilities without question."]=1,
 },
 [11811]={ -- Narain Soothfancy
   ["Narain Soothfancy, at your service! Retired engineer and master soothsayer! I can tell your future before it even happens!"]=1,
@@ -5947,6 +5975,7 @@ SpeakStone_GossipTexts = {
 },
 [11861]={ -- Mor'rogal
   ["Stonetalon Mountain has many perilous caves through out this region. Exploring these caves can hold many adventures for those willing to risk life for glory. Druid, perhaps you seek riches that only following your heart and soul can garnish."]=1,
+  ["Stonetalon Mountain has many perilous caves through out this region. Exploring these caves can hold many adventures for those willing to risk life for glory. $c, perhaps you seek riches that only following your heart and soul can garnish."]=1,
 },
 [11865]={ -- Buliwyf Stonehand
   ["Ye want to be trained in the use of a weapon, do ye? Well don't stand there slack-jawed, speak up laddie!"]=1,
@@ -6487,6 +6516,7 @@ SpeakStone_GossipTexts = {
 },
 [15012]={ -- Javnir Nashak
   ["Greetings, warlock. It is the time of the Harvest Festival - a time of great bounties and a time of remembrance. We partake of feasts to celebrate all we have to be thankful of, and we remember our ancestors and past heroes to give thanks to the legacy they gave us. Please feel free to partake of the feast being offered here. Also, I am offering some fireworks to help celebrate this joyous time of year."]=1,
+  ["Greetings, $c. It is the time of the Harvest Festival - a time of great bounties and a time of remembrance. We partake of feasts to celebrate all we have to be thankful of, and we remember our ancestors and past heroes to give thanks to the legacy they gave us. Please feel free to partake of the feast being offered here. Also, I am offering some fireworks to help celebrate this joyous time of year."]=1,
 },
 [15042]={ -- Zanza the Restless
   ["I am Zanza, a Loa of Zandalar. I have come in this ethereal form from Zandalar to help my people. Hakkar has no dominion over my soul. I help those that have helped the Zandalarian people."]=1,
@@ -6965,6 +6995,7 @@ SpeakStone_GossipTexts = {
 },
 [216289]={ -- Orokai
   ["Greetings, young druid."]=1,
+  ["Greetings, young $c."]=1,
 },
 [227853]={ -- Pix Xizzix
   ["Impulse purchases are the most fun kind of purchases!"]=1,
@@ -6978,12 +7009,15 @@ SpeakStone_GossipTexts = {
 },
 [246152]={ -- Shari Stilwell
   ["The light is a beacon that shines for all. What can I do for you, paladin?"]=1,
+  ["The light is a beacon that shines for all. What can I do for you, $c?"]=1,
 },
 [246349]={ -- Breton Samuels
   ["Welcome to Bandarion Keep, mage."]=1,
+  ["Welcome to Bandarion Keep, $c."]=1,
 },
 [246378]={ -- Danitha Morr
   ["Welcome to Bandarion Keep, mage."]=1,
+  ["Welcome to Bandarion Keep, $c."]=1,
 },
 [246389]={ -- Hilda the Breaker
   ["Why do they call me 'The Breaker'? Trust me, you don't want to know."]=1,
@@ -7017,6 +7051,7 @@ SpeakStone_GossipTexts = {
 },
 [248415]={ -- Tordrin Sternblade
   ["I kinnae help ye with trainin'. Ye should look fer a warlock trainer."]=1,
+  ["I kinnae help ye with trainin'. Ye should look fer a $c trainer."]=1,
 },
 [249363]={ -- Yala Windwatcher
   ["The Wind Spirits have left us. Now, only mindless echoes remain. Be wary, however. These winds are neither kind, nor gentle."]=1,
@@ -7189,6 +7224,7 @@ SpeakStone_GossipTexts = {
 },
 [252476]={ -- Talaanis Shadowsong
   ["Welcome to Valanaar, mage."]=1,
+  ["Welcome to Valanaar, $c."]=1,
   ["It is vital that we learn more about what the cult is planning, and with the turncoat dead the information may have died with him..."]=2,
 },
 [252477]={ -- Peacekeeper Elite
@@ -7303,6 +7339,7 @@ SpeakStone_GossipTexts = {
 },
 [256306]={ -- Arcanist Laurain
   ["Welcome to Dalaran, mage. Please pay no mind to some of the construction that is still underway. Oh, and should you encounter a rogue arcane anomaly, demon, or other malign entity, please feel free to seek the assistance from the nearest member of the Kirin Tor before fleeing--um... proceeding--to the nearest exit in an orderly fashion! <Arcanist Laurain laughs nervously.> Thank you for visiting!"]=1,
+  ["Welcome to Dalaran, $c. Please pay no mind to some of the construction that is still underway. Oh, and should you encounter a rogue arcane anomaly, demon, or other malign entity, please feel free to seek the assistance from the nearest member of the Kirin Tor before fleeing--um... proceeding--to the nearest exit in an orderly fashion! <Arcanist Laurain laughs nervously.> Thank you for visiting!"]=1,
 },
 [256386]={ -- Dokimi
   ["We've had trouble with shipments going missing across Azeroth. If you find any, I'd appreciate if you could return them to me."]=1,
