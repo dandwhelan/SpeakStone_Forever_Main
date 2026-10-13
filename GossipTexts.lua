@@ -235,6 +235,10 @@ SpeakStone_GossipTexts = {
   ["The Light protect you, $c."]=1,
   ["I hope the Light is with you, adventurer. Is there anything I can do for you today?"]=2,
 },
+[857]={ -- Donal Osgood
+  ["I am sorry $c, but you need to be more powerful before I can allow you to enter Arathi Basin."]=1,
+  ["Arathi Basin was once our home, and will be again with your aid! Will you help us $c?"]=1,
+},
 [895]={ -- Торгас Мрачнон
   ["Wot kin I do fer ye?"]=1,
   ["Чем помочь надо?"]=1,
@@ -331,9 +335,9 @@ SpeakStone_GossipTexts = {
   ["You've made a good start, but you still have a great deal to learn, adventurer."]=2,
 },
 [1226]={ -- Maxan Anvol
-  ["The Light protect you, $c."]=1,
   ["Serve the Light well, hunter."]=1,
   ["Serve the Light well, $c."]=1,
+  ["The Light protect you, $c."]=1,
   ["I hope the Light is with you, adventurer. Is there anything I can do for you today?"]=2,
 },
 [1228]={ -- Magis Sparkmantle
@@ -1149,6 +1153,7 @@ SpeakStone_GossipTexts = {
   ["Which profession trainer are you looking for?"]=2,
   ["Woo Ping's stamina is simply astounding. Watching him practice his weapon techniques for hours on end, I felt sorry for the practice dummy afterward. I can't think of anyone better suited to train you in armed combat."]=3,
   ["The Bank of Stormwind is located in the Trade District just northwest of the city gates. Here, let me show you on your map."]=4,
+  ["Another entrepreneur, eh? Well, the Auction House can be found in the Trade District. Not far from the bank."]=5,
 },
 [2079]={ -- Conservator Ilthalaine
   ["Ah, the beauty of Shadowglen never ceases to delight my senses!"]=1,
@@ -1188,7 +1193,6 @@ SpeakStone_GossipTexts = {
   ["With the sanction of Lord Varimathras, the Deathstalkers' numbers grow. More blades to strike at our enemies when they least expect it."]=1,
 },
 [2131]={ -- Austil de Mon
-  ["The warrior's role is one of protection. Just as we protect our compatriots in battle, we must also protect the interests of the Forsaken."]=1,
   ["Do not waste my time, paladin."]=1,
   ["Do not waste my time, $c."]=2,
 },
@@ -2269,9 +2273,9 @@ SpeakStone_GossipTexts = {
   ["Yonn Deepcut can be found inside the great tent at the northwest corner of Bloodhoof Village."]=40,
 },
 [3230]={ -- Nazgrel
-  ["So you've recently arrived from Azeroth, eh? You'd best steel yourself, $c - there are perils in this land unlike anything the Horde has faced before. I am Nazgrel - right hand to our mighty warchief, Thrall. He honored me with the task of safeguarding this brave expedition and - by all the spirits - I shall!"]=1,
   ["Mind yourself in the presence of the Warchief, warlock. The Kor'kron will suffer no insolence or insult here."]=1,
   ["Mind yourself in the presence of the Warchief, $c. The Kor'kron will suffer no insolence or insult here."]=1,
+  ["So you've recently arrived from Azeroth, eh? You'd best steel yourself, $c - there are perils in this land unlike anything the Horde has faced before. I am Nazgrel - right hand to our mighty warchief, Thrall. He honored me with the task of safeguarding this brave expedition and - by all the spirits - I shall!"]=1,
   ["Nazgrel grunts as he sizes you up. High Elves, here in Orgrimmar. I'd never bet on such a thing happening in my lifetime, but at this point nothing is surprising to me. Yes, the Warchief instructed me to draft up instructions for you. Take this letter and follow the instructions within. Conduct yourself with honor and show due deference when you meet with our leaders, elf. Once you've finished your journey, return to the Warchief."]=2,
 },
 [3290]={ -- Deek Fizzlebizz
@@ -6068,6 +6072,9 @@ SpeakStone_GossipTexts = {
   ["Built twelve thousand years ago by a covert sect of night elf sorcerers, the ancient city of Eldre'Thalas was used to protect Queen Azshara's most prized arcane secrets. Though it was ravaged by the Great Sundering of the world, much of the wondrous city still stands as the imposing Dire Maul. The ruins' three distinct districts have been overrun by all manner of creatures - especially the spectral highborne, foul satyr and brutish ogres."]=42,
   ["Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the plague of undeath. Arthas' surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge - led by the powerful lich, Kel'Thuzad, and a contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan. The two sides are locked in constant, violent combat."]=43,
 },
+[12197]={ -- Glordrum Steelbeard
+  ["adventurer, have ye any idea o' what we're up against in Alterac Valley? Are ye ready to fight the Frostwolf Clan?"]=1,
+},
 [12198]={ -- Martin Lindsey
   ["I am sorry $c, but you need to be more powerful before I can allow you to enter Arathi Basin."]=1,
 },
@@ -6501,6 +6508,10 @@ SpeakStone_GossipTexts = {
 },
 [14981]={ -- Elfarran
   ["I am sorry $c, but you are not seasoned enough yet to enter Warsong Gulch."]=1,
+},
+[14982]={ -- Lylandris
+  ["I am sorry $c, but you are not seasoned enough yet to enter Warsong Gulch."]=1,
+  ["$c, we need your assistance at Warsong Gulch. Will you aid us in our fight against the Warsong Outriders?"]=1,
 },
 [14990]={ -- Defilers Emissary
   ["You are not yet powerful enough, $c. Move along."]=1,
@@ -7461,8 +7472,14 @@ SpeakStone_GossipTexts = {
 [263113]={ -- Myriaal Mistwake
   ["It can get boring up here, you know. I can only annoy that stuffy wretch Halaan so much before even that gets old."]=1,
 },
+[263349]={ -- James Battlewing
+  ["I am sorry, $c, but you are not experienced enough yet to enter Darkspear Islands."]=1,
+},
 [263399]={ -- Sam Sarsaparilla
   ["Howdy there, traveler!"]=1,
+},
+[263643]={ -- Sean Guardoff
+  ["I am sorry, $c, but you are not experienced enough yet to enter Darkspear Islands."]=1,
 },
 [263664]={ -- Raan Wildwind
   ["Greetings, traveler."]=1,
@@ -7609,6 +7626,9 @@ SpeakStone_GossipTexts = {
   ["<The great cat lets out a small huff as you near it.>"]=1,
 },
 [277024]={ -- Jelinek Sharpshear
+  ["Welcome, friend, to the barbershop! Come for a cut? A coloring? Something else, perhaps? We can groom facial hair, perform piercings, ink night elf tattoos, anything you might need! Have a seat and we'll get right to work. You're only moments away from a new, more attractive you..."]=1,
+},
+[277042]={ -- Bezza Shearshave
   ["Welcome, friend, to the barbershop! Come for a cut? A coloring? Something else, perhaps? We can groom facial hair, perform piercings, ink night elf tattoos, anything you might need! Have a seat and we'll get right to work. You're only moments away from a new, more attractive you..."]=1,
 },
 }

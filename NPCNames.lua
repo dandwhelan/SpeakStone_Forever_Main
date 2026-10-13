@@ -17169,6 +17169,7 @@ SpeakStone_NPCNames = {
 [256078]="Lyssabel Dawnpetal",
 [256083]="Riaani Nightwind",
 [256101]="Furgh",
+[256119]="Lonalo",
 [256203]="Lady Liadrin",
 [256206]="Sentient Voidwalker",
 [256210]="Halduron Brightwing",
