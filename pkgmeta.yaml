@@ -21,6 +21,9 @@ manual-changelog:
 
 # Forever projects only -- never a retail SpeakStone project here.
 optional-dependencies:
-  - speakstone-forever-chatter-pack      # 1717454
-  - speakstone-forever-audio-pack1       # 1706485
-  - speakstone-forever-audio-pack-2      # 1710074
+  # 1717454
+  - speakstone-forever-chatter-pack
+  # 1706485
+  - speakstone-forever-audio-pack1
+  # 1710074
+  - speakstone-forever-audio-pack-2
