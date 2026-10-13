@@ -11,3 +11,16 @@ ignore:
   - .github
   - .git
   - .gitignore
+
+# CurseForge's changelog for each release: the top entry of CHANGELOG.md
+# (release_main.py writes it). Without this the packager used the commit
+# log, which put "Co-Authored-By" lines on the CurseForge page.
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown
+
+# Forever projects only -- never a retail SpeakStone project here.
+optional-dependencies:
+  - speakstone-forever-chatter-pack      # 1717454
+  - speakstone-forever-audio-pack1       # 1706485
+  - speakstone-forever-audio-pack-2      # 1710074
