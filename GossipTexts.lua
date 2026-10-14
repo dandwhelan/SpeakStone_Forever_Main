@@ -5983,7 +5983,6 @@ SpeakStone_GossipTexts = {
 },
 [11865]={ -- Buliwyf Stonehand
   ["Ye want to be trained in the use of a weapon, do ye? Well don't stand there slack-jawed, speak up laddie!"]=1,
-  ["Ye want to be trained in the use of a weapon, do ye? Well don't stand there slack-jawed, speak up lassie!"]=1,
 },
 [11866]={ -- Ilyenia Moonfire
   ["The grace with which I fight is not something I can teach you, but I can teach you the use of various weapons."]=1,
