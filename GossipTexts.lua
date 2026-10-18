@@ -5,6 +5,7 @@
 -- that script after any harvest; never hand-edit.
 SpeakStone_GossipTexts = {
 [68]={ -- Stormwind City Guard
+  ["Therum Deepforge is the dwarf you want to talk to one of the finest blacksmiths around if you ask me. You can find him in the heart of the dwarven district."]=3,
   ["Gryphons, eh? Never really cared for the beasts but to each their own. You can find Dungar Longdrink on the rampart in the Trade District."]=4,
   ["Lookin' to take a gryphon ride, eh? Dungar keeps his birds up on the rampart in the Trade District. Just remember to hold on tight!"]=5,
   ["Ahhh, Stormwind Visitor's Center is what you are looking for then. It's the first building on the left as you walk through the front gates from the Valley of Heroes."]=6,
@@ -457,6 +458,7 @@ SpeakStone_GossipTexts = {
 },
 [1314]={ -- Duncan Cullen
   ["I sell only the finest arcane gear, made by the crafters and mages here in the city of Stormwind."]=1,
+  ["Since the fall of Dalaran and the destruction of Quelthalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."]=2,
   ["Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."]=2,
 },
 [1315]={ -- Allan Hafgan
@@ -500,6 +502,7 @@ SpeakStone_GossipTexts = {
 },
 [1347]={ -- Alexandra Bolero
   ["I sell only the finest arcane gear, made by the crafters and mages here in the city of Stormwind."]=1,
+  ["Since the fall of Dalaran and the destruction of Quelthalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."]=3,
   ["Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."]=3,
 },
 [1350]={ -- Theresa Moulaine
@@ -797,6 +800,7 @@ SpeakStone_GossipTexts = {
   ["I can teach you how to cook!"]=1,
   ["Seek out Shandrina in Silverwind Refuge. She can sell you the 'Expert Cookbook'."]=2,
   ["Dirge Quikcleave of Gadgetzan is a master of the culinary arts. To better yourself you will need to seek him out."]=3,
+  ["Cooking is a life long pursuit and I see we share the same passion."]=4,
   ["Cooking is a life long pursuit and I see we share the same passion!"]=4,
 },
 [1700]={ -- Paxton Ganter
@@ -947,6 +951,7 @@ SpeakStone_GossipTexts = {
 [1743]={ -- Deathguard Lawrence
   ["What could you possibly need a bank for? Very well, you'll need to go through the Ruins of Lordaeron to the south of Brill. In the back are a set of elevators leading down into the Undercity. When you get there stop any of those lumbering Abominations they like to call an Undercity Guardian and ask it for better directions."]=1,
   ["Somewhere to fly to? You'll need to go to the Undercity for that! Go south on the road out of town, then southwest to the Ruins of Lordaeron. You can catch the elevator down to the Undercity from the back of the ruins and once there ask an Undercity Guardian for more specific directions."]=2,
+  ["Somewhere to fly to? You'll need to go to the Undercity for that. Go south on the road out of town, then southwest to the Ruins of Lordaeron. You can catch the elevator down to the Undercity from the back of the ruins and once there ask an Undercity Guardian for more specific directions."]=2,
   ["Now if I were Innkeeper Renee where might I be? Hmmm? Oh, perhaps inside the Gallows' End Tavern. Yes, that's it, I'm sure of it. Try the southeast end of Brill... think you can find that?"]=3,
   ["Not too clever are you? Hmm, if I were a stable master perhaps I might be in the vicinity of say, the stable? Look for Morganus over there."]=4,
   ["Do I look to you like I cast spells? Well, I did hear that Cain Firesong was hanging out on the upstairs landing of the Gallows' End Tavern at the southeast end of town. Odd how he just stands there outside of Gretchen's room like that."]=5,
@@ -960,11 +965,13 @@ SpeakStone_GossipTexts = {
   ["Word is that Vance Undergloom has taken a permanent room upstairs at the Gallows' End Tavern at the southeast end of town. I think he's just off the reading room."]=13,
   ["Rifles, dynamite, bombs, exploding sheep... what's not to love? To learn how to make these and many other exciting tools of the trade head to the Undercity, under the Ruins of Lordaeron to the south of Brill. Take the elevators down at the back of the ruins. Once you arrive speak to one of the Undercity Guardians about where the trainer is exactly."]=14,
   ["Butcher you say? Oh, First Aid Trainer! Same thing. When you see Nurse Neela standing just inside the Gallows' End Tavern on the southeast side of town you'll know why."]=15,
+  ["Butcher you say? Oh, First Aid Trainer. Same thing. When you see Nurse Neela standing just inside the Gallows' End Tavern on the southeast side of town you'll know why."]=15,
   ["Yeah, you'll always find Clyde Kellen fishing on the bank of Brightwater Lake just east of Brill. Just watch out for psychos wearing masks while you're out there. We had to shut down the kids' summer camp last year."]=16,
   ["Actually I prefer traditional medicines... leeches, maggots, bonesaws... that sort of thing. Well to each their own. You can find the our local Herbalism Trainer, Faruza, standing out front near the stables in Brill."]=17,
   ["Nothing quite like the feel of something dead rubbing up against you. You can find Shelene Rhobart by heading southeast on the road out of town, and then going east at the intersection. She's at a small camp there not too far along the road."]=18,
   ["I guess your first exercise is going to be to mine your way down to the Undercity. Heh, get it? Mine... nevermind. To get to the Undercity go to the rear of the Ruins of Lordaeron south of Brill, and take the elevator down. Ask one of the Undercity Guardians there for further assistance."]=19,
   ["You aiming to be a taxidermist? I don't like people who think they can stuff and mount me because they think I'm dead. No? Good! Look for Rand Rhobart at a camp to the southeast of town. To get to him take the road southeast out of Brill and hang a left at the intersection."]=20,
+  ["You aiming to be a taxidermist? I don't like people who think they can stuff and mount me because they think I'm dead. No? Good. Look for Rand Rhobart at a camp to the southeast of town. To get to him take the road southeast out of Brill and hang a left at the intersection."]=20,
   ["Black, grey and dark purple are the prescribed colors. See to it that you don't stray onto the wrong side of fashion street friend. Bowen Brisboise can help to see that you don't. You'll find him inside Cold Hearth Manor on the other side of the bridge to the southwest of town."]=21,
   ["What are you looking for?"]=22,
   ["We don't have a bank here in Brill, you'll have to go to the Undercity for that. At the back of the Ruins of Lordaeron to the south are elevators that will take you down into the Undercity. Once there ask one of the Undercity Guardians for more precise directions."]=23,
@@ -1036,6 +1043,7 @@ SpeakStone_GossipTexts = {
 },
 [1745]={ -- Deathguard Morris
   ["Somewhere to fly to? You'll need to go to the Undercity for that! Go south on the road out of town, then southwest to the Ruins of Lordaeron. You can catch the elevator down to the Undercity from the back of the ruins and once there ask an Undercity Guardian for more specific directions."]=2,
+  ["Somewhere to fly to? You'll need to go to the Undercity for that. Go south on the road out of town, then southwest to the Ruins of Lordaeron. You can catch the elevator down to the Undercity from the back of the ruins and once there ask an Undercity Guardian for more specific directions."]=2,
   ["Now if I were Innkeeper Renee where might I be? Hmmm? Oh, perhaps inside the Gallows' End Tavern. Yes, that's it, I'm sure of it. Try the southeast end of Brill... think you can find that?"]=3,
   ["Not too clever are you? Hmm, if I were a stable master perhaps I might be in the vicinity of say, the stable? Look for Morganus over there."]=4,
   ["Do I look to you like I cast spells? Well, I did hear that Cain Firesong was hanging out on the upstairs landing of the Gallows' End Tavern at the southeast end of town. Odd how he just stands there outside of Gretchen's room like that."]=5,
@@ -1049,11 +1057,13 @@ SpeakStone_GossipTexts = {
   ["Word is that Vance Undergloom has taken a permanent room upstairs at the Gallows' End Tavern at the southeast end of town. I think he's just off the reading room."]=13,
   ["Rifles, dynamite, bombs, exploding sheep... what's not to love? To learn how to make these and many other exciting tools of the trade head to the Undercity, under the Ruins of Lordaeron to the south of Brill. Take the elevators down at the back of the ruins. Once you arrive speak to one of the Undercity Guardians about where the trainer is exactly."]=14,
   ["Butcher you say? Oh, First Aid Trainer! Same thing. When you see Nurse Neela standing just inside the Gallows' End Tavern on the southeast side of town you'll know why."]=15,
+  ["Butcher you say? Oh, First Aid Trainer. Same thing. When you see Nurse Neela standing just inside the Gallows' End Tavern on the southeast side of town you'll know why."]=15,
   ["Yeah, you'll always find Clyde Kellen fishing on the bank of Brightwater Lake just east of Brill. Just watch out for psychos wearing masks while you're out there. We had to shut down the kids' summer camp last year."]=16,
   ["Actually I prefer traditional medicines... leeches, maggots, bonesaws... that sort of thing. Well to each their own. You can find the our local Herbalism Trainer, Faruza, standing out front near the stables in Brill."]=17,
   ["Nothing quite like the feel of something dead rubbing up against you. You can find Shelene Rhobart by heading southeast on the road out of town, and then going east at the intersection. She's at a small camp there not too far along the road."]=18,
   ["I guess your first exercise is going to be to mine your way down to the Undercity. Heh, get it? Mine... nevermind. To get to the Undercity go to the rear of the Ruins of Lordaeron south of Brill, and take the elevator down. Ask one of the Undercity Guardians there for further assistance."]=19,
   ["You aiming to be a taxidermist? I don't like people who think they can stuff and mount me because they think I'm dead. No? Good! Look for Rand Rhobart at a camp to the southeast of town. To get to him take the road southeast out of Brill and hang a left at the intersection."]=20,
+  ["You aiming to be a taxidermist? I don't like people who think they can stuff and mount me because they think I'm dead. No? Good. Look for Rand Rhobart at a camp to the southeast of town. To get to him take the road southeast out of Brill and hang a left at the intersection."]=20,
   ["Black, grey and dark purple are the prescribed colors. See to it that you don't stray onto the wrong side of fashion street friend. Bowen Brisboise can help to see that you don't. You'll find him inside Cold Hearth Manor on the other side of the bridge to the southwest of town."]=21,
   ["What are you looking for?"]=22,
   ["We don't have a bank here in Brill, you'll have to go to the Undercity for that. At the back of the Ruins of Lordaeron to the south are elevators that will take you down into the Undercity. Once there ask one of the Undercity Guardians for more precise directions."]=23,
@@ -1177,6 +1187,7 @@ SpeakStone_GossipTexts = {
 [2126]={ -- Maximillion
   ["It is wise that you humble yourself before me adventurer in your desire for more warlock knowledge."]=1,
   ["I have no time to waste on the likes of you $c."]=2,
+  ["I have no time to waste on the likes of you hero."]=2,
 },
 [2127]={ -- Rupert Boch
   ["It is wise that you humble yourself before me adventurer in your desire for more warlock knowledge."]=1,
@@ -1194,6 +1205,7 @@ SpeakStone_GossipTexts = {
 },
 [2131]={ -- Austil de Mon
   ["Do not waste my time, paladin."]=1,
+  ["Do not waste my time, hero."]=1,
   ["Do not waste my time, $c."]=2,
 },
 [2132]={ -- Carolai Anise
@@ -1486,6 +1498,7 @@ SpeakStone_GossipTexts = {
 [2786]={ -- Gerrig Bonegrip
   ["Welcome to Bonegrip's Runes and Dooms, rogue. You may look, but do not touch. Some of the knowledge here is not meant for the...uninitiated."]=1,
   ["Welcome to Bonegrip's Runes and Dooms, $c. You may look, but do not touch. Some of the knowledge here is not meant for the...uninitiated."]=1,
+  ["Welcome to Bonegrip's Runes and Dooms, hero. You may look, but do not touch. Some of the knowledge here is not meant for the...uninitiated."]=1,
 },
 [2788]={ -- Apprentice Kryten
   ["Hello, adventurer. Welcome to Refuge Pointe."]=1,
@@ -1543,7 +1556,6 @@ SpeakStone_GossipTexts = {
 },
 [2980]={ -- Grull Hawkwind
   ["Be prepared. Today, we will teach the quilboar much regret, sorrow, and fear, in the name of our Greatmother."]=1,
-  ["Greetings, adventurer, and welcome to Camp Narache. News of your arrival spread quickly among the tribe."]=1,
 },
 [2995]={ -- Tal
   ["When mounted on the back of a wind rider, one sees that its reputation for strength and speed is well earned."]=1,
@@ -2378,6 +2390,7 @@ SpeakStone_GossipTexts = {
 [3320]={ -- Soran
   ["I guarantee this bank's security with my own blood, is that good enough for you?"]=3,
   ["Would you rather trust your goods with a goblin?"]=4,
+  ["Would you rather trust your goods with a cobblin'?"]=4,
   ["Besides the Grunts outside, my brothers and I fought at the battle of Hyjal. Any who seek to steal from the bank must face us first."]=5,
 },
 [3324]={ -- Grol'dar
@@ -2454,6 +2467,9 @@ SpeakStone_GossipTexts = {
 },
 [3368]={ -- Borstan
   ["I have the finest meats in Orgrimmar."]=1,
+},
+[3370]={
+  ["Even in peace there is still war, and many clans still fight beneath the banner of the Warchief. Are you here to add your clan to those that fight for Orgrimmar?"]=1,
 },
 [3373]={ -- Arnok
   ["Only the renowned Doctor Gregory Victor can improve your skill now. He can be found in Arathi Highlands at Hammerfall."]=1,
@@ -3674,6 +3690,7 @@ SpeakStone_GossipTexts = {
 [5769]={ -- Arch Druid Hamuul Runetotem
   ["The earth keeps many secrets, $c; it is our duty to ensure that those that must remain a secret for the good of all stays as such."]=1,
   ["The earth keeps many secrets, warlock; it is our duty to ensure that those that must remain a secret for the good of all stays as such."]=1,
+  ["The earth keeps many secrets, hero; it is our duty to ensure that those that must remain a secret for the good of all stays as such."]=1,
 },
 [5784]={ -- Waldor
   ["The caverns below us are a source of strange and wondrous hides, but you must take care if you venture into their depths, adventurer. Remember that your own skin is far more valuable."]=1,
@@ -4965,6 +4982,7 @@ SpeakStone_GossipTexts = {
 },
 [7944]={ -- Tinkmaster Overspark
   ["Greetings! If you are here to access gnome engineering schemata, please have your gnome engineer membership card ready for verification."]=1,
+  ["I am Tinkmaster Overspark, and I am the chief architect for modern gnomish engineering principles in the world today. It is my job to ensure that the power of invention continues to shine brightest from our arclight spanners than anywhere else. Also, if you happen to know a good schematic for radiation elimination, we just so happen to be in the market for one right about now..."]=2,
   ["I am Tinkmaster Overspark, and I am the chief architect for modern gnomish engineering principles in the world today. It is my job to ensure that the power of invention continues to shine brightest from our arclight spanners than anywhere else! Also, if you happen to know a good schematic for radiation elimination, we just so happen to be in the market for one right about now..."]=2,
 },
 [7948]={ -- Kylanna Windwhisper
@@ -4995,9 +5013,8 @@ SpeakStone_GossipTexts = {
   ["Greetings, druid. I am Tyrande Whisperwind, High Priestess of Elune."]=1,
   ["It pleases me greatly to at last meet one of your people. I've heard much of the shen'dorei and your long history, and I am glad to see our cousins return home to Kalimdor at long last. I confess that our people have a... complicated relationship with the highborne. Some amongst the night elves are quick to distrust those of highborne descent such as those in your High Order. However, you have my assurance that you will be shown the utmost respect while a guest in our city. Please, make yourself at home here. I'd encourage you to explore and familiarize yourself with our culture. It is, after all, your culture as well in a way."]=2,
 },
-[8020]={ -- Shyn
+[8020]={ -- [UNUSED]Shyn
   ["Where would you like to fly?"]=1,
-  ["Where would you like to fly to?"]=1,
 },
 [8115]={ -- Witch Doctor Uzer'i
   ["Incredible power can be found in the spirits or 'muisek' of the creatures that we battle against. Look inside yourself; learn to harness the power of your own spirit, and you will be more powerful than you ever imagined."]=1,
@@ -5051,6 +5068,7 @@ SpeakStone_GossipTexts = {
   ["Through my studies, I see that defeating the god Hakkar's avatar has weakened him. But the bulk of his strength remains, lurking at the far end of the Nether. You have defeated his avatar once, adventurer. Perhaps if you defeat it again you can further weaken the god so that, one day, we might face his true self. I have prepared a spell that you may use to again summon an avatar of Hakkar within the Sanctum of the Fallen God. Do you want to confront it once again?"]=1,
 },
 [8582]={ -- Kadrak
+  ["What is it, Druid?"]=1,
   ["What is it, $c?"]=1,
 },
 [8659]={ -- Jes'rimon
@@ -5544,6 +5562,7 @@ SpeakStone_GossipTexts = {
   ["The plans for my twenty-foot tall turkey baster are nearly complete! Now all I need is a twenty-foot tall turkey..."]=1,
   ["Don't tell anyone else I said this, but even I don't know everything! If you want to keep learning, you should talk to the owner of the shop, Springspindle Fizzlegear."]=2,
   ["Close, but no cigar! I'm afraid you'll have to talk to my sis, Jemma first. After she's gone over the basics with you, come see me and I'll show you the juicy stuff!"]=3,
+  ["You'll need to prove your worthiness before I go giving away my secrets. I've got just the test for you..."]=4,
   ["You'll need to prove your worthiness before I go giving away my secrets! I've got just the test for you..."]=4,
 },
 [11031]={ -- Franklin Lloyd
@@ -5998,6 +6017,7 @@ SpeakStone_GossipTexts = {
   ["Well met, $c. You may speak to me unless you have direct business with my mistress Magatha.$B$BI deal with most of her tasks for her so she can concentrate on more important matters. Perhaps there are some things we could discuss before you seek audience with her?"]=1,
   ["Well met, warlock. You may speak to me unless you have direct business with my mistress Magatha. I deal with most of her tasks for her so she can concentrate on more important matters. Perhaps there are some things we could discuss before you seek audience with her?"]=1,
   ["Well met, $c. You may speak to me unless you have direct business with my mistress Magatha. I deal with most of her tasks for her so she can concentrate on more important matters. Perhaps there are some things we could discuss before you seek audience with her?"]=1,
+  ["Well met, hero. You may speak to me unless you have direct business with my mistress Magatha. I deal with most of her tasks for her so she can concentrate on more important matters. Perhaps there are some things we could discuss before you seek audience with her?"]=1,
   ["Please, feel free to speak to me anytime, adventurer. You have served Magatha well. I am sure she will call upon you in the future."]=2,
 },
 [11835]={ -- Theodore Griffs
@@ -6031,7 +6051,6 @@ SpeakStone_GossipTexts = {
 },
 [11899]={ -- Shardi
   ["Where would you like to fly?"]=1,
-  ["Where would you like to fly to?"]=1,
 },
 [11901]={ -- Andruk
   ["Where would you like to fly?"]=1,
@@ -6112,6 +6131,7 @@ SpeakStone_GossipTexts = {
 },
 [12384]={ -- Augustus the Touched
   ["Before the Scourge came, I had a great business. I bought and sold everything. Everything! And my prices were INSANE! Just ask anyone. Anyone who's not dead."]=1,
+  ["Before the Scourge came, I had a great business. I bought and sold everything. Everything. And my prices were INSANE. Just ask anyone. Anyone who's not dead."]=1,
 },
 [12616]={ -- Vhulgra
   ["Where would you like to fly?"]=1,
@@ -6140,6 +6160,8 @@ SpeakStone_GossipTexts = {
 [12757]={ -- Karang Amakkar
   ["Greetings $c - welcome to the front lines in our conquest of Ashenvale! If you are looking for something to do, then you've come to the right place. I'm always looking for able-bodied individuals to help bring glory to the Horde!"]=1,
   ["Greeting druid - welcome to the front lines in our conquest of Ashenvale! If you are looking for something to do, then you've come to the right place. I'm always looking for able-bodied individuals to help bring glory to the Horde!"]=1,
+  ["Greeting hero - welcome to the front lines in our conquest of Ashenvale! If you are looking for something to do, then you've come to the right place. I'm always looking for able-bodied individuals to help bring glory to the Horde!"]=1,
+  ["Greetings hero - welcome to the front lines in our conquest of Ashenvale. If you are looking for something to do, then you've come to the right place. I'm always looking for able-bodied individuals to help bring glory to the Horde."]=1,
   ["Greeting $c - welcome to the front lines in our conquest of Ashenvale! If you are looking for something to do, then you've come to the right place. I'm always looking for able-bodied individuals to help bring glory to the Horde!"]=1,
 },
 [12776]={ -- Hraug
@@ -6459,7 +6481,6 @@ SpeakStone_GossipTexts = {
 },
 [14726]={ -- Rashona Straglash
   ["In these trying times, a simple donation of cloth can go a long way to help those less fortunate than ourselves. Cloth goes a long way to making garments and bandages - both important for the war effort!$B$BIf you are interested in donating cloth pieces to the orcs of Orgrimmar, I will gladly accept them and make sure you receive the proper recognition for doing so.$B$BFor the Horde!"]=1,
-  ["In these trying times, a simple donation of cloth can go a long way to help those less fortunate than ourselves. Cloth goes a long way to making garments and bandages - both important for the war effort! If you are interested in donating cloth pieces to the orcs of Orgrimmar, I will gladly accept them and make sure you receive the proper recognition for doing so. For the Horde!"]=1,
 },
 [14728]={ -- Rumstag Proudstrider
   ["Hail $g brother : sister;... I'd like a moment of your time, if I may.$B$BWe tauren have endured much in our trials and tribulations in establishing our homeland. We now find ourselves in a dire shortage of cloth. If you have the materials to spare, I ask that you please donate them. You certainly would earn the gratitude of tauren everywhere in helping us out!"]=1,
@@ -6552,6 +6573,7 @@ SpeakStone_GossipTexts = {
 },
 [14990]={ -- Defilers Emissary
   ["You are not yet powerful enough, $c. Move along."]=1,
+  ["You are not yet powerful enough, hero. Move along."]=1,
 },
 [14991]={ -- League of Arathor Emissary
   ["Thank you for the offer, $c. Unfortunately you are not yet experienced enough to weather the hazards of Arathi Basin."]=1,
@@ -6564,6 +6586,7 @@ SpeakStone_GossipTexts = {
 },
 [15012]={ -- Javnir Nashak
   ["Greetings, warlock. It is the time of the Harvest Festival - a time of great bounties and a time of remembrance. We partake of feasts to celebrate all we have to be thankful of, and we remember our ancestors and past heroes to give thanks to the legacy they gave us. Please feel free to partake of the feast being offered here. Also, I am offering some fireworks to help celebrate this joyous time of year."]=1,
+  ["Greetings Druid. It is the time of the harvest festival, a time of great bounties and a time of remembrance. We partake of feasts to celebrate all we have to be thankful of, and we remember our ancestors and past heroes to give thanks to the legacy they gave us. Please feel free to partake of the feast being offered here. Also, I am offering some fireworks to help celebrate this joyous time of year."]=1,
   ["Greetings, $c. It is the time of the Harvest Festival - a time of great bounties and a time of remembrance. We partake of feasts to celebrate all we have to be thankful of, and we remember our ancestors and past heroes to give thanks to the legacy they gave us. Please feel free to partake of the feast being offered here. Also, I am offering some fireworks to help celebrate this joyous time of year."]=1,
 },
 [15042]={ -- Zanza the Restless
@@ -7216,7 +7239,6 @@ SpeakStone_GossipTexts = {
 },
 [251992]={ -- Fenn Fairweather
   ["Welcome to Shen'dar Village, some of the best fishing this side of the mountain range. If you are looking to catch fish I can teach you, for a price."]=1,
-  ["Welcome to Shen'dar Village, some of the best fishing this side of the mountain range. If you are looking to catch fish, I can teach you, for a price."]=1,
 },
 [251993]={ -- Indari Sunseam
   ["I can teach you to craft fine leather armor, if you have the aptitude."]=1,
@@ -7713,5 +7735,14 @@ SpeakStone_GossipTexts = {
 },
 [277042]={ -- Bezza Shearshave
   ["Welcome, friend, to the barbershop! Come for a cut? A coloring? Something else, perhaps? We can groom facial hair, perform piercings, ink night elf tattoos, anything you might need! Have a seat and we'll get right to work. You're only moments away from a new, more attractive you..."]=1,
+},
+}
+SpeakStone_GossipTranscribed = {
+[68]={
+  ["Therum Deepforge is the dwarf you want to talk to one of the finest blacksmiths around if you ask me. You can find him in the heart of the dwarven district."]=3,
+  ["Which profession trainer are you looking for?"]=56,
+},
+[3320]={
+  ["Would you rather trust your goods with a cobblin'?"]=4,
 },
 }
