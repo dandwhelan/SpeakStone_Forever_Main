@@ -1541,6 +1541,10 @@ SpeakStone_GossipTexts = {
 [2934]={ -- Keeper Bel'dugur
   ["Knowledge is both tool and weapon to those with the will to use it."]=1,
 },
+[2980]={ -- Grull Hawkwind
+  ["Be prepared. Today, we will teach the quilboar much regret, sorrow, and fear, in the name of our Greatmother."]=1,
+  ["Greetings, adventurer, and welcome to Camp Narache. News of your arrival spread quickly among the tribe."]=1,
+},
 [2995]={ -- Tal
   ["When mounted on the back of a wind rider, one sees that its reputation for strength and speed is well earned."]=1,
 },
@@ -1600,6 +1604,7 @@ SpeakStone_GossipTexts = {
 [3036]={ -- Kym Wildmane
   ["Many are the paths of the Earth Mother. May your ancestors watch over you warlock."]=1,
   ["Many are the paths of the Earth Mother. May your ancestors watch over you $c."]=2,
+  ["If you desire, in addition to training, I have it within my power to erase the knowledge of your talents from your mind. Be warned that every time you undergo this procedure the more difficult it is to perform, and therefore the more expensive it becomes."]=3,
 },
 [3038]={ -- Kary Thunderhorn
   ["I train hunters in the ways and traditions of our ancestors."]=1,
@@ -2453,6 +2458,7 @@ SpeakStone_GossipTexts = {
 [3373]={ -- Arnok
   ["Only the renowned Doctor Gregory Victor can improve your skill now. He can be found in Arathi Highlands at Hammerfall."]=1,
   ["I am an orc of medicine, skyborne. If you have come here to learn, I shall do my best to teach."]=1,
+  ["I am an orc of medicine, $r. If you have come here to learn, I shall do my best to teach."]=1,
 },
 [3387]={ -- Jorn Skyseer
   ["Although we call this land the Barrens, to one who knows where to look this place teems with life."]=1,
@@ -2526,6 +2532,7 @@ SpeakStone_GossipTexts = {
 [3448]={ -- Tonga Runetotem
   ["The times we live in are as fickle as the shifting winds, druid. The ground itself quakes and cries out in anguish. We must remain resolute or we ourselves will be engulfed by the turmoil."]=1,
   ["The times we live in are as fickle as the shifting winds, $c. The ground itself quakes and cries out in anguish. We must remain resolute or we ourselves will be engulfed by the turmoil."]=1,
+  ["The times we live in are as fickle as the shifting winds, $c. It is important to remember what is true and lasting in this world, and to preserve that. Everything else is a waste."]=2,
 },
 [3484]={ -- Kil'hala
   ["Hey mon, what can I be doin' for you?"]=1,
@@ -2680,6 +2687,9 @@ SpeakStone_GossipTexts = {
 [3663]={ -- Delgren the Purifier
   ["Good day, Druid."]=1,
   ["Good day, $c."]=1,
+},
+[3682]={ -- Vrang Wildgore
+  ["Are you in need of a weapon, traveler? You'll not find a finer blade anywhere, I assure you."]=1,
 },
 [3685]={ -- Harb Clawhoof
   ["Kodo beasts, my friend! Trained from a young age and raised on the Golden Plains of Mulgore, these fine animals will make even finer steeds! Please, browse my selection, and see for yourself why we taurens have come to rely on these magnificant creatures!"]=1,
@@ -3012,6 +3022,9 @@ SpeakStone_GossipTexts = {
   ["Johnson? I think he's around here somewhere..."]=6,
   ["If it weren't for the goblins' inconceivable, dumb luck, they'd crash their car during every race!"]=7,
 },
+[4453]={ -- Wizzle Brassbolts
+  ["Be careful where you put that foot of yours, mister. We're not all blessed with the lofty height of a skyborne."]=1,
+},
 [4488]={ -- Parqual Fintallas
   ["It's always nice when someone wishes to speak to me. How are things with you, $c?"]=1,
 },
@@ -3119,6 +3132,9 @@ SpeakStone_GossipTexts = {
 },
 [4598]={ -- Brom Killian
   ["Greetings."]=1,
+},
+[4604]={ -- Abigail Sawyer
+  ["Words are like arrows. Once loosed, you cannot call them back."]=1,
 },
 [4607]={ -- Father Lankester
   ["Yes, $c?"]=1,
@@ -3570,6 +3586,7 @@ SpeakStone_GossipTexts = {
   ["You look in The Apothecarium. That where Doctor Herbert Halsey and Doctor Marsh practice."]=9,
   ["You look for Josef Gregorian. He in Magic Quarter on inner ring side of green canal."]=10,
   ["You go to inner ring of The Apothecarium. Lavinia Crowe is there."]=11,
+  ["Killian Hagey teach skinning in Rogues' Quarter on inner ring."]=12,
 },
 [5675]={ -- Carendin Halgar
   ["Yes, warlock?"]=1,
@@ -4978,6 +4995,10 @@ SpeakStone_GossipTexts = {
   ["Greetings, druid. I am Tyrande Whisperwind, High Priestess of Elune."]=1,
   ["It pleases me greatly to at last meet one of your people. I've heard much of the shen'dorei and your long history, and I am glad to see our cousins return home to Kalimdor at long last. I confess that our people have a... complicated relationship with the highborne. Some amongst the night elves are quick to distrust those of highborne descent such as those in your High Order. However, you have my assurance that you will be shown the utmost respect while a guest in our city. Please, make yourself at home here. I'd encourage you to explore and familiarize yourself with our culture. It is, after all, your culture as well in a way."]=2,
 },
+[8020]={ -- Shyn
+  ["Where would you like to fly?"]=1,
+  ["Where would you like to fly to?"]=1,
+},
 [8115]={ -- Witch Doctor Uzer'i
   ["Incredible power can be found in the spirits or 'muisek' of the creatures that we battle against. Look inside yourself; learn to harness the power of your own spirit, and you will be more powerful than you ever imagined."]=1,
 },
@@ -5002,6 +5023,9 @@ SpeakStone_GossipTexts = {
 },
 [8308]={ -- Alenndaar Lapidaar
   ["I cannot train a $c such as yourself."]=1,
+},
+[8359]={ -- Ahanu
+  ["Greetings. If you are here for leather goods, then you will find my wares well crafted."]=1,
 },
 [8380]={ -- Captain Vanessa Beltis
   ["Ahoy, adventurer! Not a pretty picture, is it? The Horizon Scout at the bottom of the sea, my crew in shambles, and our cargo and passengers strewn about like so much debris that you'd think this was one of Stormwind's canals after a festival. And that's not where the trouble ends..."]=1,
@@ -5480,6 +5504,9 @@ SpeakStone_GossipTexts = {
 [10879]={ -- Harbinger Balthazad
   ["Greetings and salutations, hero! I have the latest news from both continents and points beyond for your consideration."]=1,
 },
+[10881]={ -- Bluff Runner Windstrider
+  ["Greetings and salutations, hero! I have the latest news from both continents and points beyond for your consideration."]=1,
+},
 [10897]={ -- Sindrayl
   ["Where would you like to fly?"]=1,
   ["Where would you like to fly to?"]=1,
@@ -5544,6 +5571,7 @@ SpeakStone_GossipTexts = {
 },
 [11047]={ -- Kray
   ["I must have broken hundreds of vials when I first began brewing potions. The glass was so fragile in my clumsy hands. I hope you are more cautious than I was."]=2,
+  ["Your capacity for learning has outstripped mine. You will need to talk to Bena Winterhoof over there for further instruction. Please don't take too much of her time, though. She needs her rest."]=3,
 },
 [11048]={ -- Victor Ward
   ["We don't get many visitors out here. May I interest you in something?"]=1,
@@ -5970,6 +5998,7 @@ SpeakStone_GossipTexts = {
   ["Well met, $c. You may speak to me unless you have direct business with my mistress Magatha.$B$BI deal with most of her tasks for her so she can concentrate on more important matters. Perhaps there are some things we could discuss before you seek audience with her?"]=1,
   ["Well met, warlock. You may speak to me unless you have direct business with my mistress Magatha. I deal with most of her tasks for her so she can concentrate on more important matters. Perhaps there are some things we could discuss before you seek audience with her?"]=1,
   ["Well met, $c. You may speak to me unless you have direct business with my mistress Magatha. I deal with most of her tasks for her so she can concentrate on more important matters. Perhaps there are some things we could discuss before you seek audience with her?"]=1,
+  ["Please, feel free to speak to me anytime, adventurer. You have served Magatha well. I am sure she will call upon you in the future."]=2,
 },
 [11835]={ -- Theodore Griffs
   ["Hello, adventurer."]=1,
@@ -5999,6 +6028,10 @@ SpeakStone_GossipTexts = {
 },
 [11870]={ -- Archibald
   ["I suppose you are here to be trained in the use of a new weapon? Make it fast, I'm very busy!"]=1,
+},
+[11899]={ -- Shardi
+  ["Where would you like to fly?"]=1,
+  ["Where would you like to fly to?"]=1,
 },
 [11901]={ -- Andruk
   ["Where would you like to fly?"]=1,
@@ -6107,6 +6140,7 @@ SpeakStone_GossipTexts = {
 [12757]={ -- Karang Amakkar
   ["Greetings $c - welcome to the front lines in our conquest of Ashenvale! If you are looking for something to do, then you've come to the right place. I'm always looking for able-bodied individuals to help bring glory to the Horde!"]=1,
   ["Greeting druid - welcome to the front lines in our conquest of Ashenvale! If you are looking for something to do, then you've come to the right place. I'm always looking for able-bodied individuals to help bring glory to the Horde!"]=1,
+  ["Greeting $c - welcome to the front lines in our conquest of Ashenvale! If you are looking for something to do, then you've come to the right place. I'm always looking for able-bodied individuals to help bring glory to the Horde!"]=1,
 },
 [12776]={ -- Hraug
   ["Want to make your demons more powerful? It'll cost you, but you've come to the right place."]=1,
@@ -6422,6 +6456,10 @@ SpeakStone_GossipTexts = {
 [14725]={ -- Raedon Duskstriker
   ["Hail friend - a moment of your time, if I may... We have endured much in our trials and tribulations in establishing Teldrassil. Were the constant strife of the times not enough, we now find ourselves in a dire shortage of cloth. If you have the materials to spare, I ask that you please donate them. You certainly would earn the gratitude of night elves everywhere in helping us out!"]=1,
   ["Hail friend - a moment of your time, if I may...$B$BWe have endured much in our trials and tribulations in establishing Teldrassil. Were the constant strife of the times not enough, we now find ourselves in a dire shortage of cloth. If you have the materials to spare, I ask that you please donate them. You certainly would earn the gratitude of night elves everywhere in helping us out!"]=1,
+},
+[14726]={ -- Rashona Straglash
+  ["In these trying times, a simple donation of cloth can go a long way to help those less fortunate than ourselves. Cloth goes a long way to making garments and bandages - both important for the war effort!$B$BIf you are interested in donating cloth pieces to the orcs of Orgrimmar, I will gladly accept them and make sure you receive the proper recognition for doing so.$B$BFor the Horde!"]=1,
+  ["In these trying times, a simple donation of cloth can go a long way to help those less fortunate than ourselves. Cloth goes a long way to making garments and bandages - both important for the war effort! If you are interested in donating cloth pieces to the orcs of Orgrimmar, I will gladly accept them and make sure you receive the proper recognition for doing so. For the Horde!"]=1,
 },
 [14728]={ -- Rumstag Proudstrider
   ["Hail $g brother : sister;... I'd like a moment of your time, if I may.$B$BWe tauren have endured much in our trials and tribulations in establishing our homeland. We now find ourselves in a dire shortage of cloth. If you have the materials to spare, I ask that you please donate them. You certainly would earn the gratitude of tauren everywhere in helping us out!"]=1,
@@ -7017,13 +7055,22 @@ SpeakStone_GossipTexts = {
   ["Welcome back to the light, friend. Do you require training?"]=1,
   ["You may not be a paladin, but you may yet find solace in the light should you seek it."]=2,
 },
+[246143]={ -- Frightened Paladin
+  ["Get away from me, monster!"]=1,
+  ["No! No, no, no! This can't be. I'd rather be dead than Forsaken! The Frightened Paladin raises her weapon, preparing to attack!"]=2,
+},
 [246152]={ -- Shari Stilwell
   ["The light is a beacon that shines for all. What can I do for you, paladin?"]=1,
   ["The light is a beacon that shines for all. What can I do for you, $c?"]=1,
 },
+[246344]={ -- Alodan the Hopeful
+  ["Welcome back to the light, friend. Do you require training?"]=1,
+  ["If you desire, in addition to training, I have it within my power to erase the knowledge of your talents from your mind. Be warned that every time you undergo this procedure the more difficult it is to perform, and therefore the more expensive it becomes."]=2,
+},
 [246349]={ -- Breton Samuels
   ["Welcome to Bandarion Keep, mage."]=1,
   ["Welcome to Bandarion Keep, $c."]=1,
+  ["If you've come seeking the fellowship of your fellow paladins, you've come to the right place. Welcome home."]=2,
 },
 [246378]={ -- Danitha Morr
   ["Welcome to Bandarion Keep, mage."]=1,
@@ -7031,13 +7078,16 @@ SpeakStone_GossipTexts = {
 },
 [246389]={ -- Hilda the Breaker
   ["Why do they call me 'The Breaker'? Trust me, you don't want to know."]=1,
+  ["A little bit of a lot of things. Mostly I take the soft and weak and reshape them into hardened fighters once again. It's a tough world out there, and even our own people mistrust us. We need to be tough and self-reliant if we are to fit into this 'Horde' with the rest of our people."]=2,
 },
 [246393]={ -- Jorin Croge
   ["There are many things lurking out there in the dark and the light is needed now more than ever. If only these poor souls could see that just because our world has changed, that doesn't mean we have to be the monsters that the living think we are."]=1,
+  ["I make sure we are provisioned and that the scant resources we do have are distributed properly. If this were a proper order, I'd be something of a quartermaster. Such as we are, however, I just do my best to make sure we are at least somewhat equipped to deal with the dangers all around us."]=2,
 },
 [246394]={ -- Ander Solliden
   ["In my previous life, I lived nearby here. I still wander the fields of my childhood farmstead occasionally. It fills me with sadness to see those I knew and loved, shambling around as mindless thralls. It pains me, but its that very pain that gives me strength and purpose."]=1,
   ["In my previous life, I lived nearby here. I still wander the fields of my childhood farmstead occasionally. It fills me with sadness to see those I knew and loved, shambling around as mindless thralls. It pains me, but it's that very pain that gives me strength and purpose."]=1,
+  ["Mostly the usual. Murloc attacks, the occasional Scarlet Crusade skirmish. There are even some paladins that can't quite adjust to life as a Forsaken. Far too often we have to put those down that turn their blades upon their brothers. By far the worst is when some mindless thrall wanders too close. I can kill murlocs all day, but some of the scourge I've had to destroy were former friends of mine. Some were even family members. I'd rather it be me who puts them down than some random adventurer, but it still stings."]=2,
 },
 [246848]={ -- Kirin Tor Guard
   ["What are you looking for?"]=1,
@@ -7166,6 +7216,7 @@ SpeakStone_GossipTexts = {
 },
 [251992]={ -- Fenn Fairweather
   ["Welcome to Shen'dar Village, some of the best fishing this side of the mountain range. If you are looking to catch fish I can teach you, for a price."]=1,
+  ["Welcome to Shen'dar Village, some of the best fishing this side of the mountain range. If you are looking to catch fish, I can teach you, for a price."]=1,
 },
 [251993]={ -- Indari Sunseam
   ["I can teach you to craft fine leather armor, if you have the aptitude."]=1,
@@ -7372,6 +7423,14 @@ SpeakStone_GossipTexts = {
 [256735]={ -- Mivin Shadowweave
   ["<Mivin gestures toward his wares and back at you again with a smile, but says nothing.>"]=1,
 },
+[256930]={ -- Captured Bandit
+  ["What are you looking at?"]=1,
+  ["Killed a peacekeeper and stole some windstones."]=2,
+  ["Why bother denying it, the constable already passed her judgement. No point lying."]=3,
+  ["Desperation? Hunger? I'm not exactly here doing this because I like robbing and murdering. I lost my home, had nowhere to go, and I don't much care to shave my head and worship some imaginary wind god, so I became a bandit. The rest is obvious."]=4,
+  ["Most of my outfit did. Displaced from the ground falling out from under our feet. Some came from other islands entirely. I came from the city of Shen'dramar, on the big island. Well, what used to be the big island, I suppose. My family and I managed to get on one of the last skycutters out of there before the entire island broke apart. We thought that adventurers would save us. Well, it didn't. They are all long dead and now I'm here, awaiting execution."]=5,
+  ["Largely, yes. The thing we all have in common is that we have nowhere else to go and that we prefer thieving over enslaving ourselves to some insane cult."]=6,
+},
 [257003]={ -- Ishlee Breezewhisper
   ["Gales greetings, friend. Is there something I can help you with?"]=1,
   ["I hope that your interruption is for a good cause, I was in the middle of some important work."]=2,
@@ -7402,6 +7461,7 @@ SpeakStone_GossipTexts = {
 [257018]={ -- Naleeia Tattermend
   ["Gales greetings, friend. Is there something I can help you with?"]=1,
   ["Va, y ealdor Gloinador. E majis ko dana ne barad ras thorniss lars majis gol ador endirvis."]=2,
+  ["Se, o ealdor Gothalgos. Y borne va vohl ru eynes nud aldonoth vrum borne gol odes methrine."]=3,
 },
 [257019]={ -- Nyassa Swiftdraught
   ["Winds tidings. What can I help you with?"]=1,
@@ -7412,9 +7472,13 @@ SpeakStone_GossipTexts = {
 },
 [257021]={ -- Halassa Fernbreeze
   ["Nostyec Regenthor, mod. E wirsh ador eynes re an tiras an lo vil va novaedi E gol melka ras re y bor rothas aelgestron."]=1,
+  ["I hope that your interruption is for a good cause. I was in the middle of some important work."]=2,
 },
 [257022]={ -- Messana Crestwind
   ["You might think that just because we live on a floating island, there would be no need for miners like me. After so many thousands of years however, we still manage to dig up a lot of interesting things. It's almost like there's some invisible force, constantly creating new mineral deposits every so often. That's magic for you though, right? Regardless, if you need training as a miner them I'm your shen'dorei."]=1,
+},
+[257024]={ -- Mendalass Tattermend
+  ["I don't get too many Skinners in here looking for training, but I guess I could teach you something if you're ready."]=1,
 },
 [257036]={ -- Baelann Favorbreeze
   ["Welcome to the Bank of Valanaar. We can secure your belongings and valuables here should you so desire. Do you wish to access your deposit box?"]=1,
@@ -7462,8 +7526,15 @@ SpeakStone_GossipTexts = {
 [259190]={ -- Ephram Barbaro
   ["Oi, what do you want?"]=1,
 },
+[260093]={ -- Garen Largo
+  ["Do you require training in the ways of the light?"]=1,
+  ["Through rigorous retraining I have had to break many students of all they had previously learned so that I might teach them anew. The service I offer becomes increasingly difficult to perform each time it is done. It is for that reason that it becomes increasingly expensive with each retraining. Do you desire that I break you of the talents you have learned?"]=2,
+},
 [260628]={ -- Valennia Stormfist
   ["Valennia winces in pain as she shifts to look at you. Don't look at me like that. I'll be fine. Despite the best efforts of the High Elder's fretful healers, I'll be up and ready to fight again in no time. Now be gone with you... don't let this old soldier hold you up. The winds will bring you good fortune on your journey, I know it."]=1,
+},
+[261366]={ -- Walton
+  ["What do you need, $r?"]=1,
 },
 [262560]={ -- Hana Lighthoof
   ["adventurer, how may I further your training in the eyes of the Earth Mother?"]=1,
@@ -7477,11 +7548,17 @@ SpeakStone_GossipTexts = {
 [263399]={ -- Sam Sarsaparilla
   ["Howdy there, traveler!"]=1,
 },
+[263570]={ -- Creeg Bothunk
+  ["Greetings, traveler! I am Creeg Bothunk, the main supplier for the Darkspear Raiders. As you improve your standing with the Darkspear Raiders, I will be able to provide a variety of goods that you can use inside Darkspear Islands. Should you find yourself in need of item repair, I also provide those services."]=1,
+},
 [263643]={ -- Sean Guardoff
   ["I am sorry, $c, but you are not experienced enough yet to enter Darkspear Islands."]=1,
 },
 [263664]={ -- Raan Wildwind
   ["Greetings, traveler."]=1,
+},
+[264074]={ -- Mazu'kon
+  ["What'ya need from ol' Mazu'kon, $c?"]=1,
 },
 [264078]={ -- Sutara Plainstalker
   ["It is my honor to handle supply and provisioning for the Earthen Ring. My stock is limited at present, but check back with me often and I may have new equipment and supplies available for purchase."]=1,
@@ -7493,6 +7570,9 @@ SpeakStone_GossipTexts = {
   ["Welcome to the guild registrar of Valanaar. How may I assist you today?"]=1,
 },
 [265809]={ -- Brakk
+  ["Greetings, traveler."]=1,
+},
+[265810]={ -- Kaga Wildhoof
   ["Greetings, traveler."]=1,
 },
 [265811]={ -- Lyreena Duskblade
@@ -7550,6 +7630,9 @@ SpeakStone_GossipTexts = {
 [268925]={ -- Night Elf Courier
   ["The night elf is motionless, with multiple wounds and discoloration emblematic of suffering from poison."]=1,
 },
+[269152]={ -- Tylana Clawhoof
+  ["You are not known to my people. A kodo is a mighty steed, and it is the product of love and care by my people; such is not given onto strangers. Until the elders of Thunder Bluff consider you to be exalted, I cannot offer you the sale of a kodo."]=1,
+},
 [270459]={ -- Alfina Nightgaze
   ["I was invited to visit Dalaran on behalf of the Cenarion Circle. I find this place equal parts wondrous... and unsettling. As for you, young Druid--if you have not yet done so, seek out Sheldras Moontree in Stormwind. He will teach you to reach the Cenarion Circle enclave at Moonglade."]=1,
 },
@@ -7571,6 +7654,7 @@ SpeakStone_GossipTexts = {
 [271613]={ -- Unfinished Abomination
   ["The body looks incomplete and awaiting a head."]=1,
   ["Othmar's head looks at you from nearby. What... You... Want... Filthy... undead..."]=2,
+  ["The body looks incomplete and appears to be awaiting a head."]=3,
 },
 [272045]={ -- Brother Zendraas
   ["Why are you looking at me like that. Do you expect me to shoot bolts of lightning at you, or threaten you with the wrath of the Windlord? Its fair enough if you do. However, not all of us are quite so... zealous."]=1,
