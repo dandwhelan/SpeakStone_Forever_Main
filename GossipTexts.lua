@@ -336,7 +336,6 @@ SpeakStone_GossipTexts = {
   ["You've made a good start, but you still have a great deal to learn, adventurer."]=2,
 },
 [1226]={ -- Maxan Anvol
-  ["Serve the Light well, hunter."]=1,
   ["Serve the Light well, $c."]=1,
   ["The Light protect you, $c."]=1,
   ["I hope the Light is with you, adventurer. Is there anything I can do for you today?"]=2,
@@ -2655,7 +2654,6 @@ SpeakStone_GossipTexts = {
 },
 [3600]={ -- Laurna Morninglight
   ["Elune be with you, $c."]=1,
-  ["Elune be with you, druid."]=1,
   ["My wisdom is yours, as is my knowledge. What can I do for you, adventurer?"]=2,
 },
 [3601]={ -- Dazalar
@@ -2849,7 +2847,6 @@ SpeakStone_GossipTexts = {
 },
 [4092]={ -- Lariia
   ["Elune be with you, $c."]=1,
-  ["Elune be with you, druid."]=1,
   ["My wisdom is yours, as is my knowledge. What can I do for you, adventurer?"]=2,
 },
 [4138]={ -- Jeen'ra Nightrunner
