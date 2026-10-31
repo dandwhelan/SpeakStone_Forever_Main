@@ -83,8 +83,6 @@ SpeakStone_GossipTexts = {
   ["You are gonna want to head over to Old Town and drop by the Protective Hide if you are lookin' to learn skinning."]=78,
   ["A tailor, is it? Well, if you hang out here long enough, you'll eventually hear word of mouth about Georgio Bolero. He's been setting the trends for some months now. If you wish to learn from him, you can find him over in the mage quarter in the outer rim."]=79,
   ["There's a great cook who works at the Pig and Whistle Tavern in Old Town. I've watched him use a knife when he cooks. And just between you and me, I don't think he's always been a cook. Don't get me wrong if you still want to learn. He's the best we have."]=80,
-  ["The sharpest shears and most delicate hands are found at curls and furls here in the trade district. Take a gander if you have some spare time and are interested in taking a little off the top."]=81,
-  ["It is located in the trade district citizen. It is nearly straight on from the entrance of Stormwind."]=82,
   ["What do you need directions to?"]=83,
 },
 [167]={ -- Morhan Coppertongue
@@ -107,12 +105,9 @@ SpeakStone_GossipTexts = {
 [240]={ -- Marshal Dughan
   ["Ach, it's hard enough keeping order around here without all these new troubles popping up! I hope you have good news, adventurer..."]=1,
 },
-[268]={
-  ["Greetings, warlock. I have but one goal, the cataloging and recording of all knowledge related to the history of Duskwood and Dokshur. Perhaps you could help me in my endeavor?"]=1,
-},
 [277]={ -- Roberto Pupellyverbos
   ["Just browsing my wares or is there something specific I can help you find today?"]=1,
-  ["Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"]=2,
+  ["Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"]=3,
   ["Best deals in all of Stormwind, my friend, won't find any better. Now, what can I help you with?"]=3,
 },
 [295]={ -- Innkeeper Farley
@@ -130,7 +125,7 @@ SpeakStone_GossipTexts = {
 [331]={ -- Maginor Dumas
   ["Greetings mage. Shall I provide you with further insight into the world of magic?"]=1,
   ["Well met, $c. My advice to you is this: As you travel the world, be wary of magic for it will burn the untrained."]=2,
-  ["If you desire, in addition to training, I have it within my power to erase the knowledge of your talents from your mind. Be warned that every time you undergo this procedure the more difficult it is to perform, and therefore the more expensive it becomes."]=3,
+  ["If you desire, in addition to training, I have it within my power to erase the knowledge of your talents from your mind. Be warned that every time you undergo this procedure the more difficult it is to perform, and therefore the more expensive it becomes."]=4,
   ["If you desire, in addition to training, I have it within my power to erase the knowledge of your talents from your mind. Be warned that every time you undergo this procedure, the more difficult it is to perform, and therefore the more expensive it becomes."]=4,
 },
 [332]={ -- Master Mathias Shaw
@@ -251,7 +246,7 @@ SpeakStone_GossipTexts = {
   ["I am sorry $c, but you need to be more powerful before I can allow you to enter Arathi Basin."]=1,
   ["Arathi Basin was once our home, and will be again with your aid! Will you help us $c?"]=1,
 },
-[895]={ -- Торгас Мрачнон
+[895]={ -- Thorgas Grimson
   ["Wot kin I do fer ye?"]=1,
   ["Чем помочь надо?"]=1,
   ["I kinnae help ye with trainin'. Ye should look fer a $c trainer."]=2,
@@ -398,7 +393,7 @@ SpeakStone_GossipTexts = {
 },
 [1275]={ -- Kyra Boucher
   ["Just browsing my wares or is there something specific I can help you find today?"]=1,
-  ["Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"]=2,
+  ["Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"]=3,
   ["Best deals in all of Stormwind, my friend, won't find any better. Now, what can I help you with?"]=3,
 },
 [1285]={ -- Thurman Mullby
@@ -407,7 +402,7 @@ SpeakStone_GossipTexts = {
 },
 [1286]={ -- Edna Mullby
   ["Just browsing my wares or is there something specific I can help you find today?"]=1,
-  ["Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"]=3,
+  ["Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"]=4,
   ["Best deals in all of Stormwind, my friend, won't find any better. Now, what can I help you with?"]=4,
 },
 [1287]={ -- Marda Weller
@@ -420,6 +415,7 @@ SpeakStone_GossipTexts = {
 },
 [1294]={ -- Aldric Moore
   ["Just browsing my wares or is there something specific I can help you find today?"]=1,
+  ["Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"]=2,
   ["Best deals in all of Stormwind, my friend, won't find any better. Now, what can I help you with?"]=2,
 },
 [1295]={ -- Lara Moore
@@ -470,12 +466,13 @@ SpeakStone_GossipTexts = {
 },
 [1313]={ -- Maria Lumere
   ["I sell only the finest arcane gear, made by the crafters and mages here in the city of Stormwind."]=1,
+  ["Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."]=2,
   ["Since the fall of Dalaran and the destruction of Quelthalas, wares of this sort have been hard to come by, but Lucan Cordell and some of our other tradesmen have been doing a fine job of filling our orders with quality merchandise."]=2,
 },
 [1314]={ -- Duncan Cullen
   ["I sell only the finest arcane gear, made by the crafters and mages here in the city of Stormwind."]=1,
   ["Since the fall of Dalaran and the destruction of Quelthalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."]=2,
-  ["Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."]=2,
+  ["Since the fall of Dalaran and the destruction of Quel'Thalas, wares of this sort have been hard to come by. But Lucan Cordell and some of our other Tradesman have been doing a fine job of filling our orders with quality merchandise."]=3,
   ["Since the fall of Dalaran and the destruction of Quelthalas, wares of this sort have been hard to come by, but Lucan Cordell and some of our other tradesmen have been doing a fine job of filling our orders with quality merchandise."]=3,
 },
 [1315]={ -- Allan Hafgan
@@ -509,6 +506,7 @@ SpeakStone_GossipTexts = {
 },
 [1340]={ -- Mountaineer Kadrell
   ["Hello, adventurer. Welcome to Thelsamar, and while you're here don't forget to visit our local brewery!"]=1,
+  ["Welcome to Thelsamar, your home away from home in Loch Modan! Thelsamar is a nice place, but it's not all beer and salted meat for those who answer the call to duty! If you're willing to face danger in the name of the Alliance, then read the poster outside the Thelsamar branch of the Explorers' League."]=2,
   ["Welcome to Felsomar, your home away from home in Lokmodan. Felsomar is a nice place, but it's not all beer and salted meat for those who answer the call to duty. If you're willing to face danger in the name of the Alliance, then read the poster outside the Felsomar branch of the Explorer's League."]=2,
 },
 [1341]={ -- Wilhelm Strang
@@ -518,7 +516,6 @@ SpeakStone_GossipTexts = {
   ["Yes, I've been running this shop for some time now. Business has been pretty good lately. A lot of new adventurers coming through..."]=1,
   ["There's only one person I know of who is more learned in the art of tailoring than myself. Last I heard he could be found in Theramore Isle. He is the person you should seek."]=2,
   ["You'll need more training before I can share my knowledge with you, I'm afraid."]=3,
-  ["You'll need more training before I can share my knowledge with you. I'm afraid."]=4,
   ["Yes, I've been running this shop for some time now. Business has been pretty good lately. A lot of new adventurers coming through."]=5,
 },
 [1347]={ -- Alexandra Bolero
@@ -826,6 +823,7 @@ SpeakStone_GossipTexts = {
   ["Dirge Quikcleave of Gadgetzan is a master of the culinary arts. To better yourself you will need to seek him out."]=3,
   ["Cooking is a life long pursuit and I see we share the same passion."]=4,
   ["Cooking is a life long pursuit and I see we share the same passion!"]=4,
+  ["Cooking is a lifelong pursuit and I see we share the same passion!"]=5,
   ["Cooking is a lifelong pursuit and I see we share the same passion."]=5,
 },
 [1700]={ -- Paxton Ganter
@@ -1191,6 +1189,7 @@ SpeakStone_GossipTexts = {
   ["Which profession trainer are you looking for?"]=2,
   ["Woo Ping's stamina is simply astounding. Watching him practice his weapon techniques for hours on end, I felt sorry for the practice dummy afterward. I can't think of anyone better suited to train you in armed combat."]=3,
   ["The Bank of Stormwind is located in the Trade District just northwest of the city gates. Here, let me show you on your map."]=4,
+  ["Another entrepreneur, eh? Well, the Auction House can be found in the Trade District. Not far from the bank."]=5,
   ["Another entrepreneur, eh? Well, the auction house can be found in the trade district, not far from the bank."]=5,
 },
 [2079]={ -- Conservator Ilthalaine
@@ -1242,7 +1241,6 @@ SpeakStone_GossipTexts = {
 },
 [2198]={ -- Crier Goodman
   ["Greetings and salutations, hero! I have the latest news from both continents and points beyond for your consideration."]=1,
-  ["Your legacy precedes you, hero. If you wish, I can allow you to rewrite that legacy into something new."]=2,
 },
 [2209]={ -- Deathguard Gavin
   ["What could you possibly need a bank for? Very well, you'll need to go through the Ruins of Lordaeron to the south of Brill. In the back are a set of elevators leading down into the Undercity. When you get there stop any of those lumbering Abominations they like to call an Undercity Guardian and ask it for better directions."]=1,
@@ -1487,11 +1485,12 @@ SpeakStone_GossipTexts = {
 },
 [2457]={ -- John Burnside
   ["Welcome to the Bank of Stormwind. We offer financial accounts and safety deposit boxes for valuable items. Do you already have an account with us sir?"]=1,
+  ["No one's ever stolen anything out of here. Not in the whole history of... the whole history!"]=2,
   ["No one's ever stolen anything out of here, not in the whole history of the whole history."]=2,
 },
 [2485]={ -- Larimaine Purdue
   ["I do not believe you possess the mental acuity to grasp the nature of portal magic."]=1,
-  ["As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."]=3,
+  ["As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."]=4,
 },
 [2489]={ -- Milstaff Stormeye
   ["I do not believe you possess the mental acuity to grasp the nature of portal magic."]=1,
@@ -1645,7 +1644,9 @@ SpeakStone_GossipTexts = {
 [3033]={ -- Turak Runetotem
   ["Strive to keep the balance in all things, $c. This is where true harmony lies."]=1,
   ["Welcome, my brother. If you are here to train, then I would be delighted to teach you. It never hurts to reaffirm one's place within what I like to call the Great Balance. As preservers of this balance, we must strive to continually keep our minds clear and our hearts strong. Training helps us in this regard."]=2,
+  ["Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to teach you. It never hurts to reaffirm one's place within what I like to call the Great Balance. As preservers of this balance, we must strive to continually keep our minds clear and our hearts strong. Training helps us in this regard."]=3,
   ["Welcome, my brother. If you are here to train, then I would be delighted to teach you. It never hurts to reaffirm one's place within what I like to call the great balance. As preservers of this balance, we must strive to continually keep our minds clear and our hearts strong. Training helps us in this regard."]=3,
+  ["If you desire, in addition to training, I have it within my power to erase the knowledge of your talents from your mind. Be warned that every time you undergo this procedure the more difficult it is to perform, and therefore the more expensive it becomes."]=4,
   ["If you desire, in addition to training, I have it within my power to erase the knowledge of your talents from your mind. Be warned that every time you undergo this procedure, the more difficult it is to perform, and therefore the more expensive it becomes."]=4,
 },
 [3034]={ -- Sheal Runetotem
@@ -1750,6 +1751,7 @@ SpeakStone_GossipTexts = {
   ["Cooking is a life long pursuit and I see we share the same passion!"]=1,
   ["Dirge Quikcleave of Gadgetzan is a master of the culinary arts. To better yourself you will need to seek him out."]=2,
   ["Wulan in Shadowprey Village can sell you the 'Expert Cookbook'. You will need that if you are to better yourself."]=3,
+  ["I can teach you how to cook!"]=4,
   ["I can teach you how to cook."]=4,
 },
 [3069]={ -- Chaw Stronghide
@@ -1819,7 +1821,6 @@ SpeakStone_GossipTexts = {
   ["Seek out Turak Runitor 10 in the Hall of Elders on the Elder Rise."]=62,
   ["There is no finer cook in Thunder Bluff than Ask a Mistrana. Mm-mm, I can smell what she is cooking from here. Head over to her kitchen located on the high rise. Drat, now I am hungry."]=64,
   ["Don't blame you for taking up fishing. Mulgore has some of the best fishing spots in southern Kalimdor, and mountaintop bait and tackle on the high rise has all of the gear you'll need to take advantage of it. Tell car, Mistrunner, that I sent you."]=65,
-  ["Look on the lower rise opposite the auctioneers, if you would like to get your main trimmed."]=66,
 },
 [3087]={ -- Crystal Boughman
   ["Cooking is a life long pursuit and I see we share the same passion!"]=1,
@@ -1989,12 +1990,13 @@ SpeakStone_GossipTexts = {
   ["Hmmm, I think you will need to go up to Thunder Bluff to learn that. Head north on the road out of Bloodhoof Village. It will take you to the base of Thunder Bluff. Ride the elevator to the top and you should be able to ask any of the Bluffwatchers there for further assistance."]=39,
   ["Yonn Deepcut can be found inside the great tent at the northwest corner of Bloodhoof Village."]=40,
 },
-[3216]={ -- Neeru Fireblade
+[3216]={ -- Arnak Fireblade
   ["Listen closely to what you are told and do not quickly trust, or distrust. For even friends serve their own ends, $c. Our great Warchief knows this, and to prove that there are warlocks within the Horde who do not wish to destroy it from within or gain control over it, I have volunteered to aid our young leader in anyway I can."]=1,
   ["Listen closely to what you are told and do not quickly trust, or distrust. For even friends serve their own ends, warlock. Our great Warchief knows this, and to prove that there are warlocks within the Horde who do not wish to destroy it from within or gain control over it, I have volunteered to aid our young leader in anyway I can."]=1,
   ["Ah, one of our own. It is good to see our numbers are growing so rapidly that I can no longer keep track of the faces of our members. That fool Thrall thinks I am working hard to cleanse the image of warlocks and prove we are his servants. Idiot! The Burning Legion will make ash of this entire world after it drains it completely."]=2,
   ["Naive fool. The Burning Blade IS the Shadow Council! There are many cults and organizations under the Council's rule, but all of them are just extensions of their will. I may lead the Burning Blade, but I am still just as much a pawn to the Council as you are to me! Look at the Searing Blade--most of them think they are becoming the next rising group of powerful warlocks that they will replace the Shadow Council."]=3,
   ["Haha! Save for their leaders--the satyr, Bazzalan, and the warlock Jergosh--yes, all of them. That is why I constantly send Thrall's worshippers at them. It gives Thrall the impression that I am weeding out the evil in the bowels of his great city. The victory is in reality two-fold: kill Thrall's faithful and test the strength of those in the Searing Blade to see if they are truly worthy of joining me."]=4,
+  ["I will make it known to you. You are obviously already proving yourself in our ranks to become a lieutenant so quickly. Perhaps you can return to me later and I will have tasks for you. The council adores those skilled in the arcane, but servants of all kinds are always welcome, no matter their profession."]=5,
   ["I will make it known to you. You are obviously already proving yourself in our ranks to become a lieutenant so quickly. Perhaps you can return to me later and I will have tasks for you. The council adores those skilled in the arcane. But servants of all kinds are always welcome, no matter their profession."]=5,
 },
 [3217]={ -- Brave Dawneagle
@@ -2419,11 +2421,10 @@ SpeakStone_GossipTexts = {
   ["Go to Kodohide Leatherworkers in The Drag. Ask for Kamari."]=65,
   ["Find Red Canyon Mining northeast of the lake in the Valley of Honor. Speak to Makaru there."]=66,
   ["Thuwd will show you how to skin your kills. Look for him at Kodohide Leatherworkers in The Drag."]=67,
-  ["Which one?"]=68,
-  ["Look for the wyvern's tail, just outside the hall of the brave."]=69,
+  ["Look for The Wyvern's Tail, just outside the Hall of the Brave."]=69,
   ["The Orgrimmar Auction House is in the Valley of Strength. Look for it on the East Side next to Boomstick Imports."]=70,
-  ["Just outside the city's main gate is a signpost. It will point you toward the Zeppelin Tower. Speak to Zeppelin Master Fredza at the top of the tower."]=71,
   ["Look for Sayok and Hanashi at the Valley of Honor, inside arms of legend. Watch your tongue around them, or Sayok may decide to give a piece of you as a snack to grinning dog."]=72,
+  ["Go to Kodohide Leatherworkers in The Drag. Ask for Karolek."]=74,
   ["Go to Kodahide Leatherworkers in the drag. Ask for Kamari."]=74,
   ["You want Zamja at Boston's fire pit on the upper level of the drag. Go up the stairs on the left as you enter the drag from the valley of strength."]=76,
 },
@@ -2552,6 +2553,7 @@ SpeakStone_GossipTexts = {
 },
 [3399]={ -- Zamja
   ["Can Zamja help you, $r?"]=1,
+  ["Can Zamja help you, traveler?"]=1,
   ["Wulan in Shadowprey Village can sell you the 'Expert Cookbook'. You will need that if you are to better yourself."]=2,
   ["Dirge Quikcleave of Gadgetzan is a master of the culinary arts. To better yourself you will need to seek him out."]=3,
 },
@@ -2598,6 +2600,7 @@ SpeakStone_GossipTexts = {
 },
 [3432]={ -- Mankrik
   ["I came to the Crossroads from the south seeking help, $c, but I find only cowards who turn their backs on me--even the mighty Thork insults me so. He is a good leader, but his dismissal of my plea causes me greater anger. He claims my rage makes me hasty--that it clouds my judgement--but I will not rest until I have vengeance!"]=1,
+  ["I came to the Crossroads from the south seeking help, hero, but I find only cowards who turn their backs on me--even the mighty Thork insults me so. He is a good leader, but his dismissal of my plea causes me greater anger. He claims my rage makes me hasty--that it clouds my judgement--but I will not rest until I have vengeance!"]=1,
   ["I thank you, adventurer. Your dedication to my plea gives rest to my lost wife's spirit, and for that I could never repay you enough. I cannot say that my hatred will ever cease for the quilboar, but it is satiated for now. Now I must begin to rebuild my life."]=2,
 },
 [3433]={ -- Tatternack Steelforge
@@ -2633,6 +2636,7 @@ SpeakStone_GossipTexts = {
 },
 [3518]={ -- Thomas Miller
   ["Just browsing my wares or is there something specific I can help you find today?"]=1,
+  ["Best deals in all of Stormwind my friend, won't find any better. Now, what can I help you with?"]=2,
   ["Best deals in all of Stormwind, my friend. Won't find any better. Now, what can I help you with?"]=2,
 },
 [3523]={ -- Bowen Brisboise
@@ -3159,6 +3163,7 @@ SpeakStone_GossipTexts = {
 [4565]={ -- Richard Kerwin
   ["It is wise that you humble yourself before me adventurer in your desire for more warlock knowledge."]=1,
   ["I have no time to waste on the likes of you $c."]=2,
+  ["It is wise that you humble yourself before me, adventurer, in your desire for more warlock knowledge."]=3,
 },
 [4567]={ -- Pierce Shackleton
   ["Greetings. I'm an undead mage trainer, and you're a mage."]=1,
@@ -3259,11 +3264,11 @@ SpeakStone_GossipTexts = {
 },
 [4730]={ -- Lelanai
   ["By the grace of Elune, I am pleased to offer you the finest steed found anywhere in Teldrassil, and perhaps the world - the nightsaber. For years, the Sentinel Army has relied on the value of these companions. Take your time friend and examine each one to your satisfaction. I am sure you will not be disappointed."]=1,
+  ["Alas $c, you are not considered to be exalted to Darnassus and the night elves of Teldrassil. Only when you prove yourself to us through deeds - not just mere words - will I then make available my selection of mounts for your perusal."]=2,
   ["Alas, druid, you are not considered to be exalted to Darnassus and the night elves of Tel Drassel, only when you prove yourself to us through deeds. Not just mere words, will I then make available my selection of mounts for your perusal?"]=2,
 },
 [4731]={ -- Zachariah Post
   ["I have little time to sit and have idle banter with you. If you desire one of my steeds, seek Velma over there, and she will teach you how to ride a skeletal steed. I would not have you harming one of my beautiful horses with your ignorance."]=1,
-  ["I have little time to sit and have idle banter with you. If you desire one of my steeds, seek Velma over there and she will teach you how to ride a skeletal steed. I would not have you harming one of my beautiful horses with your ignorance."]=2,
 },
 [4732]={ -- Randal Hunter
   ["I can teach you the finer points of Horse Riding, provided you have enough gold to cover the lesson!"]=1,
@@ -3273,6 +3278,7 @@ SpeakStone_GossipTexts = {
 },
 [4753]={ -- Jartsam
   ["I can teach you the finer points of Tiger Riding, provided you have enough gold to cover the lesson!"]=1,
+  ["You need to be exalted with the night elves of Darnassus before I will teach you a riding skill, $c."]=2,
   ["You need to be exalted with the night elves of Darnassus before I will teach you a riding skill, hero."]=2,
 },
 [4772]={ -- Ultham Ironhorn
@@ -3540,11 +3546,13 @@ SpeakStone_GossipTexts = {
   ["Shut inside this little house, I dream of joining the battles that rage outside the city walls. Still, duty compels me to share my knowledge with others who fight in my stead... for now."]=1,
   ["You are beyond my limited abilities. Seek out the night elf Ainethil in the Craftsmen's Terrace of Darnassus. She can teach you more. I only wish that I could go with you."]=2,
   ["My teachings would be too advanced for you at this stage. If you wish to learn more of potions, speak with Tel'Athir here instead."]=3,
+  ["Listen carefully, adventurer, for I have much knowledge to impart."]=4,
   ["Listen carefully adventurer, for I have much knowledge to impart."]=4,
 },
 [5500]={ -- Tel'Athir
   ["Ishnu-alah, brother. Have you any tidings from abroad? My heart yearns for news of Teldrassil."]=1,
   ["I am honored to share my knowledge with you, adventurer. See that you use it well."]=2,
+  ["You must choose a more experienced teacher, for you have surpassed my abilities. I advise you to speak with Lilyssia Nightbreeze here: she has much knowledge to offer."]=3,
   ["You must choose a more experienced teacher. For you have surpassed my abilities. I advise you to speak with Lalicia Knightbreeze here. She has much knowledge to offer."]=3,
 },
 [5501]={ -- Kaerbrus
@@ -3560,15 +3568,18 @@ SpeakStone_GossipTexts = {
 [5504]={ -- Sheldras Moontree
   ["Even within cold, stone walls such as the ones that shelter this town, one may find tranquility and peace. In fact, you may find them everywhere you are... simply look inside yourself for such balance."]=1,
   ["Welcome, my brother. If you are here to train, then I would be delighted to train you. There will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there and then that your ultimate training will take place."]=2,
+  ["Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you. There will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there and then that your ultimate training will take place."]=3,
   ["Welcome my brother, if you are here to train, then I would be delighted to train you. There will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there and then that your ultimate training will take place."]=3,
 },
 [5505]={ -- Theridran
   ["Even within cold, stone walls such as the ones that shelter this town, one may find tranquility and peace. In fact, you may find them everywhere you are... simply look inside yourself for such balance."]=1,
   ["Welcome, my brother. If you are here to train, then I would be delighted to train you. There will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there and then that your ultimate training will take place."]=2,
+  ["Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you. There will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there and then that your ultimate training will take place."]=3,
 },
 [5506]={ -- Maldryn
   ["Even within cold, stone walls such as the ones that shelter this town, one may find tranquility and peace. In fact, you may find them everywhere you are... simply look inside yourself for such balance."]=1,
   ["Welcome, my brother. If you are here to train, then I would be delighted to train you. There will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there and then that your ultimate training will take place."]=2,
+  ["Welcome, my $g brother : sister;. If you are here to train, then I would be delighted to train you. There will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there and then that your ultimate training will take place."]=3,
   ["Welcome, my brother. If you are here to train, then I would be delighted to train you. There will be a time soon where the call of the Emerald Dream will take hold in you. You will hibernate for many years and walk amongst the purest of forms. It is there, and then that your ultimate training will take place."]=3,
 },
 [5511]={ -- Therum Deepforge
@@ -3671,8 +3682,11 @@ SpeakStone_GossipTexts = {
   ["Fimble Finespindle has a shop set up on the northwest side of The Great Forge. I wager he could show ye how to make some fine armor."]=62,
   ["Do we have Mining trainers here? Where do ye think ye are!? Why you'll find one o' the best miners in all Dun Morogh at the Deepmountain Mining Guild on the northern side of The Great Forge. There, Geofram Bouldertoe will show ye the true art of mining."]=63,
   ["Balthus Stoneflayer is the one to see about Skinning. If it can be skinned, he can teach ye how. Just walk yerself over to Finespindle's Leather Goods on the northern side of The Great Forge."]=64,
+  ["Looking to take a ride on a gryphon, now are ye? Gryth Thurden is the one ye'll want to be seeing about that. Ye can find him on the eastern side of The Great Forge in the middle of Ironforge."]=65,
   ["Looking to take a ride on a Greyfon. Now are ye Gryth Thurden is the one you'll want to be seeing about that. You can find him on the eastern side of the Great Forge in the middle of Ironforge."]=65,
+  ["Oh, you're looking for Springspindle Fizzlegear then. Why that little gnome and his gadgets... Let me tell you, if you're going to his shop in Tinker Town, keep your hands to yourself and don't pet any of his mechanical sheep! Exploding sheep... now why would you even make such a thing!?"]=66,
   ["Oh, you're looking for spring spindle fizzlegear then. Why that little gnome in his gadgets. Let me tell you, if you're going to his shop in Tinkertown, keep your hands to yourself and don't pay any of his mechanical sheep. Exploding sheep. Now, why would you even make such a thing?"]=66,
+  ["Well well! You've come to the right place to learn Mining, $gboyo : girlie;! Geofram Bouldertoe himself resides at Deepmountain Mining and Jewelcrafting. Ye couldn't ask for a better instructor than him."]=67,
   ["Well, well, you've come to the right place to learn mining. Boyo! Geofram bolder toe himself resides at the deep mountain mining guild. Yi couldn't ask for a better instructor than him."]=67,
 },
 [5612]={ -- Gimrizz Shadowcog
@@ -3876,7 +3890,6 @@ SpeakStone_GossipTexts = {
 [5943]={ -- Rawrk
   ["Only the renowned Doctor Gregory Victor can improve your skill now. He can be found in Arathi Highlands at Hammerfall."]=1,
   ["Balai Lok'Wein of Brackenwall Village in Dustwallow Marsh sells a manual that you will need to study in order to improve your skills!"]=2,
-  ["I can train you in first aid techniques."]=3,
 },
 [5953]={ -- Razor Hill Grunt
   ["Yeah, I need to drop off some things myself. Find it by heading north up the road to Orgrimmar and then ask one of the grunts there."]=1,
@@ -5699,7 +5712,6 @@ SpeakStone_GossipTexts = {
 [11046]={ -- Whuut
   ["All the bottles on this table are potions I brewed today. And they say a watched pot never boils. Ha!"]=1,
   ["They called me stupid, but I'll show them. I'm going to watch every pot I have and prove that they can all boil stuff anyway. Yeah, I'm on a roll! Who's stupid now, huh? Huh!?"]=2,
-  ["Why should I pace myself if this is working?"]=3,
 },
 [11047]={ -- Kray
   ["I must have broken hundreds of vials when I first began brewing potions. The glass was so fragile in my clumsy hands. I hope you are more cautious than I was."]=2,
@@ -5787,7 +5799,7 @@ SpeakStone_GossipTexts = {
   ["What brings you to the Tower?"]=1,
   ["You have nearly reached the pinnacle of your training. To become the greatest enchanter you can possibly be, you have one more instructor to seek out. Her name is Annora, and you may find her in Uldaman."]=2,
   ["You are eager, that is good. However, you are not yet ready to train with the likes of me."]=3,
-  ["Your skills are truly becoming extraordinary. Now, let us continue your training..."]=4,
+  ["Your skills are truly becoming extraordinary. Now, let us continue your training..."]=5,
   ["Your skills are truly becoming extraordinary. Now let us continue your training."]=5,
 },
 [11074]={ -- Hgarth
@@ -6620,7 +6632,8 @@ SpeakStone_GossipTexts = {
   ["With some of the technology that was recovered by bold gnomes venturing into Gnomeregan, I have managed to construct my greatest invention: The Matter Transporter! All I need now is a skilled Gnomish Engineer to build a powerful beacon attuned to the transporter."]=1,
   ["If you figure out any way to improve the device let me know!"]=2,
 },
-[14753]={
+[14753]={ -- Illiyana Moonblaze
+  ["May the blessings of the night be yours, friend! I am Illiyana Moonblaze, and I am the main supplier for the Silverwing Sentinels here in Ashenvale. As you improve your standing with the Sentinels, I will make available to you a fine selection of goods that you can use inside Warsong Gulch. Should you find yourself in need of item repair, I also provide those services."]=1,
   ["May the blessings of the night be yours, friend. I am Iliana Moonblaze, and I am the main supplier for the Silverwing Sentinels here in Oceanvale. As you improve your standing with the Sentinels, I will make available to you a fine selection of goods that you can use inside Warsong Gulch. Should you find yourself in need of item repair, I also provide those services."]=1,
 },
 [14842]={ -- Melnan Darkstone
@@ -7342,6 +7355,7 @@ SpeakStone_GossipTexts = {
 [251904]={ -- Sania Silverstream
   ["Greetings, $c. Do you come seeking the blessings of the Windlord?"]=1,
   ["Greetings, rogue. Do you come seeking the blessings of the Windlord?"]=1,
+  ["Greetings, hero. Do you come seeking the blessings of the Windlord?"]=1,
 },
 [251905]={ -- Zerril Softbreeze
   ["If you need training as a cook, I have a few tips and tricks I could pass on! Ho ho! Throw on an apron and let's get started!"]=1,
@@ -7349,7 +7363,6 @@ SpeakStone_GossipTexts = {
 },
 [251906]={ -- Teeri Wellwind
   ["Unless you are here on business pertaining to V.L.O., I'm afraid I won't have a lot of time for chatter. If you want to pitch in and help out around town, I'll certainly put you to work though. Oh, what does V.L.O. stand for? Village Live Operations, of course. Even frontier towns like these don't manage themselves. Between major incidents, unplanned wind power outages, and bug infestations, keeping this place moving forward is no joke."]=1,
-  ["I'm in charge of Schendar village operations and there's a lot of things to keep track of around here between bandits, cultists and other random incidents that pop up, keeping this village afloat is a lot of work."]=2,
 },
 [251913]={ -- Aedi Thriceforged
   ["I can teach you to swing a blacksmith's hammer, if you are willing to learn."]=1,
@@ -7364,6 +7377,7 @@ SpeakStone_GossipTexts = {
   ["Greetings, I am Ayessa Dawnsinger, the current Grand Skyseer of the Windshapers. What may I do for you?"]=3,
   ["If the High Order gave any mind at all to actually solving the problems we face and spent less time obsessing over the old magic, we'd be in a far better position as a people. It was Highborne magic that brought about the ruin of the kaldorei to begin with. Those self-absorbed fools seek to repeat those mistakes! The fact that they attempted to make peace with the cult is bad enough, but spilling Windshaper blood is what is truly unforgivable. Were it not for the imminent threat of the cult, I'd gather up our forces and go put an end to Elaadrin and the High Order once and for all."]=4,
   ["Hmm, I see. Very well then, $c. The Windshapers will provide aid. Please inform Valennia that she can count on us for this fight."]=5,
+  ["Hmm, I see. Very well then, hero. The Windshapers will provide aid. Please inform Valennia that she can count on us for this fight."]=5,
 },
 [251991]={ -- Taleen Shimmerthread
   ["The clothcraft of the Shen'dorei is a harmonious imitation of the flowing, carefree currents of the winds. While the spirits have left us, and I know not when I may see them dance once more... I find great comfort in my art, if only as a distraction. I can teach you to work the cloth as well, if you'd like to learn?"]=1,
@@ -7788,9 +7802,6 @@ SpeakStone_GossipTexts = {
 [267354]={ -- Black Skeletal Horse
   ["<It snaps its teeth together, chomping at its bit.>"]=1,
 },
-[268511]={
-  ["Harbor work is open to everyone, but your personal safety is your own responsibility."]=1,
-},
 [268568]={ -- Roy Lewells
   ["Literacy should be celebrated and shared."]=1,
 },
@@ -7894,12 +7905,7 @@ SpeakStone_GossipTranscribed = {
   ["Which profession trainer are you looking for?"]=56,
   ["A tailor, is it? Well, if you hang out here long enough, you'll eventually hear word of mouth about Georgio Bolero. He's been setting the trends for some months now. If you wish to learn from him, you can find him over in the mage quarter in the outer rim."]=79,
   ["There's a great cook who works at the Pig and Whistle Tavern in Old Town. I've watched him use a knife when he cooks. And just between you and me, I don't think he's always been a cook. Don't get me wrong if you still want to learn. He's the best we have."]=80,
-  ["The sharpest shears and most delicate hands are found at curls and furls here in the trade district. Take a gander if you have some spare time and are interested in taking a little off the top."]=81,
-  ["It is located in the trade district citizen. It is nearly straight on from the entrance of Stormwind."]=82,
   ["What do you need directions to?"]=83,
-},
-[268]={
-  ["Greetings, warlock. I have but one goal, the cataloging and recording of all knowledge related to the history of Duskwood and Dokshur. Perhaps you could help me in my endeavor?"]=1,
 },
 [277]={
   ["Best deals in all of Stormwind, my friend, won't find any better. Now, what can I help you with?"]=3,
@@ -7939,7 +7945,6 @@ SpeakStone_GossipTranscribed = {
   ["Welcome to Felsomar, your home away from home in Lokmodan. Felsomar is a nice place, but it's not all beer and salted meat for those who answer the call to duty. If you're willing to face danger in the name of the Alliance, then read the poster outside the Felsomar branch of the Explorer's League."]=2,
 },
 [1346]={
-  ["You'll need more training before I can share my knowledge with you. I'm afraid."]=4,
   ["Yes, I've been running this shop for some time now. Business has been pretty good lately. A lot of new adventurers coming through."]=5,
 },
 [1347]={
@@ -7981,9 +7986,6 @@ SpeakStone_GossipTranscribed = {
 [1976]={
   ["Another entrepreneur, eh? Well, the auction house can be found in the trade district, not far from the bank."]=5,
 },
-[2198]={
-  ["Your legacy precedes you, hero. If you wish, I can allow you to rewrite that legacy into something new."]=2,
-},
 [2209]={
   ["What are you looking for?"]=22,
 },
@@ -7991,7 +7993,7 @@ SpeakStone_GossipTranscribed = {
   ["No one's ever stolen anything out of here, not in the whole history of the whole history."]=2,
 },
 [2485]={
-  ["As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."]=3,
+  ["As a mage, you are one of a select group that can conjure a portal to transport you back to this very place. I can teach you if you are ready."]=4,
 },
 [2798]={
   ["I can train you in first aid techniques."]=3,
@@ -8034,7 +8036,6 @@ SpeakStone_GossipTranscribed = {
   ["Seek out Turak Runitor 10 in the Hall of Elders on the Elder Rise."]=62,
   ["There is no finer cook in Thunder Bluff than Ask a Mistrana. Mm-mm, I can smell what she is cooking from here. Head over to her kitchen located on the high rise. Drat, now I am hungry."]=64,
   ["Don't blame you for taking up fishing. Mulgore has some of the best fishing spots in southern Kalimdor, and mountaintop bait and tackle on the high rise has all of the gear you'll need to take advantage of it. Tell car, Mistrunner, that I sent you."]=65,
-  ["Look on the lower rise opposite the auctioneers, if you would like to get your main trimmed."]=66,
 },
 [3136]={
   ["Ever since the shadows claimed dusk would, I haven't been able to sleep. I am kept awake by the ghostly sounds of screaming on the breeze. It sounds almost like lambs screaming and they won't stop."]=2,
@@ -8047,13 +8048,9 @@ SpeakStone_GossipTranscribed = {
   ["What are you looking for?"]=20,
 },
 [3296]={
-  ["What are you looking for?"]=1,
   ["Which trainer do you seek?"]=45,
   ["Which profession?"]=46,
-  ["Which one?"]=68,
-  ["Look for the wyvern's tail, just outside the hall of the brave."]=69,
   ["The Orgrimmar Auction House is in the Valley of Strength. Look for it on the East Side next to Boomstick Imports."]=70,
-  ["Just outside the city's main gate is a signpost. It will point you toward the Zeppelin Tower. Speak to Zeppelin Master Fredza at the top of the tower."]=71,
   ["Look for Sayok and Hanashi at the Valley of Honor, inside arms of legend. Watch your tongue around them, or Sayok may decide to give a piece of you as a snack to grinning dog."]=72,
   ["Go to Kodahide Leatherworkers in the drag. Ask for Kamari."]=74,
   ["You want Zamja at Boston's fire pit on the upper level of the drag. Go up the stairs on the left as you enter the drag from the valley of strength."]=76,
@@ -8098,6 +8095,8 @@ SpeakStone_GossipTranscribed = {
   ["Greetings, young rogue. What do you seek?"]=3,
 },
 [3596]={
+  ["Welcome to the Cenarion Circle, $c."]=1,
+  ["I cannot train a $c such as yourself."]=2,
   ["I cannot train a rogue such as yourself."]=3,
 },
 [3690]={
@@ -8134,9 +8133,6 @@ SpeakStone_GossipTranscribed = {
 [4730]={
   ["Alas, druid, you are not considered to be exalted to Darnassus and the night elves of Tel Drassel, only when you prove yourself to us through deeds. Not just mere words, will I then make available my selection of mounts for your perusal?"]=2,
 },
-[4731]={
-  ["I have little time to sit and have idle banter with you. If you desire one of my steeds, seek Velma over there and she will teach you how to ride a skeletal steed. I would not have you harming one of my beautiful horses with your ignorance."]=2,
-},
 [4753]={
   ["You need to be exalted with the night elves of Darnassus before I will teach you a riding skill, hero."]=2,
 },
@@ -8154,6 +8150,10 @@ SpeakStone_GossipTranscribed = {
   ["The things I would teach you would turn your brain to jelly, come back when you've learned sufficiently."]=4,
 },
 [5499]={
+  ["Shut inside this little house, I dream of joining the battles that rage outside the city walls. Still, duty compels me to share my knowledge with others who fight in my stead... for now."]=1,
+  ["You are beyond my limited abilities. Seek out the night elf Ainethil in the Craftsmen's Terrace of Darnassus. She can teach you more. I only wish that I could go with you."]=2,
+  ["My teachings would be too advanced for you at this stage. If you wish to learn more of potions, speak with Tel'Athir here instead."]=3,
+  ["Listen carefully, adventurer, for I have much knowledge to impart."]=4,
   ["Listen carefully adventurer, for I have much knowledge to impart."]=4,
 },
 [5500]={
@@ -8189,9 +8189,6 @@ SpeakStone_GossipTranscribed = {
 [5941]={
   ["I can teach you fishing skills."]=3,
 },
-[5943]={
-  ["I can train you in first aid techniques."]=3,
-},
 [5953]={
   ["What are you looking for?"]=24,
 },
@@ -8208,6 +8205,51 @@ SpeakStone_GossipTranscribed = {
   ["The entrance to Wellgar's excavation site can be found in the southern valley of the wetlands. A cave along the western mountain ridge marks the passage."]=45,
   ["Situated along the Zorum Strand of Ashenvale, Black Fathom Deeps was once a glorious temple dedicated to the Night Elves Moon Goddess Elune. However, the great sundering shattered the temple, sinking it beneath the waves of the veiled sea. There it remained untouched, until drawn by its ancient power, the naga and satyr emerged to plumb its secrets. Legends hold that the ancient Beast Akumai has taken up residence within the temple's ruins."]=46,
 },
+[7736]={
+  ["Your body looks worn and your spirit weary. Rest yourself beneath our roof and allow Elune to guide your dreams."]=1,
+  ["Are you interested in exploring one of these dungeons?"]=2,
+  ["No, I'm not, but lots of others are looking for love. You should buy my love tokens, put on some cologne or perfume, and then pass them around!"]=3,
+  ["Ragefire Chasm can be found beneath the Shadow Cleft in the center of Orgrimmar."]=4,
+  ["The Deadmines can be found beneath Moonbrook in the south of Westfall."]=5,
+  ["The Wailing Caverns has its entrance at the Lushwater Oasis southwest of Crossroads in the Barrens."]=6,
+  ["Shadowfang Keep is in southern Silverpine just north of Pyrewood Village."]=7,
+  ["Blackfathom Deeps can be found at the north end of Zoram Strand along the coast of Ashenvale."]=8,
+  ["The Stormwind Stockades are found near the mage quarter in Stormwind."]=9,
+  ["Razorfen Kraul can be found on the very southern tip of the Barrens on the west side of the road."]=10,
+  ["Gnomeregan can be found in western Dun Morogh."]=11,
+  ["Scarlet Monastery lies in the hills northeast of Tirisfal Glades."]=12,
+  ["Razorfen Downs can be found on the very southern tip of the Barrens on the east side of the road."]=13,
+  ["Maraudon is located in the middle of the western coast of Desolace, in the Valley of Spears."]=14,
+  ["Uldaman can be found at the very northern end of the Badlands."]=15,
+  ["The ruins of Zul'Farrak are located in the northwestern corner of the Tanaris Desert."]=16,
+  ["Blackrock Mountain lies between Searing Gorge in the north and Burning Steppes in the south."]=17,
+  ["The Sunken Temple can be found in the center of a great lake in eastern Swamp of Sorrows."]=18,
+  ["The ruins of Dire Maul stand in central Ferelas."]=19,
+  ["The ruined city of Stratholme lies in the Eastern Plaguelands to the north of the Plaguewood."]=20,
+  ["The School for Necromancy known as Scholomance is on the ruined island of Caer Darrow in the Western Plaguelands."]=21,
+  ["If you put on cologne or perfume, then you'll see who is amorous. Those are the ones who accept love tokens... and offer a gift in return. But remember: to give someone a love token, you have to smell just right! Men like the scent of perfume, while women prefer cologne."]=22,
+  ["Love tokens are small messages of affection you can give to amorous town and city folk. Such people will reward you with a gift of adoration. Or, if you are already adored by another, then at the least they'll give you a gift of friendship."]=23,
+  ["When you give love tokens to townsfolk, you'll receive different gifts in return. Some of those you'll want to keep and use, but others can be bundled together and given to your favorite hero! Visit Kwee Q. Peddlefeet to turn them in. Kwee can be found near Bolvar, Magni, or Tyrande."]=24,
+  ["When you give love tokens to townsfolk, you'll receive different gifts in return. Some of those you'll want to keep and use, but others can be bundled together and given to your favorite hero! Visit Kwee Q. Peddlefeet to turn them in. Kwee can be found near Cairne, Sylvanas and Thrall."]=25,
+  ["Ragefire Chasm consists of a network of volcanic caverns below the orcs' new capital city of Orgrimmar. Recently, rumors have spread that a cult loyal to the demonic Shadow Council has taken up residence within the Chasm's fiery depths. This cult, known as the Burning Blade, threatens the very sovereignty of Durotar. Many believe that the orc Warchief Thrall is aware of the Blade's existence and has chosen not to destroy it in the hopes that its members might lead him straight to the Shadow Council."]=26,
+  ["Once the greatest gold production center in the human lands, the Dead Mines are now inhabited by the Defias Brotherhood, who have turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook."]=27,
+  ["Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Believing he could use the caverns' springs to restore lushness to the Barrens, the druid began siphoning the energies of the fabled Emerald Dream. His vision somehow became a nightmare, however, and soon the Wailing Caverns changed into a den of vicious, deadly predators. It is said that Naralex still resides somewhere inside the labyrinth, trapped beyond the edges of the Emerald Dream."]=28,
+  ["Frustrated by the Dalaran wizards' lack of progress against the undead during the Third War, the Archmage Arugal elected to summon the extra-dimensional worgen to bolster his side's diminishing ranks. The wolf-men slaughtered the Scourge, then quickly turned on the wizards themselves and laid siege to the keep of the noble, Baron Silverlaine. The fort quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'."]=29,
+  ["Situated along the Zoram Strand of Ashenvale, Blackfathom Deeps was once a glorious temple dedicated to the night elves' moon-goddess Elune. However, the great Sundering shattered the temple - sinking it beneath the waves of the Veiled Sea. There it remained untouched - until, drawn by its ancient power - the naga and satyr emerged to plumb its secrets. Legends hold that the ancient beast, Aku'mai, has taken up residence within the temple's ruins."]=30,
+  ["The Stockades are a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockades are home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the Stockades - where the guards have been driven out and the convicts roam free."]=31,
+  ["During the War of the Ancients, the demigod Agamaggan came forth to battle the Burning Legion. The colossal boar was defeated, and over time in the areas where his blood fell, massive thorn-ridden vines sprouted to life. The quilboar came to occupy these regions and hold them sacred. The heart of these massive thorn-colonies is the Razorfen. Razorfen Kraul was conquered by the crone, Charlga Razorflank, who some speculate has been negotiating with agents of the Scourge for some insidious purpose."]=32,
+  ["Located in Dun Morogh, Gnomeregan has been the gnomes' capital city for generations, though it was recently infested by mutant troggs. In a desperate attempt to retaliate, High Tinker Mekkatorque ordered the emergency venting of the city's radioactive waste tanks. Though the troggs became irradiated, their siege continued unabated and the gnomes were forced to seek refuge in the dwarven city of Ironforge, where the High Tinker now enlists brave souls to help his people reclaim their beloved city."]=33,
+  ["The monastery was once a center for learning and enlightenment. With the rise of the undead Scourge during the Third War, the peaceful Monastery was converted into a stronghold of the fanatical Scarlet Crusade. The Crusaders are intolerant of all non-human races, regardless of alliance or affiliation. They believe that any and all outsiders are potential carriers of the undead plague - and must be destroyed."]=34,
+  ["Crafted from the same vines as Razorfen Kraul, Razorfen Downs is the traditional capital city of the quilboar race. The sprawling, thorn-ridden labyrinth houses a veritable army of loyal quilboar as well as their high priests - the Death's Head tribe. Recently, however, a looming shadow has fallen over the crude den. Agents of the undead Scourge - led by the lich, Amnennar the Coldbringer - have taken control over the quilboar race and turned the maze of thorns into a bastion of undead might."]=35,
+  ["Maraudon is one of the most sacred sites within Desolace. The great temple/cavern is the burial place of Zaetar, one of two immortal sons born to the demigod, Cenarius. Legend holds that Zaetar and the earth elemental princess, Theradras, sired the misbegotten centaur race. It is said that upon their emergence, the barbaric centaur turned on their father and killed him. Some believe that Theradras, in her grief, trapped Zaetar's spirit within the winding cavern - used its energies for some malign purpose."]=36,
+  ["Uldaman is an ancient Titan vault that has laid buried within the earth since the world's creation. Dwarven excavations of the city have recently released the Titans' first failed creations: the troggs. Legends say that when the Titans deemed the trogg experiment a failure they tried again, resulting in the creation of the dwarven race. These secrets are recorded on the fabled Discs of Norgannon - massive artifacts that lie at the bottom of the ancient city, protected by giant constructs of living stone."]=37,
+  ["This sun-blasted city is home to the Sandfury trolls, known for their particular ruthlessness and dark mysticism. Troll legends tell of a powerful sword called Sul'thraze the Lasher, a weapon capable of instilling fear and weakness in even the most formidable of foes. Long ago, the weapon was split in half. However, rumors have circulated that the two halves may be found somewhere within Zul'Farrak's walls."]=38,
+  ["Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory."]=39,
+  ["Over a thousand years ago a group of troll priests known as the Atal'ai attempted to bring back an ancient blood god named Hakkar the Soulflayer. After the resulting civil war the priests were defeated and exiled to the Swamp of Sorrows. There they erected a temple to Hakkar to prepare for his arrival into the physical world. The dragon Aspect Ysera soon learned of the Atal'ai's plans and smashed the temple beneath the marshes. To this day, the temple's ruins are guarded by the mighty green dragons."]=40,
+  ["The mighty fortress carved within the fiery bowels of Blackrock Mountain was held by the sinister Dark Iron dwarves for centuries until Nefarian - the cunning son of the dragon, Deathwing - took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself."]=41,
+  ["Built twelve thousand years ago by a covert sect of night elf sorcerers, the ancient city of Eldre'Thalas was used to protect Queen Azshara's most prized arcane secrets. Though it was ravaged by the Great Sundering of the world, much of the wondrous city still stands as the imposing Dire Maul. The ruins' three distinct districts have been overrun by all manner of creatures - especially the spectral highborne, foul satyr and brutish ogres."]=42,
+  ["Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the plague of undeath. Arthas' surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge - led by the powerful lich, Kel'Thuzad, and a contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan. The two sides are locked in constant, violent combat."]=43,
+},
 [7944]={
   ["I am Tink Master Overspark, and I am the Chief Architect for Modern No-Mish Engineering Principles in the world today. It is my job to ensure that the power of invention continues to shine brightest from our arklight spanners than anywhere else. Also, if you happen to know a good schematic for radiation elimination, we just so happen to be in the market for one right about now!"]=3,
 },
@@ -8219,6 +8261,10 @@ SpeakStone_GossipTranscribed = {
   ["The old assembly of Thanes is a chamber below the great city of Ironforge, the ancestral home of the Bronzebeard Clan. Its depths plunge to the deepest parts of the heart of Cosmodon, and rumour has it immense geodes crown the chamber."]=45,
   ["The Old Kingdom of Lord Eren is perilous. We urge caution for anyone who dares to venture into the now decaying lands of Tyrosville Glades. If you must, find the undercity, the upper courtyards are what you seek."]=46,
   ["Our ancient lands are in the northeast of the eastern kingdom, named after Lord in Himself. It was once a proud and powerful kingdom. Its history is rich and offers many lessons to upstart nobles and kings. One of its defining moments was assisting in the foundation of the alliance that we know today. Unfortunately, its history is also dark and its current inhabitants defile its lands day by day. There is still much of significance in the ruins that now rest above the undercity, but it is folly to attempt that journey and expect to return still among the living."]=47,
+},
+[10300]={
+  ["Hi! I just got back from exploring the Ruins of Kel'Theril, to the southwest. Now I'm intent on investigating the Wildkin that lie just up the ridge here, in Owl Wing Thicket. Have you spoken to Erelas Ambersky in Rut'theran Village? He requested that I come here, and perhaps he has a task for you as well."]=1,
+  ["Thanks again, adventurer! I'm very pleased with what we found. Good luck to you!"]=2,
 },
 [10378]={
   ["Many are the paths of the Earth Mother. Wherever you decide to travel, may she watch over you."]=2,
@@ -8239,9 +8285,6 @@ SpeakStone_GossipTranscribed = {
 [11044]={
   ["Very well, cut another lump of flesh from one of these specimens. Let us test what you've learned so far, and we can progress from there."]=3,
   ["Once it is true, I was human. What might otherwise be a shortcoming works to our advantage adventurer? For I know human weaknesses intimately."]=4,
-},
-[11046]={
-  ["Why should I pace myself if this is working?"]=3,
 },
 [11047]={
   ["I must have broken hundreds of vials when I first began brewing potions. The glass was so fragile in my clumsy hands. I hope you are more cautious than I was."]=2,
@@ -8271,14 +8314,19 @@ SpeakStone_GossipTranscribed = {
 [11800]={
   ["In the northern part of Darkshore runs the Cliff Spring River, flowing down from the lands now known as Felwood. As the river flows out and empties out into the mist's edge, travel north to where the deepest parts of the ocean begin, a stone formation that some call the stone claw due to its shape is where you may find what you seek. Be warned, threshers gather by the stone claw and will attack those who trespass on their territory."]=5,
 },
+[14358]={
+  ["Leave this place, stranger, lest it consume you as it has all that it has touched."]=1,
+  ["Do you know of the Highborne? The Shen'dralar?"]=2,
+  ["The Shen'dralar were Queen Azshara's most revered arcanists. It was within these very walls that the Queen's most important demands were processed - often in secret. After the destruction of the Well and the subsequent lethargy that overcame the Highborne and lesser night elf sects, the Prince of Eldre'Thalas, Tortheldrin, began construction of the pylons that you see littering the halls of the west wing."]=3,
+  ["The Prince plotted to imprison a demon of immense power behind a grand force field. The pylons would channel latent energies into the field, keeping it operational. While imprisoned, Immol'thar would serve as a battery to the populace of Eldre'Thalas."]=4,
+  ["The siphoned energies would sustain the Highborne's magic, allowing those within the walls of Eldre'Thalas to feed their endless and growing magical pangs. Thousands of years passed and the power required to keep Immol'thar imprisoned while sustaining life within Eldre'Thalas, began to shift. The cost to keep Immol'thar bound grew to overshadow the rate at which energy could be siphoned and distributed. The once net gain turned to loss."]=5,
+  ["The Highborne ghosts that you see wandering through the courtyard and halls of Eldre'Thalas were slain, not by invading Gordok ogres or satyrs, but by the Prince himself!"]=6,
+},
 [14753]={
   ["May the blessings of the night be yours, friend. I am Iliana Moonblaze, and I am the main supplier for the Silverwing Sentinels here in Oceanvale. As you improve your standing with the Sentinels, I will make available to you a fine selection of goods that you can use inside Warsong Gulch. Should you find yourself in need of item repair, I also provide those services."]=1,
 },
 [14981]={
   ["Hail to the adventurer. Do you wish me to aid you in your journey to Warsaw on Gulch?"]=2,
-},
-[251906]={
-  ["I'm in charge of Schendar village operations and there's a lot of things to keep track of around here between bandits, cultists and other random incidents that pop up, keeping this village afloat is a lot of work."]=2,
 },
 [251964]={
   ["The warrior who flinches is the warrior who dies. If you would look death in the face as a warrior, I will teach you how not to flinch."]=1,
@@ -8302,9 +8350,6 @@ SpeakStone_GossipTranscribed = {
 },
 [263643]={
   ["I am sorry, hero, but you are not experienced enough yet to enter Dark Spear Islands."]=1,
-},
-[268511]={
-  ["Harbor work is open to everyone, but your personal safety is your own responsibility."]=1,
 },
 [272450]={
   ["My darlings. My darlings."]=1,
