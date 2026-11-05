@@ -1525,8 +1525,8 @@ SpeakStone_GossipTexts = {
 },
 [2786]={ -- Gerrig Bonegrip
   ["Welcome to Bonegrip's Runes and Dooms, rogue. You may look, but do not touch. Some of the knowledge here is not meant for the...uninitiated."]=1,
-  ["Welcome to Bonegrip's Runes and Dooms, $c. You may look, but do not touch. Some of the knowledge here is not meant for the...uninitiated."]=1,
   ["Welcome to Bonegrip's Runes and Dooms, hero. You may look, but do not touch. Some of the knowledge here is not meant for the...uninitiated."]=1,
+  ["Welcome to Bonegrip's Runes and Dooms, $c. You may look, but do not touch. Some of the knowledge here is not meant for the...uninitiated."]=1,
 },
 [2788]={ -- Apprentice Kryten
   ["Hello, adventurer. Welcome to Refuge Pointe."]=1,
@@ -1990,7 +1990,7 @@ SpeakStone_GossipTexts = {
   ["Hmmm, I think you will need to go up to Thunder Bluff to learn that. Head north on the road out of Bloodhoof Village. It will take you to the base of Thunder Bluff. Ride the elevator to the top and you should be able to ask any of the Bluffwatchers there for further assistance."]=39,
   ["Yonn Deepcut can be found inside the great tent at the northwest corner of Bloodhoof Village."]=40,
 },
-[3216]={ -- Arnak Fireblade
+[3216]={ -- Neeru Fireblade
   ["Listen closely to what you are told and do not quickly trust, or distrust. For even friends serve their own ends, $c. Our great Warchief knows this, and to prove that there are warlocks within the Horde who do not wish to destroy it from within or gain control over it, I have volunteered to aid our young leader in anyway I can."]=1,
   ["Listen closely to what you are told and do not quickly trust, or distrust. For even friends serve their own ends, warlock. Our great Warchief knows this, and to prove that there are warlocks within the Horde who do not wish to destroy it from within or gain control over it, I have volunteered to aid our young leader in anyway I can."]=1,
   ["Ah, one of our own. It is good to see our numbers are growing so rapidly that I can no longer keep track of the faces of our members. That fool Thrall thinks I am working hard to cleanse the image of warlocks and prove we are his servants. Idiot! The Burning Legion will make ash of this entire world after it drains it completely."]=2,
@@ -2658,7 +2658,7 @@ SpeakStone_GossipTexts = {
   ["Your interruption is costing me valuable time, this had better be good."]=1,
   ["Ah yes, another who will stoke the fires and forge the weapons of war. Of course I will teach you how."]=2,
 },
-[3571]={ -- Dolanaar Sentinel
+[3571]={ -- Teldrassil Sentinel
   ["If a bank is what you desire, then your travels take you to the heart of Darnassus. There you will find storage for your treasures."]=2,
   ["If you require time to rest and regain your strength, you will find the best at the Inn in Dolanaar. Innkeeper Keldamyr will see to it that you are taken care of."]=4,
   ["You seek someone who cares for animals? Then you should look for Seriadne outside the Inn in Dolanaar. She is the one that you seek."]=5,
@@ -5490,8 +5490,8 @@ SpeakStone_GossipTexts = {
   ["You've started down an honorable path, adventurer. My ancestors respect your willingness, but you will not have my approval until you have followed through with my tasks. You know what you must do if you wish to prove yourself a hunter in spirit."]=2,
 },
 [9981]={ -- Sikwa
-  ["Greetings, druid. I can assist you in recovering lost companions."]=1,
   ["Greetings, $c. I can assist you in recovering lost companions."]=1,
+  ["Greetings, druid. I can assist you in recovering lost companions."]=1,
 },
 [10043]={ -- Ribbly's Crony
   ["Don't bother me while I'm partying..."]=1,
@@ -5575,6 +5575,7 @@ SpeakStone_GossipTexts = {
   ["Many are the paths of the Earth Mother. Wherever you decide to travel, may she watch over you."]=2,
   ["Though the Crossroads seems to be the center of activity in The Barrens, I prefer the quietude of Camp Taurajo. Where shall I send you?"]=3,
   ["Where can I send you today $c?"]=4,
+  ["Where can I send you today hero?"]=4,
   ["Though the crossroad seems to be the center of activity in the barons, I prefer the quietude of Camp Torayo. Where shall I send you?"]=5,
 },
 [10433]={ -- Marduk Blackpool
@@ -6148,8 +6149,8 @@ SpeakStone_GossipTexts = {
 [11833]={ -- Rahauro
   ["Well met, $c. You may speak to me unless you have direct business with my mistress Magatha.$B$BI deal with most of her tasks for her so she can concentrate on more important matters. Perhaps there are some things we could discuss before you seek audience with her?"]=1,
   ["Well met, warlock. You may speak to me unless you have direct business with my mistress Magatha. I deal with most of her tasks for her so she can concentrate on more important matters. Perhaps there are some things we could discuss before you seek audience with her?"]=1,
-  ["Well met, $c. You may speak to me unless you have direct business with my mistress Magatha. I deal with most of her tasks for her so she can concentrate on more important matters. Perhaps there are some things we could discuss before you seek audience with her?"]=1,
   ["Well met, hero. You may speak to me unless you have direct business with my mistress Magatha. I deal with most of her tasks for her so she can concentrate on more important matters. Perhaps there are some things we could discuss before you seek audience with her?"]=1,
+  ["Well met, $c. You may speak to me unless you have direct business with my mistress Magatha. I deal with most of her tasks for her so she can concentrate on more important matters. Perhaps there are some things we could discuss before you seek audience with her?"]=1,
   ["Please, feel free to speak to me anytime, adventurer. You have served Magatha well. I am sure she will call upon you in the future."]=2,
 },
 [11835]={ -- Theodore Griffs
@@ -7372,7 +7373,6 @@ SpeakStone_GossipTexts = {
 },
 [251968]={ -- Ayessa Dawnsinger
   ["<Ayessa Dawnsinger eyes you with barely-contained fury.> You are either very bold, or very stupid to so brazenly step foot into our domain after spilling Windshaper blood. We are slow to forgive, and we never forget. You should remove yourself from here at once. If we weren't in the center of Zephras, you would already be dead."]=1,
-  ["Hmm, I see. Very well then, mage. The Windshapers will provide aid. Please inform Valennia that she can count on us for this fight. <Ayessa lowers her voice dangerously.> Do not mistake our cooperation for any sort of forgiveness. You owe the Windshapers blood, and someday we will collect."]=2,
   ["Hmm, I see. Very well then, $c. The Windshapers will provide aid. Please inform Valennia that she can count on us for this fight. <Ayessa lowers her voice dangerously.> Do not mistake our cooperation for any sort of forgiveness. You owe the Windshapers blood, and someday we will collect."]=2,
   ["Greetings, I am Ayessa Dawnsinger, the current Grand Skyseer of the Windshapers. What may I do for you?"]=3,
   ["If the High Order gave any mind at all to actually solving the problems we face and spent less time obsessing over the old magic, we'd be in a far better position as a people. It was Highborne magic that brought about the ruin of the kaldorei to begin with. Those self-absorbed fools seek to repeat those mistakes! The fact that they attempted to make peace with the cult is bad enough, but spilling Windshaper blood is what is truly unforgivable. Were it not for the imminent threat of the cult, I'd gather up our forces and go put an end to Elaadrin and the High Order once and for all."]=4,
@@ -7455,6 +7455,7 @@ SpeakStone_GossipTexts = {
   ["I see. This seems dangerous in the extreme, but the situation seems to demand that risks be taken. Very well, the High Order will provide aid. Please inform Valennia that she can count on us for this fight."]=3,
   ["Elaadrin eyes you with barely-contained hatred. You would dare step foot into our sanctum after spilling High Order blood? You are very brave, or very stupid. The High Order does not forgive, nor do we forget. Someday, you will pay for your crimes in blood."]=4,
   ["Hmm, I see. Very well then, $c. The High Order will assist the Peacekeepers. Please inform Valennia that she can count on us for this fight. <Elaadrin lowers his voice dangerously.> Do not mistake our willing cooperation for any sort of clemency. You owe the High Order blood, and we always collect on our debts."]=5,
+  ["Hmm, I see. Very well then, hero. The High Order will assist the Peacekeepers. Please inform Valennia that she can count on us for this fight. Elaadrin lowers his voice dangerously. Do not mistake our willing cooperation for any sort of clemency. You owe the High Order blood, and we always collect on our debts."]=5,
 },
 [252476]={ -- Talaanis Shadowsong
   ["Welcome to Valanaar, mage."]=1,
@@ -7575,7 +7576,6 @@ SpeakStone_GossipTexts = {
   ["The spinning column of wind before you seems to hum with contentment. It clearly cannot speak, but you have a clear sense of the sensations it feels. It seems... happy to provide you with the blessing of the winds."]=1,
 },
 [256306]={ -- Arcanist Laurain
-  ["Welcome to Dalaran, mage. Please pay no mind to some of the construction that is still underway. Oh, and should you encounter a rogue arcane anomaly, demon, or other malign entity, please feel free to seek the assistance from the nearest member of the Kirin Tor before fleeing--um... proceeding--to the nearest exit in an orderly fashion! <Arcanist Laurain laughs nervously.> Thank you for visiting!"]=1,
   ["Welcome to Dalaran, $c. Please pay no mind to some of the construction that is still underway. Oh, and should you encounter a rogue arcane anomaly, demon, or other malign entity, please feel free to seek the assistance from the nearest member of the Kirin Tor before fleeing--um... proceeding--to the nearest exit in an orderly fashion! <Arcanist Laurain laughs nervously.> Thank you for visiting!"]=1,
 },
 [256386]={ -- Dokimi

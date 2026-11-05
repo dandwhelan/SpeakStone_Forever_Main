@@ -3,7 +3,7 @@
 ## X-Curse-Project-ID: 1706480
 ## Notes: Quests, books and gossip read aloud with voices similar to the in-game characters, not a generic narrator. Built for WoW Forever (Classic+). Unofficial; not affiliated with Blizzard Entertainment.
 ## Author: Nerf, SpeakStone@beanw.co.uk
-## Version: 4.1.2
+## Version: 5.0.0
 ## SavedVariables: SpeakStone_ForeverMainDB
 
 
@@ -31,6 +31,9 @@ SpeechFrame.lua
 Subtitles.lua
 DialogueSync.lua
 Harvester.lua
+ZoneLoreData.lua
+ZoneLore.lua
+LoreBook.lua
 SpeakStone_Main_Settings.lua
 BookTexts.lua
 QuestAudioLibraryUI.lua
