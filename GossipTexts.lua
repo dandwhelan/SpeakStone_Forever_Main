@@ -1191,6 +1191,7 @@ SpeakStone_GossipTexts = {
   ["The Bank of Stormwind is located in the Trade District just northwest of the city gates. Here, let me show you on your map."]=4,
   ["Another entrepreneur, eh? Well, the Auction House can be found in the Trade District. Not far from the bank."]=5,
   ["Another entrepreneur, eh? Well, the auction house can be found in the trade district, not far from the bank."]=5,
+  ["Lucan Cordell has a small shop on the canal by the Stockade. I am sure he will be able to teach you the art of enchanting."]=6,
 },
 [2079]={ -- Conservator Ilthalaine
   ["Ah, the beauty of Shadowglen never ceases to delight my senses!"]=1,
@@ -3708,7 +3709,6 @@ SpeakStone_GossipTexts = {
   ["Killian Hagey teach skinning in Rogues' Quarter on inner ring."]=12,
 },
 [5675]={ -- Carendin Halgar
-  ["Yes, warlock?"]=1,
   ["Yes, $c?"]=1,
 },
 [5688]={ -- Innkeeper Renee
@@ -4783,7 +4783,6 @@ SpeakStone_GossipTexts = {
   ["They are exactly what you need to destroy in order to free the regiment! As I had told you earlier, Kirith had a plan. Each of the servants does have a weakness. Punish their physical form in proximity of their stones until they are near the state of disintegration. It is at that point, and that point alone, that the stones of binding are vulnerable to attack. You must hurry to destroy the stones, however, as once the enslaved regain their composure, they will be invulnerable to harm once more."]=8,
 },
 [7683]={ -- Alessandro Luca
-  ["Welcome to Blue Moon Odds and Ends, mage. If you have any questions, please let me know."]=1,
   ["Welcome to Blue Moon Odds and Ends, $c. If you have any questions, please let me know."]=1,
 },
 [7714]={ -- Innkeeper Byula
@@ -7256,6 +7255,12 @@ SpeakStone_GossipTexts = {
   ["What are you looking for?"]=1,
   ["What is your curiosity looking for?"]=2,
 },
+[247226]={ -- Kelsey Fargo
+  ["Blast these kobolds. I can't get any work done with them running back and forth, getting in my way. Well, I've got nothing better to do. Would you like to learn about mining techniques? Or perhaps you just need some new tools?"]=1,
+},
+[247229]={ -- Daniel
+  ["What does Brother Paxton need now?"]=1,
+},
 [248196]={ -- Apothecary Durelle
   ["Please do not touch the vials unless you intend to purchase one. Fingerprints ruin the value, you see."]=1,
 },
@@ -7275,6 +7280,7 @@ SpeakStone_GossipTexts = {
 [248415]={ -- Tordrin Sternblade
   ["I kinnae help ye with trainin'. Ye should look fer a warlock trainer."]=1,
   ["I kinnae help ye with trainin'. Ye should look fer a $c trainer."]=1,
+  ["I heard ol' Marshal McBride was sendin' ye' my way."]=2,
 },
 [249363]={ -- Yala Windwatcher
   ["The Wind Spirits have left us. Now, only mindless echoes remain. Be wary, however. These winds are neither kind, nor gentle."]=1,
@@ -7845,6 +7851,7 @@ SpeakStone_GossipTexts = {
 [272101]={ -- Deathguard Lizabetha
   ["What are you looking for?"]=1,
   ["Which profession?"]=2,
+  ["We don't have a bank here in Brill, you'll have to go to the Undercity for that. At the back of the Ruins of Lordaeron to the south are elevators that will take you down into the Undercity. Once there ask one of the Undercity Guardians for more precise directions."]=3,
 },
 [272450]={
   ["My darlings. My darlings."]=1,
