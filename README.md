@@ -1,0 +1,41 @@
+# SpeakStone Forever - Main
+
+SpeakStone's base addon for **WoW Forever** (Classic+, interface `16001`).
+Quests, books and gossip are read aloud with voices similar to the in-game
+characters, not a generic narrator.
+
+Unofficial; not affiliated with Blizzard Entertainment.
+
+## Install
+
+1. **SpeakStone Forever - Main** (this addon: code only, no audio)
+2. **SpeakStone Forever Audio Pack 1** ([SpeakStone_Forever_Audio_Pack1](https://github.com/dandwhelan/SpeakStone_Forever_Audio_Pack1))
+3. **SpeakStone Forever Audio Pack 2** ([SpeakStone_Forever_Audio_Pack2](https://github.com/dandwhelan/SpeakStone_Forever_Audio_Pack2))
+4. **SpeakStone Narration - Forever Chatter** ([SpeakStone_Forever_Chatter](https://github.com/dandwhelan/SpeakStone_Forever_Chatter)): NPC gossip, books and some quests
+
+Install all four. Every audio pack requires this addon. Without Chatter, nearly
+every book and NPC greeting is silent, as are some quests.
+
+## Credits
+
+Quest and dialogue text for WoW Forever is matched from community data by Efficient Games (EG Link), licensed under CC BY 4.0: https://github.com/JIVESCORP/eg-link-output-wowf
+
+Unofficial; not affiliated with Blizzard Entertainment.
+
+## Built from SpeakStone_Main
+
+Everything here is produced by `tools/build_forever_main.py` from the retail
+[SpeakStone_Main](https://github.com/dandwhelan/SpeakStone_Main) payload.
+Exactly three things differ from retail:
+
+1. `## Interface: 16001`
+2. `## Title: SpeakStone Forever - Main`
+3. SavedVariables renamed to `SpeakStone_ForeverMainDB` (in the `.toc` and every Lua reference)
+
+Captures made on this client are reported to the site as `flavour: "forever"`
+by `Harvester.lua`, from the interface number. Quest IDs are only unique within
+one game, so this is what keeps Forever quest text from merging into retail's.
+
+Fixes belong in SpeakStone_Main; rebuild this rather than editing it.
+
+Player site: https://speakstone.beanw.co.uk
