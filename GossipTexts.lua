@@ -2382,6 +2382,7 @@ SpeakStone_GossipTexts = {
   ["Mind yourself in the presence of the Warchief, $c. The Kor'kron will suffer no insolence or insult here."]=1,
   ["So you've recently arrived from Azeroth, eh? You'd best steel yourself, $c - there are perils in this land unlike anything the Horde has faced before. I am Nazgrel - right hand to our mighty warchief, Thrall. He honored me with the task of safeguarding this brave expedition and - by all the spirits - I shall!"]=1,
   ["Nazgrel grunts as he sizes you up. High Elves, here in Orgrimmar. I'd never bet on such a thing happening in my lifetime, but at this point nothing is surprising to me. Yes, the Warchief instructed me to draft up instructions for you. Take this letter and follow the instructions within. Conduct yourself with honor and show due deference when you meet with our leaders, elf. Once you've finished your journey, return to the Warchief."]=2,
+  ["<Nazgrel grunts as he sizes you up.> High Elves, here in Orgrimmar. I'd never bet on such a thing happening in my lifetime, but at this point nothing is surprising to me. Yes, the Warchief instructed me to draft up instructions for you. Take this letter and follow the instructions within. Conduct yourself with honor and show due deference when you meet with our leaders, elf. Once you've finished your journey, return to the Warchief."]=2,
   ["Mind yourself in the presence of the Warchief, hero. The Kor'kron will suffer no insolence or insult here."]=4,
 },
 [3290]={ -- Deek Fizzlebizz
@@ -7293,6 +7294,9 @@ SpeakStone_GossipTexts = {
   ["Most impressive that you have noticed me, $r. You may have a talent for the shadows. I am Boarton Shadetotem, a master of the arts of stealth and subtlety. You may find the idea of a tauren rogue implausible, even impossible. For many years I took pride that my skills were mine alone. But I have seen my people face unimaginable challenges, and I now feel a duty to share my knowledge with the tribe."]=1,
   ["adventurer, my would-be protege. I'm afraid there is nothing more I can teach you. Perhaps our paths will cross again someday."]=2,
 },
+[214954]={ -- Rix Xizzix
+  ["Welcome to the Xizzix Asset Recovery Service! If you lost it, we probably found it! Check my stock to see if we've recovered anything that you might have carelessly discarded and have since decided you just can't live without."]=1,
+},
 [216289]={ -- Orokai
   ["Greetings, young druid."]=1,
   ["Greetings, young $c."]=1,
@@ -7366,6 +7370,7 @@ SpeakStone_GossipTexts = {
 },
 [248202]={ -- Jim'bek
   ["Jim'bek locks eyes with you as he takes a deep puff from his hookah. 'Ello, mon. Need a rug? A blanket? Or just some cloth for your next project? I got you."]=1,
+  ["<Jim'bek locks eyes with you as he takes a deep puff from his hookah.> 'Ello, mon. Need a rug? A blanket? Or just some cloth for your next project? I got you."]=1,
 },
 [248415]={ -- Tordrin Sternblade
   ["I kinnae help ye with trainin'. Ye should look fer a warlock trainer."]=1,
@@ -7550,7 +7555,9 @@ SpeakStone_GossipTexts = {
   ["The Windshapers are almost wholly to blame for everything that has happened. Their refusal to change has damaged our ability to save ourselves from our current peril. They speak in absolutes and treat assumptions and superstitious hope as fact. Do you know who else deals only absolutes? The Al'Aketh. I for one do not intend to let blind adherence to dangerous beliefs doom our people. If it weren't for the threat of the cult, I'd march our mages over to the other side of Valnaar and wipe the Windshapers out."]=2,
   ["I see. This seems dangerous in the extreme, but the situation seems to demand that risks be taken. Very well, the High Order will provide aid. Please inform Valennia that she can count on us for this fight."]=3,
   ["Elaadrin eyes you with barely-contained hatred. You would dare step foot into our sanctum after spilling High Order blood? You are very brave, or very stupid. The High Order does not forgive, nor do we forget. Someday, you will pay for your crimes in blood."]=4,
+  ["<Elaadrin eyes you with barely-contained hatred.> You would dare step foot into our sanctum after spilling High Order blood? You are very brave, or very stupid. The High Order does not forgive, nor do we forget. Someday, you will pay for your crimes in blood."]=4,
   ["Hmm, I see. Very well then, $c. The High Order will assist the Peacekeepers. Please inform Valennia that she can count on us for this fight. <Elaadrin lowers his voice dangerously.> Do not mistake our willing cooperation for any sort of clemency. You owe the High Order blood, and we always collect on our debts."]=5,
+  ["Hmm, I see. Very well then, hero. The High Order will assist the Peacekeepers. Please inform Valennia that she can count on us for this fight. <Elaadrin lowers his voice dangerously.> Do not mistake our willing cooperation for any sort of clemency. You owe the High Order blood, and we always collect on our debts."]=5,
   ["Hmm, I see. Very well then, hero. The High Order will assist the Peacekeepers. Please inform Valennia that she can count on us for this fight. Elaadrin lowers his voice dangerously. Do not mistake our willing cooperation for any sort of clemency. You owe the High Order blood, and we always collect on our debts."]=5,
 },
 [252476]={ -- Talaanis Shadowsong
@@ -7643,6 +7650,7 @@ SpeakStone_GossipTexts = {
 },
 [254149]={ -- Sirocca "Swimmers" Starfeather
   ["The skyborne before you sways unsteadily, clearly very inebriated. I used to be a sailor you know? Before the trouble started. The skycutters used to run between the islands. Now its unsafe or some such, or so they say. I see the High Order and the Windshapers have their skycutters running again, but I'm stuck here, grounded! What aren't we being told! He turns and yells loudly at the innkeeper. WHAT AREN'T WE BEING TOLD, DONAAL!?"]=1,
+  ["The skyborne before you sways unsteadily, clearly very inebriated. I used to be a sailor you know? Before the trouble started. The skycutters used to run between the islands. Now its unsafe or some such, or so they say. I see the High Order and the Windshapers have their skycutters running again, but I'm stuck here, grounded! What aren't we being told! <He turns and yells loudly at the innkeeper.> WHAT AREN'T WE BEING TOLD, DONAAL!?"]=1,
   ["Shadowgale Forest! It's haunted! Haunted as the sky is blue! Terrible forest spirits, terror birds with talons as big as yer arm! It's... a nightmare! Swimmers turns to Donaal and belches loudly. IT'S NOT CRAZY TALK, DONAAL!"]=2,
 },
 [254151]={ -- Vayn Moongaze
@@ -7663,6 +7671,7 @@ SpeakStone_GossipTexts = {
 },
 [256083]={ -- Riaani Nightwind
   ["Riaani seems to be intently focused on his work on the wind construct."]=1,
+  ["<Riaani seems to be intently focused on his work on the wind construct.>"]=1,
   ["Have you found what we need yet?"]=2,
 },
 [256247]={ -- Belathaan Brightwish
@@ -7807,6 +7816,7 @@ SpeakStone_GossipTexts = {
 },
 [260628]={ -- Valennia Stormfist
   ["Valennia winces in pain as she shifts to look at you. Don't look at me like that. I'll be fine. Despite the best efforts of the High Elder's fretful healers, I'll be up and ready to fight again in no time. Now be gone with you... don't let this old soldier hold you up. The winds will bring you good fortune on your journey, I know it."]=1,
+  ["<Valennia winces in pain as she shifts to look at you.> Don't look at me like that. I'll be fine. Despite the best efforts of the High Elder's fretful healers, I'll be up and ready to fight again in no time. Now be gone with you... don't let this old soldier hold you up. The winds will bring you good fortune on your journey, I know it."]=1,
 },
 [261366]={ -- Walton
   ["What do you need, $r?"]=1,
@@ -8268,8 +8278,8 @@ SpeakStone_GossipTranscribed = {
   ["Shut inside this little house, I dream of joining the battles that rage outside the city walls. Still, duty compels me to share my knowledge with others who fight in my stead... for now."]=1,
   ["You are beyond my limited abilities. Seek out the night elf Ainethil in the Craftsmen's Terrace of Darnassus. She can teach you more. I only wish that I could go with you."]=2,
   ["My teachings would be too advanced for you at this stage. If you wish to learn more of potions, speak with Tel'Athir here instead."]=3,
-  ["Listen carefully adventurer, for I have much knowledge to impart."]=4,
   ["Listen carefully, adventurer, for I have much knowledge to impart."]=4,
+  ["Listen carefully adventurer, for I have much knowledge to impart."]=4,
 },
 [5500]={
   ["You must choose a more experienced teacher. For you have surpassed my abilities. I advise you to speak with Lalicia Knightbreeze here. She has much knowledge to offer."]=3,
