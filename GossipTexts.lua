@@ -722,9 +722,19 @@ SpeakStone_GossipTexts = {
   ["Rand Rhobart is fairly good at skinning felbats and the like. You can find him at a camp along the road to the southeast of Brill. Take the road southeast out of town and then head east at the intersection."]=44,
   ["Take it then, it seems Zygand is too busy for the agonizing trip here to retrieve it himself."]=46,
 },
+[1499]={ -- Magistrate Sevren
+  ["Ah, you there! I have tasks to give, and I need not waste time explaining their crucial nature. Listen close."]=1,
+},
+[1515]={ -- Executor Zygand
+  ["The Scarlet Crusade is encroaching on our homeland. The foolish zealots do not realize that the loyal servants of The Dark Lady shall see to their demise."]=1,
+},
+[1518]={ -- Apothecary Johaan
+  ["The Dark Lady has put forth the challenge. It is up to us to meet it."]=1,
+},
 [1569]={ -- Shadow Priest Sarvis
   ["No other race on Azeroth has suffered as much as our people, paladin. To laugh in the face of death has become second nature for all of us."]=1,
   ["No other race on Azeroth has suffered as much as our people, $c. To laugh in the face of death has become second nature for all of us."]=1,
+  ["No other race on Azeroth has suffered as much as our people, hero. To laugh in the face of death has become second nature for all of us."]=2,
 },
 [1571]={ -- Shellei Brondir
   ["Where would you like to fly to?"]=1,
@@ -1201,6 +1211,9 @@ SpeakStone_GossipTexts = {
   ["The warrior's role is one of protection. Just as we protect our compatriots in battle, we must also protect the interests of the Forsaken."]=2,
   ["Do not waste my time, $c."]=3,
 },
+[2121]={ -- Shadow Priest Allister
+  ["Information... With our scouts and agents, we control the flow of information in Lordaeron. Scourge movements, their holdings, all underneath our watchful eyes..."]=1,
+},
 [2122]={ -- David Trias
   ["I can not train you. You need to talk to your class trainer."]=1,
   ["With the sanction of Lord Varimathras, the Deathstalkers' numbers grow. More blades to strike at our enemies when they least expect it."]=2,
@@ -1476,6 +1489,7 @@ SpeakStone_GossipTexts = {
 [2425]={ -- Varimathras
   ["Do not presume to speak to me as though you are my equal, mage. Sylvanas is my queen, and I will do as she bids. If you do not show the proper respect, I assure you, we can find a more than suitable place for you in the Nether. But there is no reason we cannot have words if you wish to aid the Dark Lady..."]=1,
   ["Do not presume to speak to me as though you are my equal, $c. Sylvanas is my queen, and I will do as she bids. If you do not show the proper respect, I assure you, we can find a more than suitable place for you in the Nether. But there is no reason we cannot have words if you wish to aid the Dark Lady..."]=1,
+  ["Do not presume to speak to me as though you are my equal, hero. Sylvanas is my queen, and I will do as she bids. If you do not show the proper respect, I assure you, we can find a more than suitable place for you in the Nether. But there is no reason we cannot have words if you wish to aid the Dark Lady..."]=2,
 },
 [2432]={ -- Darla Harris
   ["Where would you like to fly?"]=1,
@@ -1598,7 +1612,6 @@ SpeakStone_GossipTexts = {
 },
 [3001]={ -- Brek Stonehoof
   ["I can instruct you in mining. Interested?"]=1,
-  ["Greetings."]=1,
 },
 [3004]={ -- Tepa
   ["Aren't the patterns beautiful? Each one speaks with its own voice."]=1,
@@ -1701,6 +1714,7 @@ SpeakStone_GossipTexts = {
 },
 [3045]={ -- Malakai Cross
   ["What can this insignificant servant do for you, adventurer? Training perhaps?"]=1,
+  ["Yes, hero?"]=2,
 },
 [3046]={ -- Father Cobb
   ["What can this insignificant servant do for you, adventurer? Training perhaps?"]=1,
@@ -1846,9 +1860,11 @@ SpeakStone_GossipTexts = {
 },
 [3139]={ -- Gar'Thok
   ["Keep your eyes open, $c. Even Durotar is not safe from our enemies."]=1,
+  ["Throm'ka, hero. There is little time for talk and much work to be done."]=2,
 },
 [3142]={ -- Orgnil Soulscar
   ["Razor Hill is a place of sanctuary for young orcs, and trolls in training, and traders on the roads of the harsh land of Duratar. It is my job to keep it that way."]=1,
+  ["Hail. Be brief, for we both have much to do."]=2,
 },
 [3143]={ -- Gornek
   ["The Valley of Trials will temper even the weakest into a warrior worthy to join the Horde. Those who cannot rise to its tests will be left to bake in the scorching desert sun."]=1,
@@ -2016,6 +2032,7 @@ SpeakStone_GossipTexts = {
   ["Haha! Save for their leaders--the satyr, Bazzalan, and the warlock Jergosh--yes, all of them. That is why I constantly send Thrall's worshippers at them. It gives Thrall the impression that I am weeding out the evil in the bowels of his great city. The victory is in reality two-fold: kill Thrall's faithful and test the strength of those in the Searing Blade to see if they are truly worthy of joining me."]=4,
   ["I will make it known to you. You are obviously already proving yourself in our ranks to become a lieutenant so quickly. Perhaps you can return to me later and I will have tasks for you. The council adores those skilled in the arcane, but servants of all kinds are always welcome, no matter their profession."]=5,
   ["I will make it known to you. You are obviously already proving yourself in our ranks to become a lieutenant so quickly. Perhaps you can return to me later and I will have tasks for you. The council adores those skilled in the arcane. But servants of all kinds are always welcome, no matter their profession."]=5,
+  ["Listen closely to what you are told and do not quickly trust, or distrust. For even friends serve their own ends, hero. Our great Warchief knows this, and to prove that there are warlocks within the Horde who do not wish to destroy it from within or gain control over it, I have volunteered to aid our young leader in anyway I can."]=6,
 },
 [3217]={ -- Brave Dawneagle
   ["We have no such place in the village. The soaring heights of Thunder Bluff does though. Head north up the road out of Bloodhoof Village until you come to the base of the bluffs. There ride the elevator to the top and speak with a Bluffwatcher. May your ancestors watch over you."]=1,
@@ -2365,6 +2382,7 @@ SpeakStone_GossipTexts = {
   ["Mind yourself in the presence of the Warchief, $c. The Kor'kron will suffer no insolence or insult here."]=1,
   ["So you've recently arrived from Azeroth, eh? You'd best steel yourself, $c - there are perils in this land unlike anything the Horde has faced before. I am Nazgrel - right hand to our mighty warchief, Thrall. He honored me with the task of safeguarding this brave expedition and - by all the spirits - I shall!"]=1,
   ["Nazgrel grunts as he sizes you up. High Elves, here in Orgrimmar. I'd never bet on such a thing happening in my lifetime, but at this point nothing is surprising to me. Yes, the Warchief instructed me to draft up instructions for you. Take this letter and follow the instructions within. Conduct yourself with honor and show due deference when you meet with our leaders, elf. Once you've finished your journey, return to the Warchief."]=2,
+  ["Mind yourself in the presence of the Warchief, hero. The Kor'kron will suffer no insolence or insult here."]=4,
 },
 [3290]={ -- Deek Fizzlebizz
   ["Where's my spinner? I just had it here somewhere..."]=1,
@@ -2372,6 +2390,7 @@ SpeakStone_GossipTexts = {
 },
 [3293]={ -- Rezlak
   ["Try to ignore the firm, feathery behinds of the harpies... the creatures are really quite deadly!"]=1,
+  ["I'm happy Gazlowe gave me the opportunity to be here and all, but this place is more dangerous than I thought it'd be. It's also really hot. And dusty. And it smells kinda weird. Ah, well! Hopefully it will be good for business."]=2,
 },
 [3296]={ -- Orgrimmar Grunt
   ["What are you looking for?"]=1,
@@ -2502,6 +2521,9 @@ SpeakStone_GossipTexts = {
   ["Yap, I can teach ye to fish."]=2,
   ["Your skill exceeds mine, though I've heard that Old Man Heming in Booty Bay has copies of 'The Bass and You'. That is sure to help you increase your skill."]=3,
 },
+[3338]={ -- Sergra Darkthorn
+  ["The land, the water, and the sky are all as one. It is your eyes that deceive you with such separation. The Earthmother is all those things and more."]=1,
+},
 [3341]={ -- Gann Stonespire
   ["I walk this road alone, seeking ways to defend my honor and rid this land of our enemies. What can I do for you, adventurer?"]=1,
 },
@@ -2547,6 +2569,7 @@ SpeakStone_GossipTexts = {
   ["You won't learn anything new from me; you know too much already. If you want more training, talk to the tauren Una in the northwestern shops of Thunder Bluff's central plateau. Send her my regards, eh?"]=2,
   ["You can't study my techniques until you've learned the basics. Speak with Kamari if you are interested in training."]=3,
   ["The twists and turns of Orgrimmar are designed to thwart invaders. Can you imagine how quickly one of those puny gnomes would get lost in here? Huh! If it was lucky, I'd track it down and keep it as a pet."]=4,
+  ["The twists and turns of Orgrimmar are designed to thwart invaders. Can you imagine how quickly one of those puny gnomes would get lost in here? Ha! If it was lucky, I'd track it down and keep it as a pet."]=7,
 },
 [3368]={ -- Borstan
   ["I have the finest meats in Orgrimmar."]=1,
@@ -2558,6 +2581,7 @@ SpeakStone_GossipTexts = {
   ["Only the renowned Doctor Gregory Victor can improve your skill now. He can be found in Arathi Highlands at Hammerfall."]=1,
   ["I am an orc of medicine, skyborne. If you have come here to learn, I shall do my best to teach."]=1,
   ["I am an orc of medicine, $r. If you have come here to learn, I shall do my best to teach."]=1,
+  ["I am an orc of medicine, traveler. If you have come here to learn, I shall do my best to teach."]=3,
 },
 [3387]={ -- Jorn Skyseer
   ["Although we call this land the Barrens, to one who knows where to look this place teems with life."]=1,
@@ -2565,6 +2589,10 @@ SpeakStone_GossipTexts = {
 [3389]={ -- Regthar Deathgate
   ["We have our duties, $c. Duties to the Horde."]=1,
   ["We have our duties, warlock. Duties to the Horde."]=1,
+  ["We have our duties, hero. Duties to the Horde."]=3,
+},
+[3390]={ -- Apothecary Helbrim
+  ["The Barrens holds a wealth of substances for which we, the apothecaries or Lordaeron, may find use."]=1,
 },
 [3391]={ -- Gazlowe
   ["Thrall paid me and my boys well for helping out with the construction of Orgrimmar, so I decided to set up a port here. We do most of our business through Booty Bay and Baron Revilgaz."]=1,
@@ -2609,6 +2637,7 @@ SpeakStone_GossipTexts = {
   ["Welcome to the Crossroads, warlock. My name is Thork--I lead the defenses here in the name of the Warchief. Please, feel free to make yourself at home. As long as you mind your business, no one should have any problem with you taking up some space. There are many threats to our safety here. If you've already become familiar with the lay of the land, speak to the others here--perhaps they have tasks for you to do."]=1,
   ["Welcome to the Crossroads, $c. My name is Thork--I lead the defenses here in the name of the Warchief. Please, feel free to make yourself at home. As long as you mind your business, no one should have any problem with you taking up some space. There are many threats to our safety here. If you've already become familiar with the lay of the land, speak to the others here--perhaps they have tasks for you to do."]=1,
   ["Welcome to the Crossroads, druid. My name is Thork--I lead the defenses here in the name of the Warchief. Please, feel free to make yourself at home. As long as you mind your business, no one should have any problem with you taking up some space. There are many threats to our safety here. If you've already become familiar with the lay of the land, speak to the others here--perhaps they have tasks for you to do."]=1,
+  ["Welcome to the Crossroads, hero. My name is Thork--I lead the defenses here in the name of the Warchief. Please, feel free to make yourself at home. As long as you mind your business, no one should have any problem with you taking up some space. There are many threats to our safety here. If you've already become familiar with the lay of the land, speak to the others here--perhaps they have tasks for you to do."]=2,
 },
 [3430]={ -- Mangletooth
   ["You! Undead! Come here. snort Time is short, and my end snort is near. Mangletooth shall win; you will see. snort My capture can still aid snort my people. The Razormane tribe is more powerful than the Bristlebacks! The Horde looks to find out who leads the raids on their people. You snort shall aid Mangletooth in return for the information only I know. Mangletooth can help you! snort But you must help Mangletooth."]=1,
@@ -2616,6 +2645,7 @@ SpeakStone_GossipTexts = {
   ["You! $r! Come here. snort Time is short, and my end snort is near. Mangletooth shall win; you will see. snort My capture can still aid snort my people. The Razormane tribe is more powerful than the Bristlebacks! The Horde looks to find out who leads the raids on their people. You snort shall aid Mangletooth in return for the information only I know. Mangletooth can help you! snort But you must help Mangletooth."]=1,
   ["My hatred is strong snort, but the time is right to tell you a tale, skyborne. Long ago a battle took place between gods. Agamaggan, our great boar god, fell to the earth after being defeated in the War of the Ancients, his blood raining down and his bones torn asunder. snort Great thorns reached up out of the earth where his blood touched the ground, and his skull adorns one of the caverns to the south."]=2,
   ["You have snort aided Mangletooth more than I would have dreamed, skyborne. Thank you. As long as I remain a captive here, you may bring me blood shards from the Bristleback quilboar and I will bless you with Agamaggan's power."]=3,
+  ["My hatred is strong snort, but the time is right to tell you a tale, traveler. Long ago a battle took place between gods. Agamaggan, our great boar god, fell to the earth after being defeated in the War of the Ancients, his blood raining down and his bones torn asunder. snort Great thorns reached up out of the earth where his blood touched the ground, and his skull adorns one of the caverns to the south."]=5,
 },
 [3432]={ -- Mankrik
   ["I came to the Crossroads from the south seeking help, $c, but I find only cowards who turn their backs on me--even the mighty Thork insults me so. He is a good leader, but his dismissal of my plea causes me greater anger. He claims my rage makes me hasty--that it clouds my judgement--but I will not rest until I have vengeance!"]=1,
@@ -2634,10 +2664,17 @@ SpeakStone_GossipTexts = {
   ["Interesting! Interesting! I know of a druid that lives atop the hill above the Whaling Caverns adventurer. She might be able to tell you more about this shard you have found. Now, I must get back to work."]=5,
   ["Lots to do, lots to do. The Union's given us deadlines and they're not the sort you want to miss."]=6,
 },
+[3446]={ -- Mebok Mizzyrix
+  ["Yes yes yes! You're just the traveler I'm looking for! Sit! We have much to discuss!!"]=2,
+},
 [3448]={ -- Tonga Runetotem
   ["The times we live in are as fickle as the shifting winds, druid. The ground itself quakes and cries out in anguish. We must remain resolute or we ourselves will be engulfed by the turmoil."]=1,
   ["The times we live in are as fickle as the shifting winds, $c. The ground itself quakes and cries out in anguish. We must remain resolute or we ourselves will be engulfed by the turmoil."]=1,
   ["The times we live in are as fickle as the shifting winds, $c. It is important to remember what is true and lasting in this world, and to preserve that. Everything else is a waste."]=2,
+  ["The times we live in are as fickle as the shifting winds, hero. It is important to remember what is true and lasting in this world, and to preserve that. Everything else is a waste."]=3,
+},
+[3453]={ -- Wharfmaster Dizzywig
+  ["Something I can help you with, adventurer? There's a shipment I've got to see to otherwise."]=1,
 },
 [3483]={ -- Jahan Hawkwing
   ["The Barrens, with its hot sun and hostile denizens, is the perfect place to test your strength and fortitude."]=1,
@@ -2665,6 +2702,7 @@ SpeakStone_GossipTexts = {
   ["Pleased to make you acquaintance. May I help you?"]=1,
   ["I am knowledgable, but I am not an expert. You know who you should talk to? Rhiannon! She's not far. Ask around for her in Undercity"]=2,
   ["So, you want to be a tailor? Very well. We'll see if you have what it takes."]=3,
+  ["Pleased to make your acquaintance. May I help you?"]=4,
 },
 [3539]={ -- Ott
   ["My blades don't glisten, glitter, or gleam, and they'll sing no epic songs about my creations when I'm gone. One thing you can be sure of though is that my weapons will cut down all the knights in Stormwind before losing their honed edge."]=1,
@@ -3171,6 +3209,7 @@ SpeakStone_GossipTexts = {
   ["Cooking is a life long pursuit and I see we share the same passion!"]=1,
   ["Dirge Quikcleave of Gadgetzan is a master of the culinary arts. To better yourself you will need to seek him out."]=2,
   ["Wulan in Shadowprey Village can sell you the 'Expert Cookbook'. You will need that if you are to better yourself."]=3,
+  ["I can teach you how to cook!"]=4,
 },
 [4556]={ -- Gordon Wendham
   ["Greetings, and welcome. I am not very good at smiling, but trust me; I am happy to serve you."]=1,
@@ -3335,6 +3374,7 @@ SpeakStone_GossipTexts = {
   ["No, adventurer, you did not. I do not fault you, however, as yours is a mind much like mine was as a youth: Impetuous, rebellious, and often without a single coherent thought! Traits I can no longer afford to express. Enough lamenting. $r, I have a task for you; one that you may not survive."]=6,
   ["It would be wise to explain to you the depths at which our enemies will go to to hide themselves under our noses. Know this first and foremost, our enemy is the Shadow Council. No matter what task I give you, or who I ask you to act against, know that one simple fact. Many cults exist within the Council, but only to hide its actions against the foolish. Groups like the Burning Blade, the Argus Wake, and the Seering Blade are all tools of the Council. Consider them one and the same."]=7,
   ["All members of the Horde are equal in my eyes, adventurer. We have all suffered many burdens, and if it were not for wisdom and honor, then we would be no better than the Scorch, or my people, while our blood was tainted by the demon Maneroth. It is your duty to aid the Horde and to defend our way of life. But it is also your duty to know when quarter and compassion should be given to friend and foe alike. Understand this well. This is the new Horde, not some demon spawned army who lack free will."]=8,
+  ["All members of the Horde are equal in my eyes, adventurer. We have all suffered many burdens, and if it were not for wisdom and honor, then we would be no better than the Scourge or my people while our blood was tainted by the demon Mannoroth. It is your duty to aid the Horde and to defend our way of life. But it is also your duty to know when quarter and compassion should be given to friend and foe alike. Understand this well. This is the new Horde, not some demon-spawned army who lack freewill."]=10,
 },
 [4968]={ -- Lady Jaina Proudmoore
   ["I welcome you to Theramore, adventurer. I apologize for being abrupt and not having a lot of time to exchange pleasantries, but my city must come first. Too many things threaten our way of life and the sanctity of the Alliance. I must stay ever vigilant against forces outside of our control if I'm to ensure my people remain safe and happy. Perhaps we'll have more time to speak later."]=1,
@@ -3893,6 +3933,7 @@ SpeakStone_GossipTexts = {
 [5885]={ -- Deino
   ["Greetings, $c. Are you here to learn of the hidden arts?"]=1,
   ["Greetings, $c. I pity your kind, for the secrets of true magic are beyond you..."]=2,
+  ["Greetings, hero. Are you here to learn of the hidden arts?"]=3,
 },
 [5938]={ -- Uthan Stillwater
   ["Your skill exceeds mine, though I've heard that Old Man Heming in Booty Bay has copies of 'The Bass and You'. That is sure to help you increase your skill."]=1,
@@ -4808,6 +4849,7 @@ SpeakStone_GossipTexts = {
 },
 [7683]={ -- Alessandro Luca
   ["Welcome to Blue Moon Odds and Ends, $c. If you have any questions, please let me know."]=1,
+  ["Welcome to Blue Moon Odds and Ends, hero. If you have any questions, please let me know."]=2,
 },
 [7714]={ -- Innkeeper Byula
   ["As the wind on the plains, you are always welcome here."]=1,
@@ -5331,6 +5373,7 @@ SpeakStone_GossipTexts = {
 [9087]={ -- Bashana Runetotem
   ["Greetings, noble $c. This humble servant of the Cenarion Circle wishes blessings and bounties be given unto you and yours."]=1,
   ["Greetings, noble druid. This humble servant of the Cenarion Circle wishes blessings and bounties be given unto you and yours."]=1,
+  ["Greetings, noble hero. This humble servant of the Cenarion Circle wishes blessings and bounties be given unto you and yours."]=2,
 },
 [9099]={ -- Sraaz
   ["Cherry pie is my favoritist food in all of Azeroth."]=1,
@@ -6151,7 +6194,6 @@ SpeakStone_GossipTexts = {
   ["The Shrine of Remulos is a sacred place for us in the Cenarion Circle here in Moonglade... so please conduct yourself in a manner befitting a visitor.$B$BA visitor who doesn't want my scimitar buried in them, that is."]=1,
   ["The Shrine of Remulos is a sacred place for us in the Cenarion Circle here in Moonglade... so please conduct yourself in a manner befitting a visitor. A visitor who doesn't want my scimitar buried in them, that is."]=1,
   ["May Cenarius watch over you, $g brother : sister;.$B$BI am Tajarri, and I am a sworn protector of this shrine. It is my honor to serve Keeper Remulos as a warden of this sacred land."]=2,
-  ["May Cenarius watch over you, brother. I am Tajarri, and I am a sworn protector of this shrine. It is my honor to serve Keeper Remulos as a warden of this sacred land."]=2,
 },
 [11800]={ -- Silva Fil'naveth
   ["Would you like a flight to Rut'theran Village, courtesy of the Cenarion Circle?"]=2,
@@ -6313,6 +6355,7 @@ SpeakStone_GossipTexts = {
   ["Do you hear the call of the hunt, $c? You must listen closely, but the call comes from deep within you. It comes from deep within all of us."]=1,
   ["This bear wanders a path close to where the Talondeep Path lies, due west of Mystral Lake and the Alliance outpost of Silverwind Refuge. While he is the easiest of the three creatures you will face on the Ashenvale Hunt, he should not be trifled with. His presence is a constant threat to travelers who sojourn between Ashenvale and the Stonetalon Mountains."]=2,
   ["This nightsaber is rumored to be docile in the presence of night elves and their allies, which makes her an even more worthy opponent. Shadumbra's hunting path takes her from the Raynewood Retreat to our west, ultimately to lands due west of there. Her fur is the color of pitch, and her speed is not to be underestimated."]=3,
+  ["Do you hear the call of the hunt, hero? You must listen closely, but the call comes from deep within you. It comes from deep within all of us."]=4,
 },
 [12724]={ -- Pixel
   ["This forest can be confusing! Be careful out there."]=1,
@@ -6320,6 +6363,7 @@ SpeakStone_GossipTexts = {
 [12736]={ -- Je'neu Sancrea
   ["The elements speak to us, $c. They share knowledge that we must learn, and they share secrets that must be kept."]=1,
   ["The elements speak to us, druid. They share knowledge that we must learn, and they share secrets that must be kept."]=1,
+  ["The elements speak to us, hero. They share knowledge that we must learn, and they share secrets that must be kept."]=2,
 },
 [12737]={ -- Mastok Wrilehiss
   ["If you want to know about the comings and goings of caravans and merchants here in Splintertree Post, then I am fortunately the orc you are looking for. Unfortunately for you though, I don't like people.$B$BIf you want something, make it quick."]=1,
@@ -7839,10 +7883,22 @@ SpeakStone_GossipTexts = {
   ["Of course! Which profession would you like me to guide you towards? I will mark your map with the location of a local trainer of your choice. Remember that you can visit trainers in capital cities for more thorough training."]=2,
   ["Great choice. I have marked that location on your map."]=3,
 },
+[267321]={ -- Karne Grayhoof
+  ["Hello, adventurer! Have you considered taking up a tradeskill? I would be happy to answer any questions you might have, or point you toward the local trainers. If this feels overwhelming, that's okay! You can always return here or visit trainers in capital cities to get started on your crafting journey at any time."]=1,
+  ["I am glad you asked! Professions are skills pertaining to crafting, gathering, and general survival. There are many to choose from, with each offering their own unique benefits and economic opportunities. Whether you seek wealth, an opportunity to stock your guild's warehouse with useful items, or simply enjoy the satisfaction of wearing equipment crafted by your own hand, there's a profession for that. Crafting recipes can be learned from trainers, such as those around here, and numerous other sources across Azeroth. Once learned, you can craft as many of that item as you wish, provided you can acquire the necessary materials."]=2,
+  ["Of course! Which profession would you like me to guide you towards? I will mark your map with the location of a local trainer of your choice. Remember that you can visit trainers in capital cities for more thorough training."]=3,
+  ["Great choice. I have marked that location on your map."]=4,
+},
 [267324]={ -- Margaret Weaver
   ["Agol ne wirsh ver ne vandar novaedi veld algos nevren? Va se ras uden vrum bor garde?"]=1,
 },
 [267325]={ -- Walter Mason
+  ["How can I help you?"]=1,
+},
+[267330]={ -- Nawka Wildsong
+  ["Care to learn how to gather leather from slain beasts? Or do you need some new tools?"]=1,
+},
+[267331]={ -- Vartha Rockmane
   ["How can I help you?"]=1,
 },
 [267333]={ -- Terunne Bearshaper
@@ -7950,6 +8006,9 @@ SpeakStone_GossipTexts = {
 },
 [277042]={ -- Bezza Shearshave
   ["Welcome, friend, to the barbershop. Come for a cut! A coloring! Something else, perhaps? We can groom facial hair, perform piercings, ink night elf tattoos, anything you might need. Have a seat and we'll get right to work. You're only moments away from a new, more attractive view."]=1,
+},
+[277055]={ -- Edine Sharphorn
+  ["Welcome to my barbershop! We offer cuts, colorings, and more. We can groom facial hair, perform piercings, reshape tusks and horns, and even modify undead features! Have a seat and we'll get to work."]=1,
 },
 }
 SpeakStone_GossipTranscribed = {
