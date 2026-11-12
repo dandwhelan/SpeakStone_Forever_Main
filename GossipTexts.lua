@@ -259,7 +259,6 @@ SpeakStone_GossipTexts = {
 },
 [737]={ -- Kebok
   ["You sure picked an interesting time to chat with Ol' Kebok."]=1,
-  ["Well, hello there. You seem like you wouldn't be opposed to making some coin, hm? I can tell from the look in your eyes. I am Mogul Kebok, overseer of operations in Azeroth, and if it is riches you seek, perhaps I can make arrangements."]=1,
 },
 [836]={ -- Durnan Furcutter
   ["I sell the finest cloth and leather garb this side of the valley!"]=1,
@@ -1254,7 +1253,6 @@ SpeakStone_GossipTexts = {
 },
 [2055]={ -- Master Apothecary Faranell
   ["It is so nice to see the Undercity returned to the calming wheezes and gas-expulsions of the abominations. The orcs smelled far worse."]=1,
-  ["The Royal Apothecary Society shall heed The Dark Lady's call to uncover the New Plague and drive Arthas and his heathen Scourge Army from the world once and for all."]=1,
 },
 [2079]={ -- Conservator Ilthalaine
   ["Ah, the beauty of Shadowglen never ceases to delight my senses!"]=1,
@@ -2532,7 +2530,6 @@ SpeakStone_GossipTexts = {
   ["Thuwd will show you how to skin your kills. Look for him at Kodohide Leatherworkers in The Drag."]=67,
   ["Look for The Wyvern's Tail, just outside the Hall of the Brave."]=69,
   ["The Orgrimmar Auction House is in the Valley of Strength. Look for it on the East Side next to Boomstick Imports."]=70,
-  ["The barber? She's moved shop, out of the Cleft of Shadow and into the cliffs above the Valley of Strength, where the fruit vendor used to be."]=70,
   ["Look for Sayok and Hanashi at the Valley of Honor, inside arms of legend. Watch your tongue around them, or Sayok may decide to give a piece of you as a snack to grinning dog."]=72,
   ["Go to Kodohide Leatherworkers in The Drag. Ask for Karolek."]=74,
   ["Go to Kodahide Leatherworkers in the drag. Ask for Kamari."]=74,
@@ -3271,6 +3268,8 @@ SpeakStone_GossipTexts = {
 },
 [4488]={ -- Parqual Fintallas
   ["It's always nice when someone wishes to speak to me. How are things with you, $c?"]=1,
+  ["It's always nice when someone wishes to speak to me. How are things with you, hero?"]=2,
+  ["Now, answer me this, adventurer: Which creature became the Lich King before spreading the plague across Lordaeron?"]=3,
 },
 [4489]={ -- Braug Dimspirit
   ["Greetings, $c. Is there something I can help you with?"]=1,
@@ -3412,7 +3411,7 @@ SpeakStone_GossipTexts = {
   ["If I wasn't stuck here day in and day out, I would have attained the mastery required to train the likes of you! Unfortunately that's not the case. Go talk to Hgarth at the Sun Rock Retreat in the Stonetalon Mountains."]=2,
   ["No, no, you'll need FAR more training before you're ready to learn from me! Go talk to that uptight dabbler Malcomb Wynn. He's the one buried in books over there."]=3,
 },
-[4722]={ -- Rau Cliffrunner
+[4722]={ -- [Deprecated for 4.x]Rau Cliffrunner
   ["Yes? What is it?"]=1,
 },
 [4730]={ -- Lelanai
@@ -5293,7 +5292,6 @@ SpeakStone_GossipTexts = {
   ["It pleases me greatly to at last meet one of your people. I've heard much of the shen'dorei and your long history, and I am glad to see our cousins return home to Kalimdor at long last. I confess that our people have a... complicated relationship with the highborne. Some amongst the night elves are quick to distrust those of highborne descent such as those in your High Order. However, you have my assurance that you will be shown the utmost respect while a guest in our city. Please, make yourself at home here. I'd encourage you to explore and familiarize yourself with our culture. It is, after all, your culture as well in a way."]=2,
 },
 [8020]={ -- Shyn
-  ["Where would you like to fly?"]=1,
   ["Where would you like to fly to?"]=2,
 },
 [8115]={ -- Witch Doctor Uzer'i
@@ -5462,7 +5460,7 @@ SpeakStone_GossipTexts = {
 [9047]={ -- Jenal
   ["Conspiracies abound, I say. There are those who lack vision in understanding what I do, and would seek to keep me shackled to obscurity! Don't step in the dirt."]=1,
 },
-[9077]={ -- Warlord Goretooth
+[9077]={ -- Goretooth
   ["<Goretooth spits.> I am a warrior of the Horde, adventurer. It fills me with rage to know that our enemies sit in a fortress, less than a day's ride from Kargath, plotting against us. How I long to break free from the bonds of duty and destroy them all in the name of the Warchief. Alas, we all have roles we must fulfill."]=1,
   ["Truly, I envy you: To battle in the name of the Horde, at the forefront of conflict. Mine is a job of command. Certainly, in my youth, I lived out the dreams that make my old age bearable. I now revel in the glory of victory, the bitter taste of defeat - all through the soldiers I command."]=2,
   ["I dream, adventurer... oh yes, I dream. In my dreams I die a thousand times in a thousand different ways. Some would call dreams such as mine nightmares. NOT I! In dreams I die in the thick of battle. For each single death of my own, ten thousand enemies of the Horde fall before me. It is glorious!"]=3,
@@ -6830,11 +6828,9 @@ SpeakStone_GossipTexts = {
 },
 [14822]={ -- Sayge
   ["Very well then...$B$BYou have been tasked by your liege to guard his fields of corn from poachers and thieves. One night on patrol, you stumble across a haggard man in thread-bare clothing stealing corn from the field. You quickly confront him, and he immediately begs for his life. He claims he is stealing the corn to feed his family since the lord of the land - your liege - demands too much in taxes. Your liege is indeed known for his harsh taxes throughout the land.$B$BMake your choice."]=1,
-  ["I have long known you'd seek me out, adventurer. Every sentient being in this world is driven by the choices they make. Choices begat further choices, and these in turn make someone who they are. This is where your fortune is drawn from - who you are, and the choices you make. Are you ready to discover where your fortune lies?"]=1,
 },
 [14827]={ -- Burth
   ["This ain't a ride, clem. Beat it."]=1,
-  ["In case it wasn't obvious, I'm not here for customer relations."]=1,
 },
 [14828]={ -- Gelvas Grimegate
   ["Ticket redemption here! Get your tickets turned into prizes! Step right up!"]=1,
@@ -6909,7 +6905,6 @@ SpeakStone_GossipTexts = {
   ["Faire's a coming!"]=5,
   ["Having a good time?"]=6,
   ["Can't you see I've got work to do here?"]=7,
-  ["Sure are a lot of litter bugs around here."]=8,
   ["Hello friend."]=8,
 },
 [14860]={ -- Flik
