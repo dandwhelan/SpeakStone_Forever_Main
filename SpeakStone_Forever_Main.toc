@@ -4,13 +4,13 @@
 ## Notes: Quests, books and gossip read aloud with voices similar to the in-game characters, not a generic narrator. Built for WoW Forever (Classic+). Unofficial; not affiliated with Blizzard Entertainment.
 ## Author: Nerf, SpeakStone@beanw.co.uk
 ## X-Wago-ID: jK8WWq6y
-## Version: 5.0.9
+## Version: 5.0.10
 ## SavedVariables: SpeakStone_ForeverMainDB
 
 
 # Libraries
 Libs\LibStub\LibStub.lua
-Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\CallbackHandler\CallbackHandler.lua
 Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
 Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
 
