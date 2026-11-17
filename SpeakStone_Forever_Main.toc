@@ -29,6 +29,7 @@ Fonts.lua
 Inflate.lua
 UIKit.lua
 SpeechFrame.lua
+Gamepad.lua
 Subtitles.lua
 DialogueSync.lua
 DialogueUIVoice.lua
