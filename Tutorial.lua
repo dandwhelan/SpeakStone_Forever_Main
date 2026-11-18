@@ -112,7 +112,7 @@ local PROFILES = {
 addon.PROFILES = PROFILES
 
 local function DB()
-    return SpeakStone_MainDB
+    return SpeakStone_ForeverMainDB
 end
 
 local function ApplyProfile(key)
