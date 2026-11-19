@@ -24,9 +24,10 @@ Unofficial; not affiliated with Blizzard Entertainment.
 
 ## Built from SpeakStone_Main
 
-Everything here is produced by `tools/build_forever_main.py` from the retail
-[SpeakStone_Main](https://github.com/dandwhelan/SpeakStone_Main) payload.
-Exactly three things differ from retail:
+The code here is produced by [`tools/build_forever_main.py`](https://github.com/dandwhelan/SpeakStone_Main/blob/main/tools/build_forever_main.py)
+from the retail [SpeakStone_Main](https://github.com/dandwhelan/SpeakStone_Main) repo. Its `sync-forever` Action opens a PR
+here whenever retail's code changes. Game data (quest, gossip, NPC and book tables), CHANGELOG and this README
+are Forever's own and are never overwritten. In the code, exactly three things differ from retail:
 
 1. `## Interface: 16001`
 2. `## Title: SpeakStone Forever - Main`

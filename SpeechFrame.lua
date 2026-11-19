@@ -64,7 +64,7 @@ local lingerUntil = nil
 local pausing = false  -- our own Pause is the one calling StopCurrentSound
 
 local function DB()
-    return SpeakStone_ForeverMainDB or SpeakStone_ForeverMainDB or {}
+    return SpeakStone_ForeverMainDB or SpeakStone_MainDB or {}
 end
 
 local function Readable(value)
