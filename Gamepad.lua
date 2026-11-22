@@ -12,7 +12,7 @@ local addonName, addon = ...
 -- combination in the game's own gamepad bindings.
 
 local function DB()
-    return SpeakStone_ForeverMainDB or SpeakStone_MainDB or {}
+    return SpeakStone_ForeverMainDB or SpeakStone_ForeverMainDB or {}
 end
 
 local IDLE_SECONDS = 8
