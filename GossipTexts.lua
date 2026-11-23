@@ -311,6 +311,7 @@ SpeakStone_GossipTexts = {
   ["Back so soon."]=2,
   ["Back so soon?"]=2,
   ["Well, hello there. You seem like you wouldn't be opposed to making some coin, hm? I can tell from the look in your eyes. I am Mogul Kebok, overseer of operations in Azeroth, and if it is riches you seek, perhaps I can make arrangements."]=3,
+  ["Greetings, adventurer."]=3,
 },
 [738]={ -- Private Thorsen
   ["This is a dangerous place, adventurer. Be careful around here."]=1,
