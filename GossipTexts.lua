@@ -10036,8 +10036,8 @@ SpeakStone_GossipTranscribed = {
   ["Shut inside this little house, I dream of joining the battles that rage outside the city walls. Still, duty compels me to share my knowledge with others who fight in my stead... for now."]=1,
   ["You are beyond my limited abilities. Seek out the night elf Ainethil in the Craftsmen's Terrace of Darnassus. She can teach you more. I only wish that I could go with you."]=2,
   ["My teachings would be too advanced for you at this stage. If you wish to learn more of potions, speak with Tel'Athir here instead."]=3,
-  ["Listen carefully adventurer, for I have much knowledge to impart."]=4,
   ["Listen carefully, adventurer, for I have much knowledge to impart."]=4,
+  ["Listen carefully adventurer, for I have much knowledge to impart."]=4,
 },
 [5500]={
   ["You must choose a more experienced teacher. For you have surpassed my abilities. I advise you to speak with Lalicia Knightbreeze here. She has much knowledge to offer."]=3,
