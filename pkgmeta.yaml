@@ -11,6 +11,7 @@ ignore:
   - .github
   - .git
   - .gitignore
+  - docs
 
 # CurseForge's changelog for each release: the top entry of CHANGELOG.md
 # (release_main.py writes it). Without this the packager used the commit
