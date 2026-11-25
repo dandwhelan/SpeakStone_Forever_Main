@@ -1303,6 +1303,7 @@ SpeakStone_NPCNames = {
 [6446]="Therzok",
 [6467]="Mennet Carkad",
 [6491]="Spirit Healer",
+[6496]="Brivelthwerp",
 [6497]="Astor Hadren",
 [6522]="Andron Gant",
 [6526]="GOSSIP TEST DUDE",

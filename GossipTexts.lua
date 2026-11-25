@@ -6337,6 +6337,9 @@ SpeakStone_GossipTexts = {
   ["They are lost, $r. Librams written by the elven masters. Scattered across the world when the Scourge was unleashed upon Quel'Thalas.$B$BNow we search for these librams. Search to find the secrets they hold - to restore power once had.$B$BI search for the ten written by Master Kariel Winthalus. Should you find a libram, allow me to absorb its magical properties and for you I shall craft an amalgamation of power... of course, all things come at some cost. You will find my cost to be high; but pay you shall."]=1,
   ["They are lost, $r. Librams written by the elven masters. Scattered across the world when the Scourge was unleashed upon Quel'Thalas. Now we search for these librams. Search to find the secrets they hold - to restore power once had. I search for the ten written by Master Telmius Dreamseeker. Should you find a libram, allow me to absorb its magical properties and for you I shall craft an amalgamation of power... of course, all things come at some cost. You will find my cost to be high; but pay you shall."]=1,
 },
+[9937]={ -- Corrupted Saber
+  ["Grrr..."]=1,
+},
 [9981]={ -- Sikwa
   ["Greetings, $c. I can assist you in recovering lost companions."]=1,
   ["Greetings, druid. I can assist you in recovering lost companions."]=1,
