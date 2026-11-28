@@ -12,6 +12,10 @@ ignore:
   - .git
   - .gitignore
   - docs
+  # LibStub's own repo furniture: never loaded by the add-on.
+  - Libs/LibStub/tests
+  - Libs/LibStub/.pkgmeta
+  - Libs/LibStub/LibStub.toc
 
 # CurseForge's changelog for each release: the top entry of CHANGELOG.md
 # (release_main.py writes it). Without this the packager used the commit
